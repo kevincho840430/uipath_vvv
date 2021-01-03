@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,125
+Well done. I hope now you have understood how to
+
+2
+00:00:04,125 --> 00:00:09,070
+apply data manipulation on different data structures in UI path.
+
+3
+00:00:09,070 --> 00:00:13,755
+In this lesson, we have learned about string manipulation,
+
+4
+00:00:13,755 --> 00:00:18,225
+collection, its type, and how to manipulate collections.
+
+5
+00:00:18,225 --> 00:00:22,740
+We saw some of the common UI activities properties,
+
+6
+00:00:22,740 --> 00:00:27,945
+and we also saw the overview of.NET framework and Vb.
+
+7
+00:00:27,945 --> 00:00:29,370
+In the next lesson.
+
+8
+00:00:29,370 --> 00:00:33,460
+We will learn about selectors in UI path.
+

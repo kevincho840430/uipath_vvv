@@ -1,0 +1,308 @@
+1
+00:00:00,000 --> 00:00:05,520
+Now, we have learned about the common UI activities properties.
+
+2
+00:00:05,520 --> 00:00:09,040
+Let us try to implement it in this exercise.
+
+3
+00:00:09,040 --> 00:00:13,710
+Here, we will work on the notepad application.
+
+4
+00:00:13,710 --> 00:00:18,360
+First thing first, we need to open the notepad application.
+
+5
+00:00:18,360 --> 00:00:20,940
+After opening the notepad application,
+
+6
+00:00:20,940 --> 00:00:24,555
+we need to type our text into the text box.
+
+7
+00:00:24,555 --> 00:00:27,855
+This is the text that we need to write into the text box
+
+8
+00:00:27,855 --> 00:00:31,785
+that is," Automation makes life easier."
+
+9
+00:00:31,785 --> 00:00:36,090
+After that, you need to minimize the notepad,
+
+10
+00:00:36,090 --> 00:00:39,495
+making sure that when the board minimizes the notepad,
+
+11
+00:00:39,495 --> 00:00:42,600
+the simulate click property is checked.
+
+12
+00:00:42,600 --> 00:00:47,625
+Next, we need to type a different set of text.
+
+13
+00:00:47,625 --> 00:00:49,125
+We will be typing,
+
+14
+00:00:49,125 --> 00:00:51,615
+"Welcome to the new world of automation".
+
+15
+00:00:51,615 --> 00:00:54,330
+When the boat is typing this text,
+
+16
+00:00:54,330 --> 00:00:59,780
+we'll have to make sure that the send window message property is checked.
+
+17
+00:00:59,780 --> 00:01:03,455
+Later, we need to change the font type,
+
+18
+00:01:03,455 --> 00:01:08,060
+default style, and increase the font size by five.
+
+19
+00:01:08,060 --> 00:01:11,575
+To do that, we'll select the entire text,
+
+20
+00:01:11,575 --> 00:01:15,145
+click on "Format", click on "Font",
+
+21
+00:01:15,145 --> 00:01:19,910
+change the font type to Times New Roman,
+
+22
+00:01:19,910 --> 00:01:23,950
+and change the font style to Italic.
+
+23
+00:01:23,950 --> 00:01:28,640
+Now, you can see the font size is 28.
+
+24
+00:01:28,640 --> 00:01:31,760
+We need to increase the font size by five.
+
+25
+00:01:31,760 --> 00:01:35,800
+Now the current font size should be 33.
+
+26
+00:01:35,800 --> 00:01:41,805
+We need to hit the "Enter Key". That's it.
+
+27
+00:01:41,805 --> 00:01:47,030
+Let us build the application for this use case.
+
+28
+00:01:47,030 --> 00:01:50,405
+Before going ahead, let me change the format.
+
+29
+00:01:50,405 --> 00:01:54,000
+Let me just increase the font size a little bit.
+
+30
+00:01:55,810 --> 00:02:01,310
+Here is the solution for the application that we just saw.
+
+31
+00:02:01,310 --> 00:02:04,520
+As you can see, we have started with the "Sequence",
+
+32
+00:02:04,520 --> 00:02:08,060
+and we are using the "Open Application".
+
+33
+00:02:08,060 --> 00:02:09,860
+In the "Open Application",
+
+34
+00:02:09,860 --> 00:02:14,270
+we have make sure that we are opening up the notepad application.
+
+35
+00:02:14,270 --> 00:02:16,955
+Inside the open application,
+
+36
+00:02:16,955 --> 00:02:18,980
+the first thing that we're doing is,
+
+37
+00:02:18,980 --> 00:02:21,455
+we're using the type into activity.
+
+38
+00:02:21,455 --> 00:02:23,270
+In this type into activity,
+
+39
+00:02:23,270 --> 00:02:26,555
+we will write," Automation makes life easier."
+
+40
+00:02:26,555 --> 00:02:30,170
+After that, we'll click on "Minimize".
+
+41
+00:02:30,170 --> 00:02:33,290
+As you can see in the properties panel,
+
+42
+00:02:33,290 --> 00:02:36,750
+the "SimulateClick" has been checked to "True".
+
+43
+00:02:36,750 --> 00:02:42,050
+After that, we will type the different set of information that is we'll type,
+
+44
+00:02:42,050 --> 00:02:44,500
+"Welcome to the new world of automation."
+
+45
+00:02:44,500 --> 00:02:46,150
+On the properties panel,
+
+46
+00:02:46,150 --> 00:02:48,805
+you can see the "SendWindowMessages" option,
+
+47
+00:02:48,805 --> 00:02:50,870
+is checked as "True".
+
+48
+00:02:50,870 --> 00:02:55,500
+After that, we are using "Send Hotkey" activity,
+
+49
+00:02:55,500 --> 00:02:59,995
+wherein we are choosing "Control plus K", as the shortcut.
+
+50
+00:02:59,995 --> 00:03:06,310
+We are doing so, so that we can select all the text and then we can edit the font,
+
+51
+00:03:06,310 --> 00:03:09,415
+the font size, and default style.
+
+52
+00:03:09,415 --> 00:03:11,680
+After we have selected all the text,
+
+53
+00:03:11,680 --> 00:03:14,275
+we will click on the "Format" button.
+
+54
+00:03:14,275 --> 00:03:15,985
+After the format button,
+
+55
+00:03:15,985 --> 00:03:18,085
+we'll click on the "Font".
+
+56
+00:03:18,085 --> 00:03:23,295
+Now, once you are in the font window,
+
+57
+00:03:23,295 --> 00:03:26,220
+we will use the "Type into" activity.
+
+58
+00:03:26,220 --> 00:03:28,875
+This first "Type into" activity,
+
+59
+00:03:28,875 --> 00:03:32,715
+we are using it for changing the font type.
+
+60
+00:03:32,715 --> 00:03:34,950
+The next "Type Into" activity,
+
+61
+00:03:34,950 --> 00:03:37,815
+we are using to change the font style.
+
+62
+00:03:37,815 --> 00:03:41,285
+We will change the font style to Italic.
+
+63
+00:03:41,285 --> 00:03:44,720
+The next activity is the "Get Text" activity.
+
+64
+00:03:44,720 --> 00:03:51,845
+Here, we are first checking what is the default font size available.
+
+65
+00:03:51,845 --> 00:03:56,135
+The Get Text will take the value of the font size,
+
+66
+00:03:56,135 --> 00:03:59,045
+and will store it in a variable font size.
+
+67
+00:03:59,045 --> 00:04:02,765
+Now later, we will use a Type Into activity,
+
+68
+00:04:02,765 --> 00:04:08,285
+and the value that we fetched we'll increase it by five.
+
+69
+00:04:08,285 --> 00:04:11,985
+On the last, we will send an Hotkey,
+
+70
+00:04:11,985 --> 00:04:13,995
+that is the "Enter Key",
+
+71
+00:04:13,995 --> 00:04:17,850
+to close the format window.
+
+72
+00:04:17,850 --> 00:04:20,710
+Let us run the boat.
+
+73
+00:04:24,410 --> 00:04:28,050
+Minimize. As you can see,
+
+74
+00:04:28,050 --> 00:04:30,575
+"Welcome to the new world" has been already written.
+
+75
+00:04:30,575 --> 00:04:34,340
+Changing the font style and the font size.
+
+76
+00:04:34,340 --> 00:04:36,245
+Here you can see,
+
+77
+00:04:36,245 --> 00:04:40,350
+all the actions were performed successfully.
+

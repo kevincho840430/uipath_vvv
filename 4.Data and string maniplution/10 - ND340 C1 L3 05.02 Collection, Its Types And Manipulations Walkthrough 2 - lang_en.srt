@@ -1,0 +1,440 @@
+1
+00:00:00,000 --> 00:00:03,340
+Now that we have learned about dictionaries,
+
+2
+00:00:03,340 --> 00:00:08,705
+let us look at an example to see how to use dictionaries in the UiPath studio.
+
+3
+00:00:08,705 --> 00:00:13,105
+Moving ahead, first, we'll create a variable of the type dictionary.
+
+4
+00:00:13,105 --> 00:00:14,755
+Under the variable panel,
+
+5
+00:00:14,755 --> 00:00:19,520
+we'll create a variable with the name employee details.
+
+6
+00:00:19,520 --> 00:00:22,870
+We'll choose the variable type as dictionaries.
+
+7
+00:00:22,870 --> 00:00:24,910
+Since dictionary is not available here,
+
+8
+00:00:24,910 --> 00:00:30,575
+we'll click on "Browse for Type" and from here we will filter out dictionaries.
+
+9
+00:00:30,575 --> 00:00:34,500
+Select the dictionaries from the class collection.generic.
+
+10
+00:00:34,500 --> 00:00:38,370
+For the key value we will select the key as
+
+11
+00:00:38,370 --> 00:00:42,600
+string and for the value we'll select "List of String".
+
+12
+00:00:42,600 --> 00:00:48,660
+We will search for list and we'll choose
+
+13
+00:00:48,660 --> 00:00:51,870
+the list from the collection.generic class and
+
+14
+00:00:51,870 --> 00:00:55,640
+over here we'll select the list value as string.
+
+15
+00:00:55,640 --> 00:01:00,120
+Awesome. Now, the dictionary key is string
+
+16
+00:01:00,120 --> 00:01:05,250
+and the value as list of string. Click on "Okay".
+
+17
+00:01:05,250 --> 00:01:13,605
+Now, we have declared a dictionary of the type key as string and value as list of string.
+
+18
+00:01:13,605 --> 00:01:17,265
+Now let us go ahead and instantiate the dictionaries.
+
+19
+00:01:17,265 --> 00:01:20,775
+Over here we'll see new dictionary,
+
+20
+00:01:20,775 --> 00:01:26,955
+and since we have key and value so we'll see off string because key is off string,
+
+21
+00:01:26,955 --> 00:01:29,585
+and since the value as a list,
+
+22
+00:01:29,585 --> 00:01:34,285
+we'll see list of string.
+
+23
+00:01:34,285 --> 00:01:39,680
+Awesome. Now, we have declared the string and we have instantiated the string.
+
+24
+00:01:39,680 --> 00:01:45,005
+Now, let us go ahead and initialize the dictionaries with some values.
+
+25
+00:01:45,005 --> 00:01:48,235
+For that, we'll use the assign activity.
+
+26
+00:01:48,235 --> 00:01:52,410
+Drag and drop the Assign activity into the data in the panel.
+
+27
+00:01:52,410 --> 00:01:56,850
+Now, let us go ahead and create our dictionary key.
+
+28
+00:01:56,850 --> 00:02:00,725
+In that case, we'll create a key with the name HR.
+
+29
+00:02:00,725 --> 00:02:06,715
+Now, let us go ahead and initialize it with some values.
+
+30
+00:02:06,715 --> 00:02:13,590
+Here, we'll say new list of string,
+
+31
+00:02:13,590 --> 00:02:17,475
+and let us insert some values.
+
+32
+00:02:17,475 --> 00:02:21,605
+The first value that will insert is David,
+
+33
+00:02:21,605 --> 00:02:23,795
+and we will insert other value.
+
+34
+00:02:23,795 --> 00:02:27,350
+The second value here would be Daniel.
+
+35
+00:02:27,350 --> 00:02:29,860
+Awesome. Let us click on "Okay".
+
+36
+00:02:29,860 --> 00:02:33,950
+Now, we have created a dictionary where the key is
+
+37
+00:02:33,950 --> 00:02:38,320
+HR and the value with the key is David and Daniel.
+
+38
+00:02:38,320 --> 00:02:42,890
+Let us go ahead and create another dictionary.
+
+39
+00:02:42,890 --> 00:02:50,090
+In this case, we'll name the key as IT and in this IT department,
+
+40
+00:02:50,090 --> 00:02:52,580
+we will add values.
+
+41
+00:02:52,580 --> 00:02:57,110
+In our case, we'll name the first employee in
+
+42
+00:02:57,110 --> 00:03:02,700
+the IT section as Niyaz and the another employee as Heba.
+
+43
+00:03:03,200 --> 00:03:07,150
+Now, we have created two dictionaries.
+
+44
+00:03:09,260 --> 00:03:14,465
+The first dictionary key HR and it holds the value David and Daniel.
+
+45
+00:03:14,465 --> 00:03:19,720
+We have an another dictionary where the key is IT and the value here is Niyaz and Heba.
+
+46
+00:03:19,720 --> 00:03:23,660
+Now, let us go ahead and print one of the dictionaries.
+
+47
+00:03:23,660 --> 00:03:26,635
+We will use our write line activity.
+
+48
+00:03:26,635 --> 00:03:34,515
+Now in this write line activity we'll call the joint method so we'll say string.join.
+
+49
+00:03:34,515 --> 00:03:40,470
+Here, we'll use comma to join both the values and here we will have to pass the key.
+
+50
+00:03:40,470 --> 00:03:44,890
+The key in our case that we want to print is IT.
+
+51
+00:03:44,890 --> 00:03:48,245
+Awesome. Let us go ahead and click on "Okay".
+
+52
+00:03:48,245 --> 00:03:50,830
+Let us run the workflow.
+
+53
+00:03:50,830 --> 00:03:56,145
+In that case we are trying to print values of the key IT.
+
+54
+00:03:56,145 --> 00:04:00,775
+As you can see, the value we have printed is Niyaz and Heba.
+
+55
+00:04:00,775 --> 00:04:08,420
+Now, let us go ahead and add more values into to the dictionaries that we have created.
+
+56
+00:04:08,420 --> 00:04:11,089
+We can use the collection activity,
+
+57
+00:04:11,089 --> 00:04:14,065
+drag and drop the Add to collection.
+
+58
+00:04:14,065 --> 00:04:18,304
+Now, in this Add to collection in the collection properties,
+
+59
+00:04:18,304 --> 00:04:22,250
+we need to mention in which dictionary do we want to add values.
+
+60
+00:04:22,250 --> 00:04:29,930
+In that case, we will mention
+
+61
+00:04:29,930 --> 00:04:33,920
+that we need to add it into the employee details of IT.
+
+62
+00:04:33,920 --> 00:04:36,505
+Let us change the type argument to string.
+
+63
+00:04:36,505 --> 00:04:39,485
+Now here is where you need to add the values.
+
+64
+00:04:39,485 --> 00:04:43,960
+In that case, we will add the value as Christa.
+
+65
+00:04:48,680 --> 00:04:53,850
+Now, let us go ahead and print the dictionary.
+
+66
+00:04:53,850 --> 00:05:00,095
+We have used two write line activities and we are printing the employees of IT.
+
+67
+00:05:00,095 --> 00:05:03,270
+In this write line we are assuming there should be two values,
+
+68
+00:05:03,270 --> 00:05:07,490
+Niyaz and Heba, and we added one more value, that is Christa.
+
+69
+00:05:07,490 --> 00:05:10,555
+Here, we are assuming that three values should be printed.
+
+70
+00:05:10,555 --> 00:05:13,485
+Let us run the workflow and see the output.
+
+71
+00:05:13,485 --> 00:05:19,390
+Awesome. Here, you can see Christa has been added and it has been accordingly printed.
+
+72
+00:05:19,390 --> 00:05:24,965
+In the same way, you can also check if any of the element exists in the collection,
+
+73
+00:05:24,965 --> 00:05:27,810
+drag and drop the existing collection.
+
+74
+00:05:27,810 --> 00:05:29,850
+Here in the collection section,
+
+75
+00:05:29,850 --> 00:05:34,630
+we will mention the employee of HR,
+
+76
+00:05:34,630 --> 00:05:36,975
+change the argument type to string.
+
+77
+00:05:36,975 --> 00:05:43,310
+Here, we will see if David exist in this dictionary or not.
+
+78
+00:05:43,310 --> 00:05:46,385
+Since the result will give us add Boolean value,
+
+79
+00:05:46,385 --> 00:05:48,770
+let us go ahead and create a variable.
+
+80
+00:05:48,770 --> 00:05:53,105
+We'll name the variable as employee exist.
+
+81
+00:05:53,105 --> 00:05:57,260
+If the employee David exist it will return a true value,
+
+82
+00:05:57,260 --> 00:06:01,375
+or if it does not exist it will return a false value.
+
+83
+00:06:01,375 --> 00:06:05,565
+Let us go ahead and print the Boolean variable.
+
+84
+00:06:05,565 --> 00:06:08,720
+We'll use a write line activity again and over here,
+
+85
+00:06:08,720 --> 00:06:15,050
+we'll print the variable employee exist and we'll convert it to string.
+
+86
+00:06:15,050 --> 00:06:17,530
+Let us run the workflow.
+
+87
+00:06:17,530 --> 00:06:19,665
+In there under the output panel,
+
+88
+00:06:19,665 --> 00:06:23,210
+here you can see the value has been printed as true that
+
+89
+00:06:23,210 --> 00:06:27,620
+means David was available in the dictionary that we were searching for.
+
+90
+00:06:27,620 --> 00:06:31,030
+The same way you can also use the Remove from collection.
+
+91
+00:06:31,030 --> 00:06:34,430
+Drag and drop the remove from collection and over here we
+
+92
+00:06:34,430 --> 00:06:38,130
+need to mention the collection or the dictionary.
+
+93
+00:06:38,130 --> 00:06:44,045
+In our example, we will tell we need to remove a value from the HR dictionary,
+
+94
+00:06:44,045 --> 00:06:46,595
+convert the type to string,
+
+95
+00:06:46,595 --> 00:06:50,080
+and from here we will remove David.
+
+96
+00:06:50,080 --> 00:06:53,905
+Awesome. Now, let us use the write line
+
+97
+00:06:53,905 --> 00:06:59,315
+again and print the value after the removal of the values.
+
+98
+00:06:59,315 --> 00:07:04,255
+Let us change the department to HR.
+
+99
+00:07:04,255 --> 00:07:06,510
+Let us save it,
+
+100
+00:07:06,510 --> 00:07:09,300
+and let us run the workflow.
+
+101
+00:07:09,300 --> 00:07:12,375
+Awesome. Here you can see we've got
+
+102
+00:07:12,375 --> 00:07:16,050
+the Niyaz and Heba and then we added Christa so Christa was printed.
+
+103
+00:07:16,050 --> 00:07:18,350
+Then we were searching if David is available.
+
+104
+00:07:18,350 --> 00:07:23,940
+Yes, David was available and David existed in the dictionary as we got true.
+
+105
+00:07:23,940 --> 00:07:28,880
+Since we removed David from the dictionary and then we are printing the dictionary,
+
+106
+00:07:28,880 --> 00:07:32,450
+here you can see there is only Daniel available right now.
+
+107
+00:07:32,450 --> 00:07:35,600
+In this example, we saw how to create,
+
+108
+00:07:35,600 --> 00:07:37,745
+declare and instantiate a dictionary,
+
+109
+00:07:37,745 --> 00:07:40,205
+and how to add a value into the dictionaries,
+
+110
+00:07:40,205 --> 00:07:45,390
+and we saw how to use the collection activities with the dictionaries.
+

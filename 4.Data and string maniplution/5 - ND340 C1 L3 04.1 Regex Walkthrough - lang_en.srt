@@ -1,0 +1,352 @@
+1
+00:00:00,000 --> 00:00:07,395
+Let us try to retrieve some information from the string using Analytics Builder.
+
+2
+00:00:07,395 --> 00:00:10,800
+To do that, under the activities panel,
+
+3
+00:00:10,800 --> 00:00:14,550
+we will use the activity name, matches.
+
+4
+00:00:14,550 --> 00:00:19,050
+Drag and drop the activity into the designer panel.
+
+5
+00:00:19,050 --> 00:00:22,245
+Click on the Configure Regular Expression button.
+
+6
+00:00:22,245 --> 00:00:25,725
+This window, is the regex builder.
+
+7
+00:00:25,725 --> 00:00:31,290
+Before proceeding further, let us copy some test data into it,
+
+8
+00:00:31,290 --> 00:00:35,085
+so that we can test our regex over here.
+
+9
+00:00:35,085 --> 00:00:40,080
+This extra information, it contains some numbers.
+
+10
+00:00:40,080 --> 00:00:41,865
+It contains an e-mail address,
+
+11
+00:00:41,865 --> 00:00:44,055
+it contains website URL,
+
+12
+00:00:44,055 --> 00:00:46,445
+it contains the date of birth,
+
+13
+00:00:46,445 --> 00:00:49,595
+and it also contains some address.
+
+14
+00:00:49,595 --> 00:00:52,025
+Let us go ahead and look at
+
+15
+00:00:52,025 --> 00:00:57,305
+all the options that are available under the regex drop-down call box.
+
+16
+00:00:57,305 --> 00:00:59,855
+The first one is the literal.
+
+17
+00:00:59,855 --> 00:01:03,949
+As you can see, the default value is given as abc,
+
+18
+00:01:03,949 --> 00:01:07,565
+and since there is no text present,
+
+19
+00:01:07,565 --> 00:01:11,705
+abc, so there was no string retrieval happen.
+
+20
+00:01:11,705 --> 00:01:17,770
+Let us go ahead and change it to a data that we have in the text.
+
+21
+00:01:17,770 --> 00:01:22,520
+As you can see, the value has been changed to niyaz,
+
+22
+00:01:22,520 --> 00:01:28,655
+and all the values from the string or the text has been retrieved.
+
+23
+00:01:28,655 --> 00:01:32,125
+Let us look at the other options, digit.
+
+24
+00:01:32,125 --> 00:01:38,350
+Here you can see all the numbers from the string has been retrieved.
+
+25
+00:01:38,350 --> 00:01:42,570
+We can look at the options such as e-mail.
+
+26
+00:01:42,570 --> 00:01:44,745
+Here, you can easily see
+
+27
+00:01:44,745 --> 00:01:49,945
+the e-mail addresses has been successfully retrieved from the string.
+
+28
+00:01:49,945 --> 00:01:53,750
+We can click on URL and you can see the URL
+
+29
+00:01:53,750 --> 00:01:58,160
+has been retrieved from the entire string text.
+
+30
+00:01:58,160 --> 00:02:01,610
+The date, from the entire text available,
+
+31
+00:02:01,610 --> 00:02:04,549
+the date was easily retrieved.
+
+32
+00:02:04,549 --> 00:02:06,755
+Let's click on phone number.
+
+33
+00:02:06,755 --> 00:02:09,845
+Here you can see the phone number has been
+
+34
+00:02:09,845 --> 00:02:13,940
+successfully retrieved from the entire piece of information.
+
+35
+00:02:13,940 --> 00:02:20,540
+Apart from that, you can also add your own custom regex that you need.
+
+36
+00:02:20,540 --> 00:02:25,315
+In our case, we need to find the office address.
+
+37
+00:02:25,315 --> 00:02:29,805
+To do that, we will click on the Advanced option,
+
+38
+00:02:29,805 --> 00:02:31,875
+and inside the value,
+
+39
+00:02:31,875 --> 00:02:34,560
+we will pass the regex.
+
+40
+00:02:34,560 --> 00:02:40,405
+Now you could see easily the addresses has been retrieved successfully.
+
+41
+00:02:40,405 --> 00:02:42,510
+If you look at the regex,
+
+42
+00:02:42,510 --> 00:02:48,620
+we are looking for numbers ranging from 1-8 and characters ranging from a-z.
+
+43
+00:02:48,620 --> 00:02:52,460
+Apart from that, we are looking for some of the keywords such as;
+
+44
+00:02:52,460 --> 00:02:56,190
+road, avenue, circle, and so on.
+
+45
+00:02:56,190 --> 00:02:58,770
+With the help of this regex,
+
+46
+00:02:58,770 --> 00:03:05,645
+we are able to get a variable to retrieve the address successfully.
+
+47
+00:03:05,645 --> 00:03:09,610
+Let us go ahead and build a program.
+
+48
+00:03:09,610 --> 00:03:16,630
+In this sequence, we will retrieve all the numbers from the string,
+
+49
+00:03:16,630 --> 00:03:21,055
+and we will display it into the output panel.
+
+50
+00:03:21,055 --> 00:03:26,160
+To do that, we will take an Input Dialog activity,
+
+51
+00:03:26,160 --> 00:03:29,579
+drag and drop the Input Dialog activity,
+
+52
+00:03:29,579 --> 00:03:33,550
+let me give a title to this dialog box.
+
+53
+00:03:33,550 --> 00:03:38,995
+Here we'll enter the label for the Input Dialogue box.
+
+54
+00:03:38,995 --> 00:03:44,349
+We will store the text entered by the user into a variable.
+
+55
+00:03:44,349 --> 00:03:46,830
+Hit "Control K" to create a variable,
+
+56
+00:03:46,830 --> 00:03:49,425
+and let me give a variable name.
+
+57
+00:03:49,425 --> 00:03:52,680
+The variable name is a regexText.
+
+58
+00:03:52,680 --> 00:03:56,120
+That means the information that the user is
+
+59
+00:03:56,120 --> 00:04:00,325
+entering will be stored into a variable called as regexText.
+
+60
+00:04:00,325 --> 00:04:03,885
+Now, I'll use the matches activity.
+
+61
+00:04:03,885 --> 00:04:05,820
+I'll click on the "Configure",
+
+62
+00:04:05,820 --> 00:04:08,825
+since I want to only use digits,
+
+63
+00:04:08,825 --> 00:04:11,045
+I'll click on the "Digits",
+
+64
+00:04:11,045 --> 00:04:13,150
+and I'll click on "Save".
+
+65
+00:04:13,150 --> 00:04:15,065
+In the properties panel,
+
+66
+00:04:15,065 --> 00:04:19,175
+I'll pass the input variable.
+
+67
+00:04:19,175 --> 00:04:22,150
+Our variable is regexText.
+
+68
+00:04:22,150 --> 00:04:24,805
+On our regexText variable,
+
+69
+00:04:24,805 --> 00:04:31,790
+the digit pattern will be applied and we will get a new set of result.
+
+70
+00:04:31,790 --> 00:04:35,375
+Let us store it into a new variable,
+
+71
+00:04:35,375 --> 00:04:41,615
+hit "Control K" to create a new variable and let us go ahead and create a new variable.
+
+72
+00:04:41,615 --> 00:04:44,585
+New variable created is digit.
+
+73
+00:04:44,585 --> 00:04:48,770
+Since it is going to have more than one value,
+
+74
+00:04:48,770 --> 00:04:51,620
+we'll have to use a loop.
+
+75
+00:04:51,620 --> 00:04:56,860
+We'll use a For Each loop over here to iterate through all the values.
+
+76
+00:04:56,860 --> 00:05:00,870
+Drag and drop the For Each loop.
+
+77
+00:05:00,870 --> 00:05:07,020
+Pass the regex outcome over here, that is digits.
+
+78
+00:05:07,020 --> 00:05:11,960
+For every iteration we will print the item.
+
+79
+00:05:11,960 --> 00:05:17,165
+I'm using the right line activity here for printing the values in the console,
+
+80
+00:05:17,165 --> 00:05:20,580
+and I'll be using items.
+
+81
+00:05:20,710 --> 00:05:24,415
+Let us execute this program.
+
+82
+00:05:24,415 --> 00:05:27,075
+Here there is the Input Dialog box,
+
+83
+00:05:27,075 --> 00:05:30,215
+which is asking a text from the user.
+
+84
+00:05:30,215 --> 00:05:33,805
+We'll use the same text that we saw earlier.
+
+85
+00:05:33,805 --> 00:05:38,930
+Click "Okay". The program has been successfully completed.
+
+86
+00:05:38,930 --> 00:05:41,015
+Let us open the output panel,
+
+87
+00:05:41,015 --> 00:05:44,615
+and here you can see all the digits from the text
+
+88
+00:05:44,615 --> 00:05:49,440
+has been retrieved successfully and we have printed it.
+

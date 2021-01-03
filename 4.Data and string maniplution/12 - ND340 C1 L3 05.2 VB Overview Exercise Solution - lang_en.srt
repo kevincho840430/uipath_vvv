@@ -1,0 +1,156 @@
+1
+00:00:00,000 --> 00:00:04,395
+Now that we have learned some of the common methods of VB,
+
+2
+00:00:04,395 --> 00:00:06,975
+let us use them in this exercise.
+
+3
+00:00:06,975 --> 00:00:14,460
+In this exercise, we will move some files from a particular folder to another folder.
+
+4
+00:00:14,460 --> 00:00:16,440
+Here you can see in the next step,
+
+5
+00:00:16,440 --> 00:00:19,735
+I have two folders named from and to.
+
+6
+00:00:19,735 --> 00:00:23,100
+The from folders has four files into it.
+
+7
+00:00:23,100 --> 00:00:24,915
+It has a document file,
+
+8
+00:00:24,915 --> 00:00:27,840
+a PDF file, a text file, and an Excel file.
+
+9
+00:00:27,840 --> 00:00:33,000
+We will move all these files to the folder "to".
+
+10
+00:00:33,000 --> 00:00:36,045
+Let us see the solution for it.
+
+11
+00:00:36,045 --> 00:00:42,035
+Inside the sequence, the first activity that we are using is the Select Folder activity.
+
+12
+00:00:42,035 --> 00:00:44,585
+In this Select Folder activity,
+
+13
+00:00:44,585 --> 00:00:47,950
+we will be selecting the source folder.
+
+14
+00:00:47,950 --> 00:00:51,815
+After that, we have used an assign activity.
+
+15
+00:00:51,815 --> 00:00:53,735
+In this assign activity,
+
+16
+00:00:53,735 --> 00:00:59,270
+we are using directory.dotgetfiles method.
+
+17
+00:00:59,270 --> 00:01:04,235
+From this method, we will take all the files or basically,
+
+18
+00:01:04,235 --> 00:01:11,080
+we will fetch all the files from the source folder and store it in a variable file name.
+
+19
+00:01:11,080 --> 00:01:15,095
+After that, we are again using a select folder.
+
+20
+00:01:15,095 --> 00:01:18,440
+This activity is responsible to select
+
+21
+00:01:18,440 --> 00:01:22,070
+the destination of the folder where the files will be moved.
+
+22
+00:01:22,070 --> 00:01:25,585
+We're using a variable destination folder for it.
+
+23
+00:01:25,585 --> 00:01:28,220
+Inside the 'for each' activity,
+
+24
+00:01:28,220 --> 00:01:33,095
+we are iterating or each one of the file name one at a time.
+
+25
+00:01:33,095 --> 00:01:34,760
+Inside the file loop,
+
+26
+00:01:34,760 --> 00:01:37,780
+we are using an activity move file.
+
+27
+00:01:37,780 --> 00:01:40,625
+The move file activity has two parameters,
+
+28
+00:01:40,625 --> 00:01:42,140
+the from and the to.
+
+29
+00:01:42,140 --> 00:01:45,395
+In the from we're parsing the file name,
+
+30
+00:01:45,395 --> 00:01:47,405
+and in the to destination,
+
+31
+00:01:47,405 --> 00:01:49,760
+we are parsing the destination folder.
+
+32
+00:01:49,760 --> 00:01:52,405
+Let us see the example.
+
+33
+00:01:52,405 --> 00:01:56,805
+Right now, all the files are in the 'from' folder.
+
+34
+00:01:56,805 --> 00:02:02,465
+Here you can see it is asking me to select the source folder.
+
+35
+00:02:02,465 --> 00:02:04,435
+I'll select "from".
+
+36
+00:02:04,435 --> 00:02:10,275
+Again, it is prompting to select the destination folder, I'll select "to".
+
+37
+00:02:10,275 --> 00:02:13,315
+The bot has successfully executed.
+
+38
+00:02:13,315 --> 00:02:15,330
+As you can see here,
+
+39
+00:02:15,330 --> 00:02:22,980
+the "from" folder is empty and all the files have been moved to the 'to' folder.
+

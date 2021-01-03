@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:04,450
+Data manipulation is the process of changing data to
+
+2
+00:00:04,450 --> 00:00:08,739
+make it easier to read or to be more organized.
+
+3
+00:00:08,739 --> 00:00:15,100
+Manipulating data can enable it to be displayed in a common format of systems,
+
+4
+00:00:15,100 --> 00:00:18,535
+output verifications and beyond.
+
+5
+00:00:18,535 --> 00:00:24,075
+Common operations for data manipulations are, retrieving data,
+
+6
+00:00:24,075 --> 00:00:27,430
+it specifies a condition to extract,
+
+7
+00:00:27,430 --> 00:00:30,680
+filter or summarize data.
+
+8
+00:00:30,680 --> 00:00:35,755
+Adding data, it adds new data in a data structure.
+
+9
+00:00:35,755 --> 00:00:42,965
+The user can specify conditions to limit the additions only to the filtered entries.
+
+10
+00:00:42,965 --> 00:00:48,310
+Deleting data, it removes entries from a data structure.
+
+11
+00:00:48,310 --> 00:00:52,120
+Modifying data, any type of operations
+
+12
+00:00:52,120 --> 00:00:56,590
+that affects the existing entries in a data structure.
+
+13
+00:00:56,590 --> 00:01:04,120
+Data is defined as a collection of information that can be stored and processed.
+
+14
+00:01:04,120 --> 00:01:09,550
+Nowadays, data is the topmost priority for organization.
+
+15
+00:01:09,550 --> 00:01:15,970
+Whoever has data has the most power to use technology at their best.
+
+16
+00:01:15,970 --> 00:01:19,720
+Organizations are in deep competition to
+
+17
+00:01:19,720 --> 00:01:24,755
+utilize and maximize their efficiency by having data.
+
+18
+00:01:24,755 --> 00:01:28,245
+Having raw data is not enough,
+
+19
+00:01:28,245 --> 00:01:33,625
+it needs to be processed accordingly before it can be used.
+
+20
+00:01:33,625 --> 00:01:39,730
+However, having data is not enough as it should mean something to the company.
+
+21
+00:01:39,730 --> 00:01:46,420
+Meaningless data could prove to be unreliable and impossible to analyze.
+
+22
+00:01:46,420 --> 00:01:52,735
+Data manipulation covers all the operations done on data.
+
+23
+00:01:52,735 --> 00:02:00,010
+Operation done on data can be differentiated based on how they achieve an outcome.
+
+24
+00:02:00,010 --> 00:02:05,189
+There are two types of operation, queries,
+
+25
+00:02:05,189 --> 00:02:13,670
+they may only be considered as read Only operations because whenever a query is executed,
+
+26
+00:02:13,670 --> 00:02:19,430
+it only works at a static source and returns the value accordingly.
+
+27
+00:02:19,430 --> 00:02:27,005
+Manipulations, these operations produce alteration over the data structures.
+
+28
+00:02:27,005 --> 00:02:30,170
+These operations may be inserting,
+
+29
+00:02:30,170 --> 00:02:33,680
+deleting, or modifying data.
+
+30
+00:02:33,680 --> 00:02:40,890
+Data manipulation is used for data filtering, verification and concatenation.
+
+31
+00:02:40,890 --> 00:02:46,070
+Most of the data manipulation language share four basic commands,
+
+32
+00:02:46,070 --> 00:02:50,590
+select, update, insert, and delete.
+
+33
+00:02:50,590 --> 00:02:55,355
+This command do not cover all the data processing techniques,
+
+34
+00:02:55,355 --> 00:02:59,060
+but by using conditions and configurations,
+
+35
+00:02:59,060 --> 00:03:02,165
+complex manipulations can be performed.
+
+36
+00:03:02,165 --> 00:03:06,500
+Let's see a basic outline of these commands.
+
+37
+00:03:06,500 --> 00:03:10,235
+The Select command, this is used to extract,
+
+38
+00:03:10,235 --> 00:03:13,030
+filter, and summarize data.
+
+39
+00:03:13,030 --> 00:03:15,450
+The second command is Update,
+
+40
+00:03:15,450 --> 00:03:18,365
+this is used to add a new columns.
+
+41
+00:03:18,365 --> 00:03:24,385
+For example, fields, remove or update the existing one.
+
+42
+00:03:24,385 --> 00:03:26,955
+The third is Insert,
+
+43
+00:03:26,955 --> 00:03:29,795
+this is used to add new data,
+
+44
+00:03:29,795 --> 00:03:32,560
+for example, adding new rules.
+
+45
+00:03:32,560 --> 00:03:35,010
+The last is the Delete,
+
+46
+00:03:35,010 --> 00:03:40,230
+this is used to delete the entries by using a condition.
+

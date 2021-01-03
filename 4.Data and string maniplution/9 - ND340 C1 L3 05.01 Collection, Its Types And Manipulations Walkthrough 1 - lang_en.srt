@@ -1,0 +1,320 @@
+1
+00:00:00,000 --> 00:00:02,880
+Now that we have learned about list,
+
+2
+00:00:02,880 --> 00:00:05,940
+let us look at an example where we can see how
+
+3
+00:00:05,940 --> 00:00:09,780
+to implement or how to use list in the UiPath Studio.
+
+4
+00:00:09,780 --> 00:00:12,825
+To begin that, first we'll open up the variable panel,
+
+5
+00:00:12,825 --> 00:00:16,620
+and inside the variable panel will create a list variable.
+
+6
+00:00:16,620 --> 00:00:20,010
+The variable name in our case is employee name.
+
+7
+00:00:20,010 --> 00:00:23,025
+We'll choose the variable type as list.
+
+8
+00:00:23,025 --> 00:00:26,220
+As you can see, list is not available here in the drop-down box,
+
+9
+00:00:26,220 --> 00:00:31,275
+we'll click on "Browse for Type" and here we'll search for list.
+
+10
+00:00:31,275 --> 00:00:35,400
+Make sure you choose the list from the System.Collection package.
+
+11
+00:00:35,400 --> 00:00:38,550
+We'll choose the type of the list as string,
+
+12
+00:00:38,550 --> 00:00:40,155
+and we'll click "OK".
+
+13
+00:00:40,155 --> 00:00:45,965
+Here we have declared our list and now let us go ahead and instantiate the list.
+
+14
+00:00:45,965 --> 00:00:52,885
+Here, we'll specify new list of and we'll pass string.
+
+15
+00:00:52,885 --> 00:00:55,800
+Now we have declared and instantiated the list,
+
+16
+00:00:55,800 --> 00:01:00,080
+let us go ahead and add values inside the list.
+
+17
+00:01:00,080 --> 00:01:04,715
+To do that, we'll make use of the collection activities.
+
+18
+00:01:04,715 --> 00:01:07,295
+We'll use the Add To Collection activities.
+
+19
+00:01:07,295 --> 00:01:09,485
+In the Add To Collection activities here,
+
+20
+00:01:09,485 --> 00:01:12,265
+we need to specify the collection name.
+
+21
+00:01:12,265 --> 00:01:16,550
+We'll go here and specify the collection name that is the employee name,
+
+22
+00:01:16,550 --> 00:01:18,230
+that is the list basically,
+
+23
+00:01:18,230 --> 00:01:24,160
+and here we will type the value that we want to insert into the list.
+
+24
+00:01:24,160 --> 00:01:26,895
+Let us change the type to string.
+
+25
+00:01:26,895 --> 00:01:31,270
+Perfect. We'll use the same Add To Collection
+
+26
+00:01:31,270 --> 00:01:36,170
+and we will insert two more values in the list.
+
+27
+00:01:36,170 --> 00:01:44,480
+We'll change the name to Niyaz and here we'll add the third value into the list,
+
+28
+00:01:44,480 --> 00:01:48,105
+and we'll name this as David.
+
+29
+00:01:48,105 --> 00:01:53,540
+Now let us use a For Each activity and in this For Each activity,
+
+30
+00:01:53,540 --> 00:01:56,660
+we will print all the values inside the list.
+
+31
+00:01:56,660 --> 00:01:58,550
+Here we'll pass the list name,
+
+32
+00:01:58,550 --> 00:01:59,885
+that is employee name,
+
+33
+00:01:59,885 --> 00:02:03,605
+and here inside the For Each activity,
+
+34
+00:02:03,605 --> 00:02:06,905
+we will use a Write Line activity.
+
+35
+00:02:06,905 --> 00:02:12,530
+Now here we'll specify item.ToString.
+
+36
+00:02:12,530 --> 00:02:15,220
+Let us run the automation.
+
+37
+00:02:15,220 --> 00:02:18,650
+Let us check the output panel and here you can see
+
+38
+00:02:18,650 --> 00:02:22,775
+the three values that we added into the list has been displayed.
+
+39
+00:02:22,775 --> 00:02:27,754
+Now let us go ahead and use the other activities from the collections.
+
+40
+00:02:27,754 --> 00:02:32,290
+Now, let us go ahead and use the Exists in Collection.
+
+41
+00:02:32,290 --> 00:02:37,490
+The Exists in Collection basically tells if the element is present in the list or not.
+
+42
+00:02:37,490 --> 00:02:41,195
+Here we specify the list name, the list name,
+
+43
+00:02:41,195 --> 00:02:42,710
+in our case is employee name,
+
+44
+00:02:42,710 --> 00:02:47,105
+and we'll check if David is present in the list.
+
+45
+00:02:47,105 --> 00:02:50,810
+Let us change the argument type to string and since
+
+46
+00:02:50,810 --> 00:02:56,240
+the Exists in Collection will give us a value saying yes,
+
+47
+00:02:56,240 --> 00:02:58,640
+the element exist or the element does not exist,
+
+48
+00:02:58,640 --> 00:03:00,770
+that means the return type is Boolean,
+
+49
+00:03:00,770 --> 00:03:05,060
+as it can also confirm from here that the output is in the form of a Boolean.
+
+50
+00:03:05,060 --> 00:03:09,580
+Let us go ahead and create a new variable for storing the result.
+
+51
+00:03:09,580 --> 00:03:11,915
+Control K for creating a new variable,
+
+52
+00:03:11,915 --> 00:03:16,520
+and we'll have the variable name as employee exists.
+
+53
+00:03:16,520 --> 00:03:20,735
+Now, let us go ahead and do Write Line activity
+
+54
+00:03:20,735 --> 00:03:25,620
+and let us print the variable name, that is employeeexists.ToString.
+
+55
+00:03:27,370 --> 00:03:30,750
+Let us run the workflow.
+
+56
+00:03:31,340 --> 00:03:33,690
+Let us check the output panel,
+
+57
+00:03:33,690 --> 00:03:40,930
+and here you see we got the value as true because David is present in our list.
+
+58
+00:03:40,930 --> 00:03:44,730
+Perfect. Let us use the other activity.
+
+59
+00:03:44,730 --> 00:03:48,490
+Let us make use of Remove From Collection.
+
+60
+00:03:48,490 --> 00:03:53,945
+In this example, we will remove David from our list.
+
+61
+00:03:53,945 --> 00:03:55,775
+First, we need to specify the list name,
+
+62
+00:03:55,775 --> 00:03:57,590
+that is employee name,
+
+63
+00:03:57,590 --> 00:04:04,070
+and here we will specify that we need to remove David from the list.
+
+64
+00:04:04,070 --> 00:04:06,365
+Change the argument type to string.
+
+65
+00:04:06,365 --> 00:04:12,080
+Let us run the workflow and check if David is actually removed from this list or not.
+
+66
+00:04:12,080 --> 00:04:17,735
+Let us open the output panel and here you can see David has been removed.
+
+67
+00:04:17,735 --> 00:04:21,890
+But here you can see we still got the true value because
+
+68
+00:04:21,890 --> 00:04:26,765
+the exist was called before removing from the list.
+
+69
+00:04:26,765 --> 00:04:32,780
+Let us use the last activity present that is Clear Collection.
+
+70
+00:04:32,780 --> 00:04:39,190
+The Clear Collection basically removes all the elements from the list.
+
+71
+00:04:39,190 --> 00:04:41,915
+Let us use the same for each loop again,
+
+72
+00:04:41,915 --> 00:04:45,635
+and we'll print the values and let us see if we are
+
+73
+00:04:45,635 --> 00:04:50,580
+able to print any values after removing elements from the collection.
+
+74
+00:04:50,660 --> 00:04:55,235
+Now here we got true because David was present here.
+
+75
+00:04:55,235 --> 00:04:58,985
+Now since we remove David and then we printed all the elements,
+
+76
+00:04:58,985 --> 00:05:00,755
+we got Heba and Niyaz.
+
+77
+00:05:00,755 --> 00:05:05,255
+Now later we have cleared the collection and after clearing the collection,
+
+78
+00:05:05,255 --> 00:05:08,360
+we are using the For Each activity again.
+
+79
+00:05:08,360 --> 00:05:10,655
+Now since the collection is empty,
+
+80
+00:05:10,655 --> 00:05:14,670
+we're not able to print any values from the list.
+

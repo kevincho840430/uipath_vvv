@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:04,365
+Welcome back and awesome work on completing the first two lesson,
+
+2
+00:00:04,365 --> 00:00:06,465
+and starting with the third lesson.
+
+3
+00:00:06,465 --> 00:00:08,490
+The world is full of data,
+
+4
+00:00:08,490 --> 00:00:10,260
+so is the RPA world.
+
+5
+00:00:10,260 --> 00:00:14,610
+We need to alter the data as per the process need,
+
+6
+00:00:14,610 --> 00:00:20,255
+to make it more meaningful and readable to both human and the robot.
+
+7
+00:00:20,255 --> 00:00:24,855
+In this lesson, we will learn about string manipulation,
+
+8
+00:00:24,855 --> 00:00:30,825
+collection, its type, and how to perform manipulation on collection.
+
+9
+00:00:30,825 --> 00:00:34,620
+We will look at some common UI properties,
+
+10
+00:00:34,620 --> 00:00:40,340
+and we will also look at the overview of.NET Framework and VB.
+
+11
+00:00:40,340 --> 00:00:42,450
+At the end of this lesson,
+
+12
+00:00:42,450 --> 00:00:44,145
+you will be able to;
+
+13
+00:00:44,145 --> 00:00:48,235
+describe data manipulation and its importance,
+
+14
+00:00:48,235 --> 00:00:52,245
+apply data manipulation methods suitable for RPA to
+
+15
+00:00:52,245 --> 00:00:57,300
+different types of data structures and variables, explain collection,
+
+16
+00:00:57,300 --> 00:00:59,865
+its type and manipulation,
+
+17
+00:00:59,865 --> 00:01:03,300
+understand and correctly use the properties of
+
+18
+00:01:03,300 --> 00:01:09,480
+UI interface activity to make them robust, reusable, and scalable.
+

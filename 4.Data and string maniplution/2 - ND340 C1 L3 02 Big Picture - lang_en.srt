@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:05,145
+We'll start with data manipulation and we will introduce what is data manipulation.
+
+2
+00:00:05,145 --> 00:00:09,825
+We will speak about the difference between data query and data manipulation,
+
+3
+00:00:09,825 --> 00:00:14,445
+and we will look at some of the basic data manipulation operators.
+
+4
+00:00:14,445 --> 00:00:17,250
+The next is the string manipulation.
+
+5
+00:00:17,250 --> 00:00:22,605
+Here we will introduce string and look for the methods for manipulating strings,
+
+6
+00:00:22,605 --> 00:00:25,470
+and we'll look at the regular expression.
+
+7
+00:00:25,470 --> 00:00:27,975
+The next topic is the collection.
+
+8
+00:00:27,975 --> 00:00:31,635
+We'll introduce collection and the types of the collection,
+
+9
+00:00:31,635 --> 00:00:35,940
+and we'll look at how to use collection manipulations.
+
+10
+00:00:35,940 --> 00:00:39,690
+The next topic is the UI activities property.
+
+11
+00:00:39,690 --> 00:00:44,095
+Here we will look at some of the common UI properties.
+
+12
+00:00:44,095 --> 00:00:51,880
+The last topic we'll do an overview of the.NET Framework and VB.
+

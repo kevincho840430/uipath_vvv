@@ -1,0 +1,224 @@
+1
+00:00:00,000 --> 00:00:07,680
+String is the data type corresponding to the text that contains any sequence of text.
+
+2
+00:00:07,680 --> 00:00:14,715
+Almost every automation scenarios involves string as they are used anytime.
+
+3
+00:00:14,715 --> 00:00:18,585
+A form of text needs to be captured,
+
+4
+00:00:18,585 --> 00:00:23,685
+processed, sent between applications, or displayed.
+
+5
+00:00:23,685 --> 00:00:30,565
+Let us now look at some of the operations that can be performed on strings.
+
+6
+00:00:30,565 --> 00:00:33,600
+The first method is concat,
+
+7
+00:00:33,600 --> 00:00:39,935
+concatenates the string representation of two specified object.
+
+8
+00:00:39,935 --> 00:00:47,090
+Contains, checks whether a specified substring occurs within a string.
+
+9
+00:00:47,090 --> 00:00:51,845
+It returns a Boolean value that is true or false.
+
+10
+00:00:51,845 --> 00:00:58,040
+Format, converts an entire expression into a string.
+
+11
+00:00:58,040 --> 00:01:02,780
+It reduces complexity and increases readability.
+
+12
+00:01:02,780 --> 00:01:07,070
+IndexOf, returns the zero-based index
+
+13
+00:01:07,070 --> 00:01:11,105
+of the first occurrence of the character in a string.
+
+14
+00:01:11,105 --> 00:01:18,680
+Join, it concatenates the element in a collection and displays them as string.
+
+15
+00:01:18,680 --> 00:01:22,730
+Replace, identifies a sequence of character of
+
+16
+00:01:22,730 --> 00:01:27,730
+the string type in a text and replaces it with a given string.
+
+17
+00:01:27,730 --> 00:01:35,195
+Split, it splits a string into substring based on a criteria set by the user.
+
+18
+00:01:35,195 --> 00:01:38,134
+This delimiter could be space,
+
+19
+00:01:38,134 --> 00:01:40,975
+comma, or any specified character.
+
+20
+00:01:40,975 --> 00:01:48,590
+Substring, it extracts a substring from a string using the starting index and the length.
+
+21
+00:01:48,590 --> 00:01:54,610
+It is used to isolate or separate a substring from the original string.
+
+22
+00:01:54,610 --> 00:01:58,520
+Trim, this removes all occurrence of
+
+23
+00:01:58,520 --> 00:02:02,740
+a character from the beginning and the end of a string.
+
+24
+00:02:02,740 --> 00:02:09,290
+Basically, it removes all the white spaces from the starting and the ending of a string.
+
+25
+00:02:09,290 --> 00:02:15,265
+ToUpper, it converts all the character in a string to uppercase.
+
+26
+00:02:15,265 --> 00:02:21,110
+ToLower, it converts all the character in a string to lowercase.
+
+27
+00:02:21,110 --> 00:02:25,205
+ToString, it returns this instance of a string.
+
+28
+00:02:25,205 --> 00:02:28,390
+No actual conversion is performed.
+
+29
+00:02:28,390 --> 00:02:31,085
+For further string manipulation methods,
+
+30
+00:02:31,085 --> 00:02:35,755
+there will be a link provided in the classroom for reference.
+
+31
+00:02:35,755 --> 00:02:40,670
+Regular expression or commonly known as RegEx is
+
+32
+00:02:40,670 --> 00:02:45,485
+a specific search pattern that can be used to easily match,
+
+33
+00:02:45,485 --> 00:02:48,835
+locate, and manage text.
+
+34
+00:02:48,835 --> 00:02:52,760
+UiPath studio contains a RegEx builder
+
+35
+00:02:52,760 --> 00:02:57,145
+that simplifies the creation of a regular expression.
+
+36
+00:02:57,145 --> 00:03:02,300
+Using the RegEx search capabilities in selectors enables
+
+37
+00:03:02,300 --> 00:03:08,720
+the user to identify multiple target elements with a single search execution.
+
+38
+00:03:08,720 --> 00:03:16,975
+Without RegEx, multiple selectors would have been built to identify each target element.
+
+39
+00:03:16,975 --> 00:03:21,350
+RegEx can be used in string validation,
+
+40
+00:03:21,350 --> 00:03:25,735
+string parsing, data scraping, string manipulation.
+
+41
+00:03:25,735 --> 00:03:32,510
+For example, RegEx can be used for retrieving a piece of a text that
+
+42
+00:03:32,510 --> 00:03:35,405
+follows a certain pattern such as
+
+43
+00:03:35,405 --> 00:03:39,925
+extracting phone number that starts with a certain digit.
+
+44
+00:03:39,925 --> 00:03:47,075
+The RegEx builder is integrated as three activities applicable in UiPath.
+
+45
+00:03:47,075 --> 00:03:49,795
+They are Matches.
+
+46
+00:03:49,795 --> 00:03:53,705
+It searches and inputs string for all occurrences
+
+47
+00:03:53,705 --> 00:03:58,385
+and returns all the successful matches for the given expression.
+
+48
+00:03:58,385 --> 00:04:04,180
+It can be used to retrieve all the entries and use them further.
+
+49
+00:04:04,180 --> 00:04:07,980
+The second activity is the IsMatch.
+
+50
+00:04:07,980 --> 00:04:13,970
+It indicates whether the specified regular expression finds a match in
+
+51
+00:04:13,970 --> 00:04:19,790
+the specified input string and returns only a true or a false value.
+
+52
+00:04:19,790 --> 00:04:24,274
+It can be used as a condition for another activity.
+
+53
+00:04:24,274 --> 00:04:27,935
+The last activity is Replace,
+
+54
+00:04:27,935 --> 00:04:31,445
+it replaces string that matches
+
+55
+00:04:31,445 --> 00:04:36,500
+a regular expression pattern with a specified replacement string.
+
+56
+00:04:36,500 --> 00:04:40,680
+It can be used for data quality purposes.
+
