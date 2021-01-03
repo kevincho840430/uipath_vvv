@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:03,070
+Welcome to the second lesson of this course.
+
+2
+00:00:03,070 --> 00:00:08,220
+Here, we will mainly focus on how to extract information from the screen.
+
+3
+00:00:08,220 --> 00:00:12,870
+In this lesson, we will learn recordings in the UI part
+
+4
+00:00:12,870 --> 00:00:18,390
+and we will also see what are the different types of recording in the UI part.
+
+5
+00:00:18,390 --> 00:00:21,330
+Next, we will look at these scraping techniques.
+
+6
+00:00:21,330 --> 00:00:25,710
+Here, we will learn about the screen scraping mechanism and
+
+7
+00:00:25,710 --> 00:00:31,510
+the data scraping mechanism and also look at the advanced scraping mechanism.
+
+8
+00:00:31,510 --> 00:00:37,175
+We will look at the image and text automation in the UI part and we will look
+
+9
+00:00:37,175 --> 00:00:39,920
+at the Citrix automation and what are
+
+10
+00:00:39,920 --> 00:00:43,165
+the challenges that we face in the Citrix automation?
+
+11
+00:00:43,165 --> 00:00:45,605
+At the end of this lesson,
+
+12
+00:00:45,605 --> 00:00:50,630
+you will be able to differentiate between actions that can be
+
+13
+00:00:50,630 --> 00:00:56,784
+recorded automatically and actions that have to be manually recorded in UiPath,
+
+14
+00:00:56,784 --> 00:01:01,220
+use the basic desktop and web recording
+
+15
+00:01:01,220 --> 00:01:06,570
+and know the situations in which each of them is appropriate,
+
+16
+00:01:06,570 --> 00:01:10,460
+use the screen scraping wizard and configured
+
+17
+00:01:10,460 --> 00:01:15,029
+input and output methods as appropriate to the context,
+
+18
+00:01:15,029 --> 00:01:21,070
+use the data scraping functionalities of UiPath in the appropriate context,
+
+19
+00:01:21,070 --> 00:01:26,240
+learn how to perform basic image and text automation,
+
+20
+00:01:26,240 --> 00:01:30,720
+as well as virtual machine applications automation.
+

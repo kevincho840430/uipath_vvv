@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:04,305
+Relative scraping is one of the advanced scraping techniques.
+
+2
+00:00:04,305 --> 00:00:06,690
+It is based on OCR engine,
+
+3
+00:00:06,690 --> 00:00:11,280
+but it uses it for recognizing the character and
+
+4
+00:00:11,280 --> 00:00:16,545
+choosing another UI element as an anchor for the forced UI element.
+
+5
+00:00:16,545 --> 00:00:20,115
+This results in the following order of activities.
+
+6
+00:00:20,115 --> 00:00:25,380
+First, the process will attempt to identify the anchor, and second,
+
+7
+00:00:25,380 --> 00:00:28,755
+it will search for the UI element to scrape data from
+
+8
+00:00:28,755 --> 00:00:32,760
+using the relative positions on the screen.
+
+9
+00:00:32,760 --> 00:00:39,790
+This is particularly useful while selectors are unavailable for various reason.
+
+10
+00:00:39,790 --> 00:00:44,245
+UI elements are not recognized directly or
+
+11
+00:00:44,245 --> 00:00:49,175
+the activities apply to all virtual environments, such as Citrix.
+
+12
+00:00:49,175 --> 00:00:51,845
+The attribute of a UI element,
+
+13
+00:00:51,845 --> 00:00:58,930
+such as exact screen position or its ancestor can be extracted.
+
+14
+00:00:58,930 --> 00:01:05,704
+Data scraping is about getting texts from UI element using various methods.
+
+15
+00:01:05,704 --> 00:01:10,990
+In certain circumstances, this is not the easiest thing to do.
+
+16
+00:01:10,990 --> 00:01:16,235
+UI path offers several activities that may come in handy,
+
+17
+00:01:16,235 --> 00:01:18,735
+such as Get Ancestor.
+
+18
+00:01:18,735 --> 00:01:21,770
+As you may recall from the selector lesson,
+
+19
+00:01:21,770 --> 00:01:25,760
+UI elements are in parent-child structures.
+
+20
+00:01:25,760 --> 00:01:30,530
+This is always visible from the structure of selectors.
+
+21
+00:01:30,530 --> 00:01:34,850
+First general classes, then particular classes,
+
+22
+00:01:34,850 --> 00:01:38,215
+then sub-classes, and so on.
+
+23
+00:01:38,215 --> 00:01:40,715
+When you open up a notepad file,
+
+24
+00:01:40,715 --> 00:01:44,240
+the selector will go up to the notepad app,
+
+25
+00:01:44,240 --> 00:01:49,445
+then to the category of app that Notepad is a part of, and so on.
+
+26
+00:01:49,445 --> 00:01:56,660
+Get Ancestor retrieves the ancestor or the parent of a UI element.
+
+27
+00:01:56,660 --> 00:01:58,660
+Get Attributes.
+
+28
+00:01:58,660 --> 00:02:02,285
+UI element have plenty of attributes.
+
+29
+00:02:02,285 --> 00:02:04,610
+Think of a button on a website.
+
+30
+00:02:04,610 --> 00:02:09,620
+It has a color or name or state, and so on.
+
+31
+00:02:09,620 --> 00:02:16,385
+Get Attribute is the activity that enables the identification of a certain attributes.
+
+32
+00:02:16,385 --> 00:02:20,315
+The user can specify the attributes and
+
+33
+00:02:20,315 --> 00:02:25,145
+the activity retrieves the value of that specific attribute.
+
+34
+00:02:25,145 --> 00:02:26,780
+Get Position.
+
+35
+00:02:26,780 --> 00:02:32,795
+This activity retrieves the actual position on the screen of a specific element.
+
+36
+00:02:32,795 --> 00:02:38,435
+It can be very useful when there are many similar elements on the screen.
+
+37
+00:02:38,435 --> 00:02:40,910
+Without knowing the actual position,
+
+38
+00:02:40,910 --> 00:02:45,300
+it would become very difficult to identify them.
+

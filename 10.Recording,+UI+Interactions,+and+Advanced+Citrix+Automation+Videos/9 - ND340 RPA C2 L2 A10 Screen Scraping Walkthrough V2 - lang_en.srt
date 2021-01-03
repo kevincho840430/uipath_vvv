@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:05,984
+In this example, we will look at the various screen scraping methods.
+
+2
+00:00:05,984 --> 00:00:10,335
+Firstly, we will scrape the data from this notepad.
+
+3
+00:00:10,335 --> 00:00:15,990
+In this notepad, we have some data which is not visible to the human eye.
+
+4
+00:00:15,990 --> 00:00:20,985
+Now, let us try to do a screen scraping on this notepad application.
+
+5
+00:00:20,985 --> 00:00:26,235
+To begin that, click on the "Screen Scraping" option on the [inaudible] back,
+
+6
+00:00:26,235 --> 00:00:32,250
+and point out to the text area from where you want to screen the text.
+
+7
+00:00:32,250 --> 00:00:38,015
+Over here, you can see by default the scraping method is taken as full text.
+
+8
+00:00:38,015 --> 00:00:41,045
+Over here, you can also verify that
+
+9
+00:00:41,045 --> 00:00:45,365
+the full text was also able to scrape the hidden data,
+
+10
+00:00:45,365 --> 00:00:47,770
+that is this part of the data.
+
+11
+00:00:47,770 --> 00:00:54,315
+Now, let us change the method to a native and click on "Refresh".
+
+12
+00:00:54,315 --> 00:00:57,470
+As you can see, the native methods was only
+
+13
+00:00:57,470 --> 00:01:01,790
+responsible to scrape the data which is visible in the screen,
+
+14
+00:01:01,790 --> 00:01:05,065
+that is till this part that is growth.
+
+15
+00:01:05,065 --> 00:01:07,640
+We can also choose the third option,
+
+16
+00:01:07,640 --> 00:01:09,395
+that is the OCR option.
+
+17
+00:01:09,395 --> 00:01:10,580
+In the OCR option,
+
+18
+00:01:10,580 --> 00:01:12,785
+you have two OCR engine available,
+
+19
+00:01:12,785 --> 00:01:15,905
+the Microsoft OCR and the Tesseract OCR.
+
+20
+00:01:15,905 --> 00:01:20,785
+Let us go ahead with Microsoft OCR and click on "Refresh".
+
+21
+00:01:20,785 --> 00:01:26,795
+The OCR is comparatively slow than the full text and the native methods.
+
+22
+00:01:26,795 --> 00:01:34,390
+Even the OCR also captures only the part that is visible on the screen.
+
+23
+00:01:34,390 --> 00:01:37,910
+Now, since this is our text application,
+
+24
+00:01:37,910 --> 00:01:42,215
+the full-text was able to retrieve all the information,
+
+25
+00:01:42,215 --> 00:01:46,850
+that is the hidden information also and the native and the OCR,
+
+26
+00:01:46,850 --> 00:01:52,790
+were only able to retrieve those part which is visible on the screen.
+
+27
+00:01:52,790 --> 00:01:56,230
+Now, let us use an image.
+
+28
+00:01:56,230 --> 00:02:02,915
+This is an image and we will try to apply all the three scraping methods in this image.
+
+29
+00:02:02,915 --> 00:02:05,855
+To begin with, we'll click on the "UI Element",
+
+30
+00:02:05,855 --> 00:02:09,750
+and we'll indicate the area that we want to screen.
+
+31
+00:02:10,570 --> 00:02:16,220
+Awesome. Here you saw the full-text method field to scrape the region.
+
+32
+00:02:16,220 --> 00:02:18,665
+Let us try again with the native.
+
+33
+00:02:18,665 --> 00:02:21,330
+Click on "Refresh".
+
+34
+00:02:21,530 --> 00:02:25,765
+The native method also has failed doing it.
+
+35
+00:02:25,765 --> 00:02:28,720
+Now, let us click on "OCR".
+
+36
+00:02:28,720 --> 00:02:32,095
+We'll go with the Microsoft OCR first.
+
+37
+00:02:32,095 --> 00:02:34,460
+Click on "Refresh".
+
+38
+00:02:35,150 --> 00:02:39,790
+Awesome. Now you can see the Microsoft OCR was
+
+39
+00:02:39,790 --> 00:02:44,844
+able to extract all the information from this text available.
+
+40
+00:02:44,844 --> 00:02:46,960
+Since this is an image,
+
+41
+00:02:46,960 --> 00:02:48,710
+it's not a text format,
+
+42
+00:02:48,710 --> 00:02:52,170
+the other two methods that is native and full text,
+
+43
+00:02:52,170 --> 00:02:56,470
+were not able to extract or scrape the data.
+
+44
+00:02:56,470 --> 00:03:01,044
+In this case, OCR is the only help that is available.
+
+45
+00:03:01,044 --> 00:03:03,925
+Now, we have two options for the OCR,
+
+46
+00:03:03,925 --> 00:03:06,790
+the Microsoft and the Tesseract.
+
+47
+00:03:06,790 --> 00:03:13,875
+Let us go ahead and choose the other option that is the Tesseract and click on "Refresh".
+
+48
+00:03:13,875 --> 00:03:18,460
+The scaling factor, we will set it at as 1.
+
+49
+00:03:19,580 --> 00:03:25,915
+OCR will take compatibly more time than the other two method.
+
+50
+00:03:25,915 --> 00:03:29,680
+Now, you can easily see the OCR was able to
+
+51
+00:03:29,680 --> 00:03:33,984
+extract the text from it but if you see very carefully,
+
+52
+00:03:33,984 --> 00:03:37,650
+the text are not extracted in the correct manner.
+
+53
+00:03:37,650 --> 00:03:40,360
+For example, if you see this text over here,
+
+54
+00:03:40,360 --> 00:03:43,390
+there is a space in-between here but here,
+
+55
+00:03:43,390 --> 00:03:46,190
+as you can see, there is no space added.
+
+56
+00:03:46,190 --> 00:03:51,235
+Tesseract OCR only works with the small size of the images,
+
+57
+00:03:51,235 --> 00:03:56,540
+whereas Microsoft OCR works with the bigger size of the images.
+
+58
+00:03:56,540 --> 00:04:01,800
+Changing it to Microsoft OCR and keeping the scale as one that is the same,
+
+59
+00:04:01,800 --> 00:04:03,825
+we'll click on "Refresh".
+
+60
+00:04:03,825 --> 00:04:09,155
+Now you can easily see Microsoft was able to scrape the data accurately,
+
+61
+00:04:09,155 --> 00:04:11,735
+as you can confirm from here.
+
+62
+00:04:11,735 --> 00:04:18,335
+We can also make the Tesseract OCR to do the same thing by increasing the scale factor.
+
+63
+00:04:18,335 --> 00:04:20,585
+If you increase the scale factor,
+
+64
+00:04:20,585 --> 00:04:24,845
+the scraping time is comparatively more.
+
+65
+00:04:24,845 --> 00:04:27,305
+Let us wait for the data to be scraped.
+
+66
+00:04:27,305 --> 00:04:31,925
+Now you can see the data has been scraped accurately.
+
+67
+00:04:31,925 --> 00:04:34,190
+Depending upon your application,
+
+68
+00:04:34,190 --> 00:04:38,030
+you need to test which OCR engine works
+
+69
+00:04:38,030 --> 00:04:42,170
+best and what is the scaling factor that is going to help you.
+
+70
+00:04:42,170 --> 00:04:44,090
+Apart from the scaling factor,
+
+71
+00:04:44,090 --> 00:04:48,860
+we also have options for characters and choosing the languages.
+
+72
+00:04:48,860 --> 00:04:56,100
+The Microsoft OCR has only choosing the language and the scaling factor.
+

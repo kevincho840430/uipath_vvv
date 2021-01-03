@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:04,200
+In this exercise, we will use the Data Scraping UiPath
+
+2
+00:00:04,200 --> 00:00:08,445
+and we will scrape the blocks from the white part page.
+
+3
+00:00:08,445 --> 00:00:12,375
+To do so, let us use the data scraping tool.
+
+4
+00:00:12,375 --> 00:00:17,490
+Here, we will scrape the block from this particular page,
+
+5
+00:00:17,490 --> 00:00:21,015
+and here, we will scrape only the RPA blocks.
+
+6
+00:00:21,015 --> 00:00:25,215
+Click Next and indicate the RPA block.
+
+7
+00:00:25,215 --> 00:00:27,375
+Let us create a pattern.
+
+8
+00:00:27,375 --> 00:00:30,645
+Let us scrape one more RPA block.
+
+9
+00:00:30,645 --> 00:00:33,705
+Awesome. Let us give a column a name.
+
+10
+00:00:33,705 --> 00:00:39,105
+We'll name it as RPA block and click on Next.
+
+11
+00:00:39,105 --> 00:00:43,350
+Here, you can see the RPA blocks that have been scraped.
+
+12
+00:00:43,350 --> 00:00:47,235
+Here, we are only interested in 15 blocks,
+
+13
+00:00:47,235 --> 00:00:49,890
+and we'll click on Finish.
+
+14
+00:00:49,890 --> 00:00:51,800
+Now, here, it is asking,
+
+15
+00:00:51,800 --> 00:00:54,470
+is the data spanning in multiple pages?
+
+16
+00:00:54,470 --> 00:00:59,435
+Over here, the Load More button will act as spanning in multiple pages.
+
+17
+00:00:59,435 --> 00:01:04,405
+We'll click Yes, and we'll indicate on this button, Load More.
+
+18
+00:01:04,405 --> 00:01:12,470
+Awesome. Now, we'll drag and drop the right range activity after the data scraping.
+
+19
+00:01:12,470 --> 00:01:18,050
+Over here, we will save the data into an Excel sheet with the name block.
+
+20
+00:01:18,050 --> 00:01:20,630
+As you can see, there is no block created.
+
+21
+00:01:20,630 --> 00:01:24,240
+Now, let us run this automation.
+
+22
+00:01:24,830 --> 00:01:28,760
+Over here, you can see the UiPath block page has been
+
+23
+00:01:28,760 --> 00:01:32,300
+opened up and the data has been successfully scraped.
+
+24
+00:01:32,300 --> 00:01:34,385
+Let us do a refresh, and over here,
+
+25
+00:01:34,385 --> 00:01:38,020
+you can see the Excel file has been created.
+
+26
+00:01:40,340 --> 00:01:46,300
+Here are the 15 blocks that we have scraped.
+

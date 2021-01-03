@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:03,480
+We have learned a lot of concepts in this lesson.
+
+2
+00:00:03,480 --> 00:00:05,445
+Let us summarize them.
+
+3
+00:00:05,445 --> 00:00:12,570
+In this lesson, we have learned how to use the basic desktop and web recording,
+
+4
+00:00:12,570 --> 00:00:16,770
+and know the situations in which each of them is appropriate.
+
+5
+00:00:16,770 --> 00:00:21,660
+We also learned about how to use the screen scraping
+
+6
+00:00:21,660 --> 00:00:28,080
+wizard and configure input and output methods as appropriate to the context.
+
+7
+00:00:28,080 --> 00:00:34,465
+We also saw how to use the data scraping functionalities of UiPath.
+
+8
+00:00:34,465 --> 00:00:40,895
+Here, we also learned how to perform basic image and text automation,
+
+9
+00:00:40,895 --> 00:00:44,635
+as well as the virtual machine application automation.
+
+10
+00:00:44,635 --> 00:00:46,190
+In the next lesson,
+
+11
+00:00:46,190 --> 00:00:50,880
+we will learn about email automations in UiPath.
+

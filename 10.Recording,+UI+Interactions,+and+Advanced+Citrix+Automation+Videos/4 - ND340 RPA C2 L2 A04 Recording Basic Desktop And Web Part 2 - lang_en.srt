@@ -1,0 +1,188 @@
+1
+00:00:00,000 --> 00:00:04,185
+Let's first understand the difference between the type
+
+2
+00:00:04,185 --> 00:00:08,520
+of recorders to understand better each recording mode,
+
+3
+00:00:08,520 --> 00:00:11,370
+and the environment they operate.
+
+4
+00:00:11,370 --> 00:00:18,015
+The basic recorder: a basic recorder is used to automate the desktop application.
+
+5
+00:00:18,015 --> 00:00:22,920
+It is used when we only want to work with a single window.
+
+6
+00:00:22,920 --> 00:00:28,440
+Desktop recorder: a desktop recorder records the desktop application,
+
+7
+00:00:28,440 --> 00:00:32,655
+when multiple actions are performed in numerous windows.
+
+8
+00:00:32,655 --> 00:00:39,835
+While recording, it fixes all operations inside the attach a window container.
+
+9
+00:00:39,835 --> 00:00:44,225
+Web recorder: it is used to automate activities
+
+10
+00:00:44,225 --> 00:00:48,740
+performed on website using one of the three major browsers,
+
+11
+00:00:48,740 --> 00:00:51,739
+that is IE, Chrome, and Firefox.
+
+12
+00:00:51,739 --> 00:00:58,340
+It is used when we want to act on any web-based applications and website.
+
+13
+00:00:58,340 --> 00:01:04,060
+All the actions that we perform come under the attached browser activity.
+
+14
+00:01:04,060 --> 00:01:09,980
+Image recorder: it uses images for all virtualized environment.
+
+15
+00:01:09,980 --> 00:01:14,395
+The automation cannot identify all the application.
+
+16
+00:01:14,395 --> 00:01:17,195
+It relies on image recognition.
+
+17
+00:01:17,195 --> 00:01:22,405
+First the position of the element used in automation is needed.
+
+18
+00:01:22,405 --> 00:01:26,915
+Citrix recorder: native Citrix is used for
+
+19
+00:01:26,915 --> 00:01:32,255
+Citrix environment that were configured to support new iPad native Citrix.
+
+20
+00:01:32,255 --> 00:01:38,180
+The configuration involves installing several apps and plugins on the client
+
+21
+00:01:38,180 --> 00:01:44,805
+and server machine and using studio 2018.4 or later.
+
+22
+00:01:44,805 --> 00:01:47,255
+Once the setup is made,
+
+23
+00:01:47,255 --> 00:01:53,135
+native Citrix generates selectors and works like the desktop recorder.
+
+24
+00:01:53,135 --> 00:01:59,635
+Let us understand the difference between a basic recorder and the desktop recorder.
+
+25
+00:01:59,635 --> 00:02:06,590
+Basic recorder is used with multiple windows when it causes the interference problem.
+
+26
+00:02:06,590 --> 00:02:09,350
+It generates default selector.
+
+27
+00:02:09,350 --> 00:02:13,190
+For example, if you have to write something in Notepad,
+
+28
+00:02:13,190 --> 00:02:17,930
+you open an untitled Notepad and perform your actions inside it.
+
+29
+00:02:17,930 --> 00:02:21,190
+The basic recorder does not use the container.
+
+30
+00:02:21,190 --> 00:02:25,790
+Your iPad uses the name of the currently open file name of
+
+31
+00:02:25,790 --> 00:02:31,280
+the application title of the window to identify the correct window on the screen.
+
+32
+00:02:31,280 --> 00:02:35,180
+In some cases, multiple windows are identical.
+
+33
+00:02:35,180 --> 00:02:40,620
+Suppose it opens two untitled windows at the same time
+
+34
+00:02:40,620 --> 00:02:46,330
+then your iPad will perform all actions inside the first open window.
+
+35
+00:02:46,330 --> 00:02:48,350
+Because in this case,
+
+36
+00:02:48,350 --> 00:02:53,725
+the title of both Notepad application is same, that is untitled.
+
+37
+00:02:53,725 --> 00:02:56,490
+The next is the desktop recorder.
+
+38
+00:02:56,490 --> 00:03:01,505
+It is used when multiple actions are performed in many windows.
+
+39
+00:03:01,505 --> 00:03:06,575
+It nests all activities inside the attach a window container.
+
+40
+00:03:06,575 --> 00:03:10,970
+It uses container to ensure that other activities
+
+41
+00:03:10,970 --> 00:03:15,545
+of the same application don't interfere with your workflow.
+
+42
+00:03:15,545 --> 00:03:21,455
+The top-level window selectors are inside the attach window and it
+
+43
+00:03:21,455 --> 00:03:27,475
+generates the partial selectors for activities inside the attachment window container.
+
+44
+00:03:27,475 --> 00:03:33,800
+Automatic recording is used for recording multiple actions in one time.
+
+45
+00:03:33,800 --> 00:03:40,595
+There are four activities that are automatically generated using automatic recording.
+
+46
+00:03:40,595 --> 00:03:44,175
+They are, click, type into,
+
+47
+00:03:44,175 --> 00:03:47,740
+select items, and check.
+

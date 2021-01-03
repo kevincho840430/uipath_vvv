@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:06,450
+Data Scraping is the process of extracting structured data from a browser,
+
+2
+00:00:06,450 --> 00:00:10,230
+application or document to a database,
+
+3
+00:00:10,230 --> 00:00:13,574
+that is a CSV file or an Excel spreadsheet.
+
+4
+00:00:13,574 --> 00:00:18,210
+It is used to create a data table at runtime.
+
+5
+00:00:18,210 --> 00:00:22,170
+It can extract all the pattern-based data
+
+6
+00:00:22,170 --> 00:00:26,380
+and store it into the form of a data table automatically.
+
+7
+00:00:26,380 --> 00:00:33,440
+Data Scraping always generates a container that is attach browser or attach window,
+
+8
+00:00:33,440 --> 00:00:40,085
+with a selector for the top level window and an extracted structured data activity.
+
+9
+00:00:40,085 --> 00:00:47,285
+This activity will extract data from the indicated webpage using a partial selector,
+
+10
+00:00:47,285 --> 00:00:52,120
+ensuring the correct identification of the app being scraped.
+
+11
+00:00:52,120 --> 00:00:55,370
+All the script information is stored in
+
+12
+00:00:55,370 --> 00:01:01,084
+a data table variable that can later be used to populate a database,
+
+13
+00:01:01,084 --> 00:01:05,790
+that is a CSV file or an Excel spreadsheet.
+

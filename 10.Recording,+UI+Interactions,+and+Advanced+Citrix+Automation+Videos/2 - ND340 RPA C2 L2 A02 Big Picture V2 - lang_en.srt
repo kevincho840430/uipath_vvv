@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:02,865
+Firstly, we will learn about recording.
+
+2
+00:00:02,865 --> 00:00:05,520
+That is, we learn about the basic recording,
+
+3
+00:00:05,520 --> 00:00:06,735
+the next stop recording,
+
+4
+00:00:06,735 --> 00:00:09,345
+and the web recording in UiPath.
+
+5
+00:00:09,345 --> 00:00:12,840
+Next, we will learn about the types of UI interaction.
+
+6
+00:00:12,840 --> 00:00:17,550
+Here, we will speak about the input and the output action.
+
+7
+00:00:17,550 --> 00:00:21,505
+Next, we will learn about the scraping techniques in UiPath.
+
+8
+00:00:21,505 --> 00:00:24,485
+Here we will learn about the screen scraping,
+
+9
+00:00:24,485 --> 00:00:26,555
+we will learn about data scraping,
+
+10
+00:00:26,555 --> 00:00:30,610
+and we'll also see what are the advanced scraping techniques.
+
+11
+00:00:30,610 --> 00:00:36,020
+Next, we will learn about how can we use an image and a text automation.
+
+12
+00:00:36,020 --> 00:00:40,310
+Lastly, we will learn how to automate a Citrix environment,
+
+13
+00:00:40,310 --> 00:00:45,000
+and we will see what are the challenges in the Citrix environment.
+

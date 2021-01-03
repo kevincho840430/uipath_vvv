@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:05,010
+OCR output method, although both full text and
+
+2
+00:00:05,010 --> 00:00:10,200
+native have excellent result in terms of accuracy and speed,
+
+3
+00:00:10,200 --> 00:00:14,655
+there are specific cases in which both are unstable.
+
+4
+00:00:14,655 --> 00:00:18,255
+For example, if we need to extract information from
+
+5
+00:00:18,255 --> 00:00:23,250
+a virtual environment or read text from the images,
+
+6
+00:00:23,250 --> 00:00:28,215
+the optical character recognition output method should be used,
+
+7
+00:00:28,215 --> 00:00:34,650
+it is based on the OCR technology used in the recognition of scanned documents,
+
+8
+00:00:34,650 --> 00:00:40,740
+it attempts to recognize each letter or given an image in the target document.
+
+9
+00:00:40,740 --> 00:00:45,770
+It is slow compared to the other method, has lower accuracy,
+
+10
+00:00:45,770 --> 00:00:48,035
+it varies from one text to another,
+
+11
+00:00:48,035 --> 00:00:50,510
+it cannot extract hidden text,
+
+12
+00:00:50,510 --> 00:00:53,485
+and it cannot work in the background.
+
+13
+00:00:53,485 --> 00:00:57,465
+The OCR methods has two default engines,
+
+14
+00:00:57,465 --> 00:01:00,975
+Google Tesseract and Microsoft MODI.
+
+15
+00:01:00,975 --> 00:01:06,995
+The use of this engine depends on the type of information being extracted.
+
+16
+00:01:06,995 --> 00:01:12,155
+In general, it is better to switch between the methods to see which
+
+17
+00:01:12,155 --> 00:01:17,345
+of the engine brings better results for each particular situation.
+
+18
+00:01:17,345 --> 00:01:24,615
+If the user has downloaded and installed the package of other OCR engines such as AMI,
+
+19
+00:01:24,615 --> 00:01:29,435
+they will also be available by choosing the OCR engine.
+
+20
+00:01:29,435 --> 00:01:34,220
+Google Tesseract OCR, this method gets better results for
+
+21
+00:01:34,220 --> 00:01:40,625
+character recognition on the smaller size area and it supports color inversion,
+
+22
+00:01:40,625 --> 00:01:44,990
+it offers multiple customization through filters that
+
+23
+00:01:44,990 --> 00:01:49,925
+can be used to select only a specific categories of character.
+
+24
+00:01:49,925 --> 00:01:54,325
+This method offers the following options: Language,
+
+25
+00:01:54,325 --> 00:01:58,255
+this is English by default, Character,
+
+26
+00:01:58,255 --> 00:02:03,980
+enables the user to select which type of character to be extracted.
+
+27
+00:02:03,980 --> 00:02:09,115
+The following options are: any character, numbers only, letters,
+
+28
+00:02:09,115 --> 00:02:12,015
+uppercase, lowercase, phone number,
+
+29
+00:02:12,015 --> 00:02:14,790
+currency, date, and custom.
+
+30
+00:02:14,790 --> 00:02:16,520
+When custom is selected,
+
+31
+00:02:16,520 --> 00:02:19,080
+two additional fields, allowed and denied,
+
+32
+00:02:19,080 --> 00:02:23,660
+are displayed that enables the user to create custom rules
+
+33
+00:02:23,660 --> 00:02:28,850
+of which types of characters to scrape and which to avoid.
+
+34
+00:02:28,850 --> 00:02:31,260
+The next is Invert,
+
+35
+00:02:31,260 --> 00:02:33,829
+when this check box is selected,
+
+36
+00:02:33,829 --> 00:02:38,240
+the color of the UI element are inverted before scraping,
+
+37
+00:02:38,240 --> 00:02:44,545
+this is helpful when the background is darker than the text color.
+
+38
+00:02:44,545 --> 00:02:46,904
+The next is Scale,
+
+39
+00:02:46,904 --> 00:02:51,570
+the scaling factor of the selected UI element or image,
+
+40
+00:02:51,570 --> 00:02:53,265
+the higher the number,
+
+41
+00:02:53,265 --> 00:02:55,275
+the larger the image,
+
+42
+00:02:55,275 --> 00:03:02,240
+this can provide a better OCR read and it is recommended for small images.
+
+43
+00:03:02,240 --> 00:03:09,325
+Get Words Info, it gets the on-screen position of each scraped word.
+
+44
+00:03:09,325 --> 00:03:18,570
+Microsoft OCR, this method is used to work with Microsoft fonts and on larger size area,
+
+45
+00:03:18,570 --> 00:03:21,395
+it supports multiple languages.
+
+46
+00:03:21,395 --> 00:03:25,935
+This method offers the following options: Language,
+
+47
+00:03:25,935 --> 00:03:30,290
+enables the user to change the language of the script text,
+
+48
+00:03:30,290 --> 00:03:33,215
+by default, English is selected.
+
+49
+00:03:33,215 --> 00:03:38,995
+Scale, the scaling factor of the selected UI element or image,
+
+50
+00:03:38,995 --> 00:03:40,815
+the higher the numbers,
+
+51
+00:03:40,815 --> 00:03:42,285
+the larger the image,
+
+52
+00:03:42,285 --> 00:03:47,345
+this can provide a better OCR read and is recommended for small images.
+
+53
+00:03:47,345 --> 00:03:53,970
+Get Words Info, it gets the on-screen position of each scraped word.
+

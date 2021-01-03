@@ -1,0 +1,580 @@
+1
+00:00:00,000 --> 00:00:05,730
+In this example, we will learn how to use the recordings in UiPath.
+
+2
+00:00:05,730 --> 00:00:11,790
+First, we will start with basic recording and then move to desktop recording and lastly,
+
+3
+00:00:11,790 --> 00:00:15,420
+we will see how to use the web recording.
+
+4
+00:00:15,420 --> 00:00:19,080
+For the basic recording from the ribbon bar,
+
+5
+00:00:19,080 --> 00:00:24,525
+click on ''Recording'' and click on the ''Basic recording.''
+
+6
+00:00:24,525 --> 00:00:28,910
+This is the Window which comes up for the basic recording.
+
+7
+00:00:28,910 --> 00:00:33,935
+Here we will use the Notepad application for building the automation.
+
+8
+00:00:33,935 --> 00:00:38,020
+We will type into the Notepad and we'll save the Notepad.
+
+9
+00:00:38,020 --> 00:00:39,460
+To begin with, first,
+
+10
+00:00:39,460 --> 00:00:41,645
+we need to open up the Notepad.
+
+11
+00:00:41,645 --> 00:00:44,450
+For that, we'll click on the ''Start Apps''
+
+12
+00:00:44,450 --> 00:00:47,765
+and we'll select the ''Start app activity from here.''
+
+13
+00:00:47,765 --> 00:00:52,515
+Will point to the notepad and it is asking us,
+
+14
+00:00:52,515 --> 00:00:55,150
+"Is this the application that you need to open up?"
+
+15
+00:00:55,150 --> 00:00:56,390
+We will say confirm,
+
+16
+00:00:56,390 --> 00:00:58,430
+we need to open this notepad.
+
+17
+00:00:58,430 --> 00:01:00,685
+You can skip the argument for now.
+
+18
+00:01:00,685 --> 00:01:06,545
+Now we will use the automatic recording and we will continue further.
+
+19
+00:01:06,545 --> 00:01:08,685
+Next is, we need to type.
+
+20
+00:01:08,685 --> 00:01:10,965
+We will point to the text area over here
+
+21
+00:01:10,965 --> 00:01:14,480
+and we will type the message in this balloon box.
+
+22
+00:01:14,480 --> 00:01:18,560
+The message that we will type is UiPath.
+
+23
+00:01:18,560 --> 00:01:20,710
+Here we have two options.
+
+24
+00:01:20,710 --> 00:01:24,230
+Type password for typing password and empty field.
+
+25
+00:01:24,230 --> 00:01:27,665
+The empty field options allows you to erase
+
+26
+00:01:27,665 --> 00:01:31,385
+the pre-existing text and then write the new text.
+
+27
+00:01:31,385 --> 00:01:35,155
+Once the text is written, press ''Enter.''
+
+28
+00:01:35,155 --> 00:01:40,415
+Here you can see the bot has performed the type into activity.
+
+29
+00:01:40,415 --> 00:01:42,720
+Next, we'll click on ''File.''
+
+30
+00:01:42,720 --> 00:01:46,920
+Hold your mouse to the file and then perform a click.
+
+31
+00:01:46,920 --> 00:01:48,690
+Now it's asking you,
+
+32
+00:01:48,690 --> 00:01:50,580
+"Do you want to use an anchor?"
+
+33
+00:01:50,580 --> 00:01:54,355
+We have learned about anchors in these selectors chapters.
+
+34
+00:01:54,355 --> 00:01:59,930
+In our case, there is no need to anchorate because the file location or
+
+35
+00:01:59,930 --> 00:02:06,500
+the file is always going to be in the same place for each and every notepad application.
+
+36
+00:02:06,500 --> 00:02:07,860
+We will ignore this.
+
+37
+00:02:07,860 --> 00:02:10,990
+We will say, ''No, we do not want to anchorate.''
+
+38
+00:02:10,990 --> 00:02:14,780
+Next, we will click on ''Save as.''
+
+39
+00:02:15,010 --> 00:02:17,990
+Perfect. In this new Window,
+
+40
+00:02:17,990 --> 00:02:20,010
+we have to give a file name.
+
+41
+00:02:20,010 --> 00:02:24,785
+We will hover the mouse over the file name text box and we will click here.
+
+42
+00:02:24,785 --> 00:02:27,590
+Now this activities are so smart that they
+
+43
+00:02:27,590 --> 00:02:30,485
+can differentiate between the click and the type.
+
+44
+00:02:30,485 --> 00:02:33,170
+Now this is a type activity hence,
+
+45
+00:02:33,170 --> 00:02:36,385
+we got the balloon to type your name.
+
+46
+00:02:36,385 --> 00:02:39,125
+Here we will type the file name.
+
+47
+00:02:39,125 --> 00:02:45,695
+We'll type the file name as UiPath and we'll make sure that we check the empty field.
+
+48
+00:02:45,695 --> 00:02:48,235
+Press ''Enter.''
+
+49
+00:02:48,235 --> 00:02:51,480
+Next is we need to save the Notepad.
+
+50
+00:02:51,480 --> 00:02:57,040
+To do that, we'll hover over the save button and we'll perform a click.
+
+51
+00:02:57,440 --> 00:02:59,855
+To stop the recording,
+
+52
+00:02:59,855 --> 00:03:04,940
+you have to press the Escape key from your keyboard.
+
+53
+00:03:04,940 --> 00:03:09,920
+Here you can see in the desktop the file has been created.
+
+54
+00:03:09,920 --> 00:03:16,990
+Next, we can click on ''Save and exit'' to get out of the recording.
+
+55
+00:03:16,990 --> 00:03:23,720
+Here you can see all the set of activities that we have performed is available.
+
+56
+00:03:23,720 --> 00:03:26,150
+Starting from opening of the notepad,
+
+57
+00:03:26,150 --> 00:03:27,819
+typing into the notepad,
+
+58
+00:03:27,819 --> 00:03:30,915
+performing the file, and then save as,
+
+59
+00:03:30,915 --> 00:03:34,240
+then lastly clicking on ''Save.''
+
+60
+00:03:34,460 --> 00:03:38,920
+Let us run this bot.
+
+61
+00:03:46,460 --> 00:03:51,640
+The bot was able to perform the desired task.
+
+62
+00:03:51,640 --> 00:03:55,390
+Now, let us move ahead and see the next recording.
+
+63
+00:03:55,390 --> 00:03:58,475
+That is the desktop recording.
+
+64
+00:03:58,475 --> 00:04:01,810
+For desktop recording also we will do
+
+65
+00:04:01,810 --> 00:04:06,190
+the same exercise that is automating the notepad application.
+
+66
+00:04:06,190 --> 00:04:07,750
+On the ribbon bar,
+
+67
+00:04:07,750 --> 00:04:10,975
+click on ''Recording'' and click on ''Desktop.''
+
+68
+00:04:10,975 --> 00:04:15,220
+This is the Window that comes up for the desktop recording.
+
+69
+00:04:15,220 --> 00:04:19,070
+To start with, we will say start up and
+
+70
+00:04:19,070 --> 00:04:23,175
+will indicate the notepad application. Click on ''Okay.''
+
+71
+00:04:23,175 --> 00:04:27,855
+Here we will again use the automatic recording option.
+
+72
+00:04:27,855 --> 00:04:35,105
+We will point out to the text area where we want to print or type our data and
+
+73
+00:04:35,105 --> 00:04:42,240
+we will type the text as the Udacity and hit ''Enter.''
+
+74
+00:04:42,240 --> 00:04:44,865
+Next we'll click on ''File.''
+
+75
+00:04:44,865 --> 00:04:47,130
+There is no need for anchoring it.
+
+76
+00:04:47,130 --> 00:04:52,725
+We'll click on ''Save as'' and here we will give a name.
+
+77
+00:04:52,725 --> 00:04:57,900
+We'll say with the name Udacity, hit ''Enter.''
+
+78
+00:04:57,900 --> 00:05:04,370
+Next, click on the ''Save button'' and escape the recording.
+
+79
+00:05:04,370 --> 00:05:07,745
+Here you can see the Udacity file has been created.
+
+80
+00:05:07,745 --> 00:05:09,830
+Click on ''Save and exit.''
+
+81
+00:05:09,830 --> 00:05:15,110
+Here is all the activities that we have used in the recording.
+
+82
+00:05:15,110 --> 00:05:19,950
+Now, the bot will perform the same task as in it will open up the notepad,
+
+83
+00:05:19,950 --> 00:05:22,760
+type Udacity and save the application.
+
+84
+00:05:22,760 --> 00:05:26,330
+But now let us see the difference between
+
+85
+00:05:26,330 --> 00:05:33,005
+the basic recording and the desktop recording as we have learned earlier in the lessons,
+
+86
+00:05:33,005 --> 00:05:36,320
+that the basic recording gives us
+
+87
+00:05:36,320 --> 00:05:41,255
+a full selector and a desktop recording gives us a partial selector.
+
+88
+00:05:41,255 --> 00:05:46,985
+Basically, what we want to do is the basic recording does not use a container,
+
+89
+00:05:46,985 --> 00:05:51,140
+whereas a desktop recording always uses a container.
+
+90
+00:05:51,140 --> 00:05:56,645
+Here you can see all the activities are grouped into one sequence.
+
+91
+00:05:56,645 --> 00:05:59,825
+We can look at the selector for the same.
+
+92
+00:05:59,825 --> 00:06:02,660
+Over here, when you look at the selector,
+
+93
+00:06:02,660 --> 00:06:06,425
+each and every selector includes the parent node.
+
+94
+00:06:06,425 --> 00:06:10,020
+Here, we can also see the same thing.
+
+95
+00:06:10,250 --> 00:06:13,560
+Let us look at the desktop recording.
+
+96
+00:06:13,560 --> 00:06:15,205
+Here in the desktop recording,
+
+97
+00:06:15,205 --> 00:06:20,690
+you can easily see that you have a container for the different set of activities.
+
+98
+00:06:20,690 --> 00:06:23,165
+This is one container.
+
+99
+00:06:23,165 --> 00:06:25,145
+Here is the second container,
+
+100
+00:06:25,145 --> 00:06:27,695
+and here is the third container.
+
+101
+00:06:27,695 --> 00:06:31,535
+This helps us to generate a partial selector.
+
+102
+00:06:31,535 --> 00:06:36,019
+Here, you can look at the selector for the type into activity.
+
+103
+00:06:36,019 --> 00:06:37,745
+As you can see here,
+
+104
+00:06:37,745 --> 00:06:39,680
+this part has been grayed out.
+
+105
+00:06:39,680 --> 00:06:43,600
+That means it comes from the parent activity,
+
+106
+00:06:43,600 --> 00:06:46,920
+as in it comes from the open notepad application.
+
+107
+00:06:46,920 --> 00:06:54,320
+All the activities inside this container will follow the parent node.
+
+108
+00:06:54,320 --> 00:07:00,445
+Let us look at the third type of recording that is the web recording.
+
+109
+00:07:00,445 --> 00:07:05,790
+Here we'll navigate to the IMDb movie rating website.
+
+110
+00:07:05,790 --> 00:07:11,360
+We will search for a movie and we will display the movie rating to the user.
+
+111
+00:07:11,360 --> 00:07:16,680
+To begin so click on the ''Recording'' and click on the ''Web recording.''
+
+112
+00:07:16,680 --> 00:07:21,155
+Here is the Window that comes up for the web recording.
+
+113
+00:07:21,155 --> 00:07:24,530
+Over here, the first thing that we need to do is,
+
+114
+00:07:24,530 --> 00:07:26,690
+we need to open up the browser.
+
+115
+00:07:26,690 --> 00:07:30,310
+Click on the ''Open browser'' and say open browser.
+
+116
+00:07:30,310 --> 00:07:33,805
+Point anywhere on your webpage.
+
+117
+00:07:33,805 --> 00:07:37,250
+Here is the URL and we'll confirm,
+
+118
+00:07:37,250 --> 00:07:40,475
+yes, we need to open up this web page.
+
+119
+00:07:40,475 --> 00:07:44,720
+Next, we can start with the automatic recording.
+
+120
+00:07:44,720 --> 00:07:50,110
+Click on the ''Recorder'' and over here we will input the movie name.
+
+121
+00:07:50,110 --> 00:07:55,785
+I'll input the movie name as Joker and hit ''Enter.''
+
+122
+00:07:55,785 --> 00:07:59,585
+Next is, we need to click on this particular movie,
+
+123
+00:07:59,585 --> 00:08:02,010
+that is the Joker movie.
+
+124
+00:08:02,840 --> 00:08:06,265
+Awesome. The next thing that we need to do is,
+
+125
+00:08:06,265 --> 00:08:10,325
+we need to get the ratings from here.
+
+126
+00:08:10,325 --> 00:08:17,045
+To do that, we will escape from the automatic recording and from the manual recording,
+
+127
+00:08:17,045 --> 00:08:20,015
+we will select the ''Copy text.''
+
+128
+00:08:20,015 --> 00:08:24,005
+We will point out to the rating area over here.
+
+129
+00:08:24,005 --> 00:08:29,495
+Awesome. Let us save and exit the recording.
+
+130
+00:08:29,495 --> 00:08:33,500
+As you can see, all the activities have been displayed here,
+
+131
+00:08:33,500 --> 00:08:35,870
+right from opening up the browser,
+
+132
+00:08:35,870 --> 00:08:37,685
+typing the movie name,
+
+133
+00:08:37,685 --> 00:08:39,155
+clicking on the movie,
+
+134
+00:08:39,155 --> 00:08:45,230
+and here we have a Get Text activity which fetches the rating from the webpage.
+
+135
+00:08:45,230 --> 00:08:49,100
+By default, there is a variable created called a span.
+
+136
+00:08:49,100 --> 00:08:52,670
+You can verify it in the variable panel.
+
+137
+00:08:52,670 --> 00:08:56,000
+We will change the variable and we will name
+
+138
+00:08:56,000 --> 00:09:00,440
+the variable as Rating to make it much more meaningful.
+
+139
+00:09:00,440 --> 00:09:06,575
+Now, we need to use a Message Box activity and inside the Message Box activity,
+
+140
+00:09:06,575 --> 00:09:09,500
+we will display the rating to the user.
+
+141
+00:09:09,500 --> 00:09:19,505
+Drag and drop the Message Box activity after the Get Text and give the input as rating.
+
+142
+00:09:19,505 --> 00:09:24,390
+Perfect. Now let us run this automation.
+
+143
+00:09:24,700 --> 00:09:28,475
+Now you can see the web page has been opened up.
+
+144
+00:09:28,475 --> 00:09:31,745
+The movie name was searched and the movie was clicked.
+
+145
+00:09:31,745 --> 00:09:38,580
+Now, here the Get Text activity is working and here we are displaying the movie rating.
+

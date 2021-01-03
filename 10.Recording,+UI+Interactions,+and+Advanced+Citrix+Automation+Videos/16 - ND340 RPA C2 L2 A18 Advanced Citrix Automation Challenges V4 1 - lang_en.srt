@@ -1,0 +1,204 @@
+1
+00:00:00,000 --> 00:00:04,814
+UiPath version 2018.4.1 onwards,
+
+2
+00:00:04,814 --> 00:00:08,580
+has native support for Citrix Virtual Apps,
+
+3
+00:00:08,580 --> 00:00:11,280
+formerly known as the Zen App.
+
+4
+00:00:11,280 --> 00:00:16,290
+By installing the Citrix Extension on the client machine and
+
+5
+00:00:16,290 --> 00:00:21,605
+the UiPath Remote Runtime component on the Citrix Virtual App application server,
+
+6
+00:00:21,605 --> 00:00:27,400
+we can automate Citrix App as if they were local applications.
+
+7
+00:00:27,400 --> 00:00:33,465
+Selectors are natively generated for Citrix App element,
+
+8
+00:00:33,465 --> 00:00:39,050
+and we can use the full range of UiAutomation Activities,
+
+9
+00:00:39,050 --> 00:00:41,690
+such as Click, Type Into,
+
+10
+00:00:41,690 --> 00:00:45,245
+Get Text, Extract Text, and more.
+
+11
+00:00:45,245 --> 00:00:53,160
+However, this is not the case with the Citrix Virtual Desktop called as Xendesktop.
+
+12
+00:00:53,160 --> 00:00:57,995
+UiExplorer is unable to extract selectors
+
+13
+00:00:57,995 --> 00:01:03,065
+for element inside the applications in a Citrix Desktop application.
+
+14
+00:01:03,065 --> 00:01:07,130
+The same is the case with Citrix Virtual Apps,
+
+15
+00:01:07,130 --> 00:01:10,800
+where Citrix extensions are not enabled.
+
+16
+00:01:10,800 --> 00:01:14,885
+In this scenarios, we have to rely on image,
+
+17
+00:01:14,885 --> 00:01:18,045
+text, and keyboard automation.
+
+18
+00:01:18,045 --> 00:01:21,735
+When and where to perform these certain actions.
+
+19
+00:01:21,735 --> 00:01:26,360
+The concepts of automation can be fully utilized in
+
+20
+00:01:26,360 --> 00:01:32,150
+cases where the errors in the automating projects are minimal.
+
+21
+00:01:32,150 --> 00:01:36,995
+For example, when waiting for a particular state of an application,
+
+22
+00:01:36,995 --> 00:01:40,805
+it is essential to create optimal automation,
+
+23
+00:01:40,805 --> 00:01:44,860
+that waits for the application or a web page to load,
+
+24
+00:01:44,860 --> 00:01:47,945
+or for a specific process to end.
+
+25
+00:01:47,945 --> 00:01:52,535
+At this point, we look and wait for the visual element to appear,
+
+26
+00:01:52,535 --> 00:01:56,005
+by keeping the On Image Appear on it.
+
+27
+00:01:56,005 --> 00:01:59,520
+A better and more gentle solution is
+
+28
+00:01:59,520 --> 00:02:03,210
+to wait for the application loading icon to disappear.
+
+29
+00:02:03,210 --> 00:02:07,850
+An On Image Vanish activities can be used for this purpose,
+
+30
+00:02:07,850 --> 00:02:10,755
+allowing the automation to continue,
+
+31
+00:02:10,755 --> 00:02:13,775
+or leave when the loading icon vanishes.
+
+32
+00:02:13,775 --> 00:02:19,345
+Certain activities accept control to be already present in the normal field.
+
+33
+00:02:19,345 --> 00:02:22,125
+Sending data to the application,
+
+34
+00:02:22,125 --> 00:02:25,500
+or extracting data from the application,
+
+35
+00:02:25,500 --> 00:02:27,780
+are some of the such scenarios,
+
+36
+00:02:27,780 --> 00:02:31,520
+where we can get data by using click activities,
+
+37
+00:02:31,520 --> 00:02:34,420
+like Click Image and Click Text.
+
+38
+00:02:34,420 --> 00:02:41,270
+Apart from these, you can also click on an anchor image relative to the text.
+
+39
+00:02:41,270 --> 00:02:45,860
+You can also achieve this by using keyboard activities,
+
+40
+00:02:45,860 --> 00:02:48,400
+like sending tab keys.
+
+41
+00:02:48,400 --> 00:02:50,805
+Identifying the elements.
+
+42
+00:02:50,805 --> 00:02:58,010
+Virtual environment do not provide any way to identify UIElements through standard means.
+
+43
+00:02:58,010 --> 00:03:02,629
+Therefore, visual anchors are the only options.
+
+44
+00:03:02,629 --> 00:03:07,550
+You can use the image or the extracted text,
+
+45
+00:03:07,550 --> 00:03:10,375
+to compare with the expected result.
+
+46
+00:03:10,375 --> 00:03:14,750
+UiPath Studio features activities that uses
+
+47
+00:03:14,750 --> 00:03:20,140
+OCR or image recognition technologies, in such situations.
+
+48
+00:03:20,140 --> 00:03:24,785
+Several OCR engines can be used with the UiPatch Studios,
+
+49
+00:03:24,785 --> 00:03:29,465
+like Google Tesseract, Microsoft MODI, and ABBYY.
+
+50
+00:03:29,465 --> 00:03:34,915
+Google Tesseract engine works better for scraping smaller areas,
+
+51
+00:03:34,915 --> 00:03:41,190
+while Microsoft MODI is more suitable for the larger ones.
+

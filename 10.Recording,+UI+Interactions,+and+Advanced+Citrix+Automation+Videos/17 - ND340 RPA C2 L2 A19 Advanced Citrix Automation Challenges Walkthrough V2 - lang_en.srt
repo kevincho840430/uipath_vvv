@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:05,790
+In this example, we will see how to use the Native Citrix Recording.
+
+2
+00:00:05,790 --> 00:00:11,910
+But before starting, let us try to understand more about the Native Citrix recording.
+
+3
+00:00:11,910 --> 00:00:16,200
+The Native Citrix recording option allows you to identify
+
+4
+00:00:16,200 --> 00:00:20,580
+the UI element in the Citrix app and automated them.
+
+5
+00:00:20,580 --> 00:00:22,395
+Whereas on the other hand,
+
+6
+00:00:22,395 --> 00:00:26,925
+the image recording that we have already used still exists
+
+7
+00:00:26,925 --> 00:00:31,965
+to perform the traditional image and the text-based automation.
+
+8
+00:00:31,965 --> 00:00:36,000
+By installing the UI path extension for Citrix on the
+
+9
+00:00:36,000 --> 00:00:40,159
+client machine and the UI path remote runtime component
+
+10
+00:00:40,159 --> 00:00:43,505
+on the virtual application server,
+
+11
+00:00:43,505 --> 00:00:50,525
+you can now create automation projects for Citrix app as if they were local applications.
+
+12
+00:00:50,525 --> 00:00:55,355
+Selectors are natively generated for Citrix app element,
+
+13
+00:00:55,355 --> 00:01:00,050
+and you can use the full range of UI automation activities,
+
+14
+00:01:00,050 --> 00:01:03,405
+such as click, typing to get text,
+
+15
+00:01:03,405 --> 00:01:06,300
+extract data and many more.
+
+16
+00:01:06,300 --> 00:01:08,315
+In that case, over here,
+
+17
+00:01:08,315 --> 00:01:10,565
+we have a Citrix environment.
+
+18
+00:01:10,565 --> 00:01:12,140
+In this Citrix environment,
+
+19
+00:01:12,140 --> 00:01:18,815
+we will try to type the information into the notepad and we'll try to save it.
+
+20
+00:01:18,815 --> 00:01:21,515
+To begin that from the recording,
+
+21
+00:01:21,515 --> 00:01:24,469
+we will use the Native Citrix.
+
+22
+00:01:24,469 --> 00:01:29,604
+Over here, we'll start typing into the Notepad.
+
+23
+00:01:29,604 --> 00:01:34,875
+As you can see, the selector is been readily available.
+
+24
+00:01:34,875 --> 00:01:39,515
+We'll type the message as Citrix recording.
+
+25
+00:01:39,515 --> 00:01:42,505
+Awesome. Hit enter.
+
+26
+00:01:42,505 --> 00:01:46,320
+Now we'll click on the file.
+
+27
+00:01:46,320 --> 00:01:49,125
+There is no need for anchoring it.
+
+28
+00:01:49,125 --> 00:01:53,110
+Now, we will click on Save As.
+
+29
+00:01:53,900 --> 00:02:02,040
+Awesome. Now, we will use a type into activity to give a name to the file.
+
+30
+00:02:02,920 --> 00:02:08,370
+We'll save the file with the name Citrix.
+
+31
+00:02:09,770 --> 00:02:14,440
+Lastly, we'll click on the Save button.
+
+32
+00:02:15,590 --> 00:02:19,900
+Now, we will close this application.
+
+33
+00:02:22,760 --> 00:02:26,985
+Let us save and exit the recording.
+
+34
+00:02:26,985 --> 00:02:31,340
+Here you can see the activities available for them.
+
+35
+00:02:31,340 --> 00:02:33,500
+Let us run the application.
+
+36
+00:02:33,500 --> 00:02:36,440
+Before that, we'll open up the notepad application here.
+
+37
+00:02:36,440 --> 00:02:39,810
+Now, let us run the automation.
+
+38
+00:02:46,450 --> 00:02:52,920
+Perfect. We were able to run the automation successfully.
+

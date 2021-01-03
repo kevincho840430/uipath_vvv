@@ -1,0 +1,420 @@
+1
+00:00:00,000 --> 00:00:02,355
+In this data scraping example,
+
+2
+00:00:02,355 --> 00:00:08,085
+we will scrape the title of the book and the date from the Amazon.com website.
+
+3
+00:00:08,085 --> 00:00:12,660
+To begin that, we have already used the open browser activity.
+
+4
+00:00:12,660 --> 00:00:14,505
+Within the open browser activity,
+
+5
+00:00:14,505 --> 00:00:17,520
+we have mentioned the amazon.com URL.
+
+6
+00:00:17,520 --> 00:00:19,650
+After that, we are using a type into
+
+7
+00:00:19,650 --> 00:00:23,100
+activity and then we are searching for the automation books.
+
+8
+00:00:23,100 --> 00:00:26,070
+Now, we will start our data scraping tool.
+
+9
+00:00:26,070 --> 00:00:28,260
+To do that from the ribbon bar,
+
+10
+00:00:28,260 --> 00:00:30,165
+click on data scraping.
+
+11
+00:00:30,165 --> 00:00:32,205
+A new window comes up.
+
+12
+00:00:32,205 --> 00:00:36,435
+Let us try to understand what does is window asking?
+
+13
+00:00:36,435 --> 00:00:38,730
+The window has three steps in it.
+
+14
+00:00:38,730 --> 00:00:42,650
+The first step is asking you to open up your browser or
+
+15
+00:00:42,650 --> 00:00:46,490
+the application or the document from where you want to scrape the data.
+
+16
+00:00:46,490 --> 00:00:49,655
+In our case, the Amazon page is already opened up.
+
+17
+00:00:49,655 --> 00:00:51,835
+The next step it says,
+
+18
+00:00:51,835 --> 00:00:55,550
+press next in this dialogue box and then hover over
+
+19
+00:00:55,550 --> 00:00:59,780
+the data that you want to extract and then click that field.
+
+20
+00:00:59,780 --> 00:01:05,915
+We'll click the Next button and we will hold upon the data that we want to extract.
+
+21
+00:01:05,915 --> 00:01:10,055
+In our case, we want to extract the book title.
+
+22
+00:01:10,055 --> 00:01:13,445
+We'll click here. A new window comes up,
+
+23
+00:01:13,445 --> 00:01:17,375
+but just asking us to select the second element.
+
+24
+00:01:17,375 --> 00:01:21,020
+This is because we want to create a pattern.
+
+25
+00:01:21,020 --> 00:01:25,760
+Click on Next and click on the Next Book Title.
+
+26
+00:01:25,760 --> 00:01:30,365
+Here, you can give a name to the column as you are
+
+27
+00:01:30,365 --> 00:01:36,155
+extracting more than one information that is more than one book title,
+
+28
+00:01:36,155 --> 00:01:39,205
+you will be storing it in the form of what column.
+
+29
+00:01:39,205 --> 00:01:42,450
+Now here, we need to give a column name.
+
+30
+00:01:42,450 --> 00:01:47,150
+Let us give the column name as book title.
+
+31
+00:01:47,150 --> 00:01:50,240
+Awesome. We have an additional option here,
+
+32
+00:01:50,240 --> 00:01:52,210
+which is extract the URL.
+
+33
+00:01:52,210 --> 00:01:58,490
+Now, this works upon the data which has a URL embedded behind it.
+
+34
+00:01:58,490 --> 00:02:02,015
+In our case, when we click on any of the book title,
+
+35
+00:02:02,015 --> 00:02:04,795
+it takes us to a new web page.
+
+36
+00:02:04,795 --> 00:02:08,390
+Basically there is a URL embedded behind it.
+
+37
+00:02:08,390 --> 00:02:13,040
+The data scraping tool can also extract the URL from it.
+
+38
+00:02:13,040 --> 00:02:18,385
+We will click on this and we will name this column as URL.
+
+39
+00:02:18,385 --> 00:02:22,640
+Click Next. Here you can see we have
+
+40
+00:02:22,640 --> 00:02:28,100
+extracted all the book title and the URL from the first page.
+
+41
+00:02:28,100 --> 00:02:30,320
+Let us verify the last data.
+
+42
+00:02:30,320 --> 00:02:34,620
+The last data is the condensed Handbook of Measurement and Control,
+
+43
+00:02:34,620 --> 00:02:37,445
+and we have the last book there.
+
+44
+00:02:37,445 --> 00:02:42,550
+Now let us try to understand what are the fields in this window?
+
+45
+00:02:42,550 --> 00:02:47,005
+The first field that we are interested is the maximum result field.
+
+46
+00:02:47,005 --> 00:02:48,645
+Over here, by default,
+
+47
+00:02:48,645 --> 00:02:50,385
+it is set as 100.
+
+48
+00:02:50,385 --> 00:02:55,130
+That means the data scraping tool will scrape 100 data.
+
+49
+00:02:55,130 --> 00:02:57,830
+If you want to scrape all the data,
+
+50
+00:02:57,830 --> 00:02:59,920
+you have to mention zero.
+
+51
+00:02:59,920 --> 00:03:03,740
+Else if you want to explicitly mentioned any custom number,
+
+52
+00:03:03,740 --> 00:03:05,285
+you can give the number here.
+
+53
+00:03:05,285 --> 00:03:08,975
+In our case, we will extract 50 records.
+
+54
+00:03:08,975 --> 00:03:12,725
+The next button is the extract co-related button.
+
+55
+00:03:12,725 --> 00:03:19,075
+Now this button is responsible to extract more data from the same page.
+
+56
+00:03:19,075 --> 00:03:22,220
+In our case, we want to extract even the date.
+
+57
+00:03:22,220 --> 00:03:26,380
+To do that, we'll click on extract correlated data,
+
+58
+00:03:26,380 --> 00:03:29,170
+and we will point towards the date.
+
+59
+00:03:29,170 --> 00:03:30,985
+I click on that.
+
+60
+00:03:30,985 --> 00:03:34,830
+Now, we also have to make a pattern for the date.
+
+61
+00:03:34,830 --> 00:03:39,165
+Click on Next and point out to other date.
+
+62
+00:03:39,165 --> 00:03:45,940
+Awesome. Now you can see all the dates have been taken by the data scraping tool.
+
+63
+00:03:45,940 --> 00:03:48,430
+Give a name to this column,
+
+64
+00:03:48,430 --> 00:03:50,630
+we'll give the name as date.
+
+65
+00:03:50,630 --> 00:03:53,950
+As you can see the extract you had an option is still available,
+
+66
+00:03:53,950 --> 00:03:59,960
+but in our case there is no URL behind the date and neither there interested in it.
+
+67
+00:03:59,960 --> 00:04:04,480
+We will make it as uncheck and we will proceed further.
+
+68
+00:04:04,480 --> 00:04:09,155
+Awesome. Here you can see we have now the book title and the URL,
+
+69
+00:04:09,155 --> 00:04:12,320
+and we have the next column that is date.
+
+70
+00:04:12,320 --> 00:04:15,200
+If in case you want to scrape more data,
+
+71
+00:04:15,200 --> 00:04:20,465
+you can click on extract correlated data and scrape more data accordingly.
+
+72
+00:04:20,465 --> 00:04:23,980
+Now, we'll click on Finish.
+
+73
+00:04:23,980 --> 00:04:27,105
+Here there is another window which pops up,
+
+74
+00:04:27,105 --> 00:04:31,880
+and it is asking, is your data spanning in multiple pages?
+
+75
+00:04:31,880 --> 00:04:36,845
+That means is your data here spanning in multiple pages?
+
+76
+00:04:36,845 --> 00:04:40,565
+If yes, then click on yes and point
+
+77
+00:04:40,565 --> 00:04:44,360
+to the button from where you can navigate to the next screen.
+
+78
+00:04:44,360 --> 00:04:47,405
+In our case, the button is here.
+
+79
+00:04:47,405 --> 00:04:51,695
+Awesome. Here you can see we have
+
+80
+00:04:51,695 --> 00:04:57,400
+the data scraping tool and inside the data scraping we have the extract data.
+
+81
+00:04:57,400 --> 00:05:01,400
+Here we will just add a delay between multiple pages.
+
+82
+00:05:01,400 --> 00:05:03,845
+We'll add a two second of delay.
+
+83
+00:05:03,845 --> 00:05:10,430
+By default, all the data that has been scraped will be stored in a data table.
+
+84
+00:05:10,430 --> 00:05:15,070
+The data table name by default is kept as extract data table.
+
+85
+00:05:15,070 --> 00:05:18,245
+If you want you can change the variable name.
+
+86
+00:05:18,245 --> 00:05:21,590
+Now, the next thing that we need to do is we need
+
+87
+00:05:21,590 --> 00:05:25,790
+to store this data table into an Excel sheet.
+
+88
+00:05:25,790 --> 00:05:29,735
+We will use a right range activity,
+
+89
+00:05:29,735 --> 00:05:33,000
+drag-and-drop derived range activity.
+
+90
+00:05:33,000 --> 00:05:36,215
+Within this right range activity,
+
+91
+00:05:36,215 --> 00:05:40,485
+we will pass the workbook URL.
+
+92
+00:05:40,485 --> 00:05:43,150
+In our case, we will create the workbook.
+
+93
+00:05:43,150 --> 00:05:49,945
+We will name the workbook as automation books with the extension.
+
+94
+00:05:49,945 --> 00:05:55,355
+Over here, you need to specify the data table that you want to write.
+
+95
+00:05:55,355 --> 00:05:59,440
+In our case, the data table name is extract data table.
+
+96
+00:05:59,440 --> 00:06:02,480
+Awesome. Make sure you click on the add
+
+97
+00:06:02,480 --> 00:06:06,155
+headers so that your column names is also included.
+
+98
+00:06:06,155 --> 00:06:09,240
+Let us run the automation.
+
+99
+00:06:10,190 --> 00:06:13,340
+As you can see Amazon page is opened up,
+
+100
+00:06:13,340 --> 00:06:20,765
+automation book was search and now the multiple spanning of the pages will begin.
+
+101
+00:06:20,765 --> 00:06:24,695
+Now, the automation has completed successfully.
+
+102
+00:06:24,695 --> 00:06:27,425
+Let us verify the Excel file.
+
+103
+00:06:27,425 --> 00:06:33,380
+Let us open this excel file and here you can see we have the book title,
+
+104
+00:06:33,380 --> 00:06:36,110
+we have URL and the date.
+
+105
+00:06:36,110 --> 00:06:42,360
+We have 51 record because the first entry is the column name.
+

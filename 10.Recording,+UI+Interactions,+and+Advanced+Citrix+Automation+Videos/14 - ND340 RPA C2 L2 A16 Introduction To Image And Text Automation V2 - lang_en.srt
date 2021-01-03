@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:04,980
+Image based automation relies on user-interface element recognition.
+
+2
+00:00:04,980 --> 00:00:07,400
+Based on the recognized element,
+
+3
+00:00:07,400 --> 00:00:11,280
+a robot can perform specific automation task.
+
+4
+00:00:11,280 --> 00:00:18,450
+Text-based automation relies on identifying the text from certain user interface element.
+
+5
+00:00:18,450 --> 00:00:27,165
+Image ad text automation is very useful in situations where UI automation fails to work.
+
+6
+00:00:27,165 --> 00:00:34,055
+This happens when selector cannot be found by using regular methods.
+
+7
+00:00:34,055 --> 00:00:39,445
+Application hosted on Citrix, Citrix desktop,
+
+8
+00:00:39,445 --> 00:00:43,040
+scanned PDF or SAP have scripting
+
+9
+00:00:43,040 --> 00:00:49,920
+disabled examples of environment where the application does not expose selectors.
+
