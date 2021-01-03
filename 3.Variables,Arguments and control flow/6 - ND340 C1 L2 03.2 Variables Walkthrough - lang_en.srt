@@ -1,0 +1,232 @@
+1
+00:00:00,000 --> 00:00:04,575
+Now let us understand the concept of scopes in variable.
+
+2
+00:00:04,575 --> 00:00:07,830
+Over here, we have taken a couple of sequences.
+
+3
+00:00:07,830 --> 00:00:12,400
+We have the first sequence and we have named it as ScopeEx.
+
+4
+00:00:12,400 --> 00:00:16,700
+Here we have an another sequence which we have named our sequence ones.
+
+5
+00:00:16,700 --> 00:00:20,010
+Here be having another sequence which we have named as sequence two.
+
+6
+00:00:20,010 --> 00:00:22,005
+Let us use an another sequence.
+
+7
+00:00:22,005 --> 00:00:27,435
+Drag and drop the sequence from the activity panel and place it below the sequence two.
+
+8
+00:00:27,435 --> 00:00:29,925
+Let us name it to sequence three.
+
+9
+00:00:29,925 --> 00:00:36,105
+Awesome. Now let us put a message box inside the sequence activity, and we're good to go.
+
+10
+00:00:36,105 --> 00:00:38,250
+Now in the variables panel,
+
+11
+00:00:38,250 --> 00:00:41,790
+we have declared for variables ID,
+
+12
+00:00:41,790 --> 00:00:44,600
+company, name and age.
+
+13
+00:00:44,600 --> 00:00:46,940
+As you can see here in the scope,
+
+14
+00:00:46,940 --> 00:00:50,105
+all of them have been assigned the ScopeEx,
+
+15
+00:00:50,105 --> 00:00:51,875
+that is the parent scope.
+
+16
+00:00:51,875 --> 00:00:55,925
+Now let us try to change some of these scope of the variable.
+
+17
+00:00:55,925 --> 00:01:01,190
+Let us click on sequence one and change the scope of the ID to sequence one.
+
+18
+00:01:01,190 --> 00:01:06,935
+Now, if you go ahead and use the message box of the scope X sequences,
+
+19
+00:01:06,935 --> 00:01:12,775
+and if you try to print the variable ID over here now you will get an error.
+
+20
+00:01:12,775 --> 00:01:18,920
+The validation error is saying that the ID is not declared or it is not accessible.
+
+21
+00:01:18,920 --> 00:01:24,200
+Reason is because we have changed the scope of the ID variable to sequence one.
+
+22
+00:01:24,200 --> 00:01:27,325
+The movement, we change it back to ScopeEx,
+
+23
+00:01:27,325 --> 00:01:31,910
+now you can see the error is gone and we have access to the ID variable.
+
+24
+00:01:31,910 --> 00:01:35,825
+Now the same can be done to all the variables that we have.
+
+25
+00:01:35,825 --> 00:01:40,505
+So in that case, we will give a variable to each and every sequence.
+
+26
+00:01:40,505 --> 00:01:45,350
+Now, let's go ahead and change the scope of all the variables that we have over here.
+
+27
+00:01:45,350 --> 00:01:47,945
+Now, let us go ahead and click on sequence one
+
+28
+00:01:47,945 --> 00:01:51,035
+and changed the ID company to sequence one.
+
+29
+00:01:51,035 --> 00:01:54,275
+Let us go ahead and change the sequence two,
+
+30
+00:01:54,275 --> 00:01:58,030
+and let us put name under the sequence two.
+
+31
+00:01:58,030 --> 00:02:01,010
+For the sequence three,
+
+32
+00:02:01,010 --> 00:02:04,030
+let us put age as sequence three.
+
+33
+00:02:04,030 --> 00:02:08,270
+Awesome. Now, let us try to print some values over here.
+
+34
+00:02:08,270 --> 00:02:12,545
+As we know that the ID has been assigned the ScopeEx,
+
+35
+00:02:12,545 --> 00:02:15,065
+as it is we can access it over here.
+
+36
+00:02:15,065 --> 00:02:18,260
+Now you can easily see the rest three variables are
+
+37
+00:02:18,260 --> 00:02:21,950
+not available here because they don't belong to this particular scope.
+
+38
+00:02:21,950 --> 00:02:25,040
+Now, let us look at this sequence one scope.
+
+39
+00:02:25,040 --> 00:02:26,960
+Now, in the sequence one scope,
+
+40
+00:02:26,960 --> 00:02:30,415
+as you can see, we have access to two variables.
+
+41
+00:02:30,415 --> 00:02:33,800
+We have access to a company which is within the scope,
+
+42
+00:02:33,800 --> 00:02:36,365
+but we also have access to ID variable,
+
+43
+00:02:36,365 --> 00:02:39,275
+which comes from the parent scope that this ScopeEx.
+
+44
+00:02:39,275 --> 00:02:42,200
+Now the same goes with sequence two,
+
+45
+00:02:42,200 --> 00:02:45,565
+and the same also goes with sequence three.
+
+46
+00:02:45,565 --> 00:02:48,600
+Let us try to print all the variables from here.
+
+47
+00:02:48,600 --> 00:02:52,730
+Over here, we'll print age in the sequence two,
+
+48
+00:02:52,730 --> 00:02:55,210
+we will go ahead and print name,
+
+49
+00:02:55,210 --> 00:02:57,005
+and in the sequence one,
+
+50
+00:02:57,005 --> 00:02:59,645
+we'll go ahead and print company.
+
+51
+00:02:59,645 --> 00:03:01,295
+As you can see over here,
+
+52
+00:03:01,295 --> 00:03:05,015
+the ID is available to all the sequences.
+
+53
+00:03:05,015 --> 00:03:07,325
+That is it available in within all the scope
+
+54
+00:03:07,325 --> 00:03:10,895
+because the scope has been saved to the parents scope.
+
+55
+00:03:10,895 --> 00:03:15,005
+Let us run the workflow and see the output.
+
+56
+00:03:15,005 --> 00:03:18,155
+Now we got the corresponding output,
+
+57
+00:03:18,155 --> 00:03:19,700
+that is the ID,
+
+58
+00:03:19,700 --> 00:03:24,390
+the company, the name, and the age.
+

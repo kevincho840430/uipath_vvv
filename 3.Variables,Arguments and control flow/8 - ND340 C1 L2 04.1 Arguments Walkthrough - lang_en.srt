@@ -1,0 +1,300 @@
+1
+00:00:00,000 --> 00:00:05,070
+Let us try to understand how to work with arguments.
+
+2
+00:00:05,070 --> 00:00:08,865
+To do so, we will make lemonade.
+
+3
+00:00:08,865 --> 00:00:10,965
+Yes, you heard it right,
+
+4
+00:00:10,965 --> 00:00:16,395
+we will learn how to work with arguments while making the lemonade.
+
+5
+00:00:16,395 --> 00:00:20,295
+To do so, we have created two workflows;
+
+6
+00:00:20,295 --> 00:00:24,285
+the ingredient workflows and the recipe workflows.
+
+7
+00:00:24,285 --> 00:00:27,675
+The ingredient workflows is responsible to
+
+8
+00:00:27,675 --> 00:00:31,710
+collect all the ingredients needed for making the lemonade,
+
+9
+00:00:31,710 --> 00:00:36,240
+and the recipe workflows takes all the ingredients from
+
+10
+00:00:36,240 --> 00:00:42,445
+the ingredient workflow and then it states the step to prepare the lemonade.
+
+11
+00:00:42,445 --> 00:00:48,815
+To do so, we have created two input dialog box in the ingredient workflow.
+
+12
+00:00:48,815 --> 00:00:52,700
+The first dialogue box is asking the user to
+
+13
+00:00:52,700 --> 00:00:56,920
+enter the quantity of water needed to make a lemonade.
+
+14
+00:00:56,920 --> 00:01:02,240
+The value has been stored into an argument out_water.
+
+15
+00:01:02,240 --> 00:01:04,325
+The second dialogue box,
+
+16
+00:01:04,325 --> 00:01:09,875
+ask the user for the count of lemons needed to make the lemonade.
+
+17
+00:01:09,875 --> 00:01:15,110
+The user input is stored in an argument out_lemon.
+
+18
+00:01:15,110 --> 00:01:19,165
+As you can see, the direction of both the argument is out.
+
+19
+00:01:19,165 --> 00:01:26,905
+Reason, the arguments value from this workflow will be passed on to the recipe workflow.
+
+20
+00:01:26,905 --> 00:01:28,640
+In the recipe workflow,
+
+21
+00:01:28,640 --> 00:01:34,025
+we have created two arguments in_lemon and in_water.
+
+22
+00:01:34,025 --> 00:01:38,435
+The direction is in because it will get the value
+
+23
+00:01:38,435 --> 00:01:43,685
+from another workflow and then it will prepare the recipe for lemonade.
+
+24
+00:01:43,685 --> 00:01:46,115
+We can see the message box,
+
+25
+00:01:46,115 --> 00:01:48,260
+and the message box says,
+
+26
+00:01:48,260 --> 00:01:52,700
+extract the juice of the in_lemon,
+
+27
+00:01:52,700 --> 00:01:54,050
+that is the argument;
+
+28
+00:01:54,050 --> 00:01:55,880
+we convert it into a string,
+
+29
+00:01:55,880 --> 00:01:58,140
+mix it with the water,
+
+30
+00:01:58,140 --> 00:02:00,680
+that is in_water argument,
+
+31
+00:02:00,680 --> 00:02:03,290
+and add a tablespoon of sugar and mix it,
+
+32
+00:02:03,290 --> 00:02:05,155
+and your lemonade is ready.
+
+33
+00:02:05,155 --> 00:02:07,950
+This workflow needs two values,
+
+34
+00:02:07,950 --> 00:02:11,630
+the in_lemon and the in_score water.
+
+35
+00:02:11,630 --> 00:02:16,265
+Let us go ahead and open the main.xaml file.
+
+36
+00:02:16,265 --> 00:02:18,635
+In the main.xaml file,
+
+37
+00:02:18,635 --> 00:02:21,685
+we will invoke both the workflows.
+
+38
+00:02:21,685 --> 00:02:25,625
+First, we will invoke the ingredient workflow.
+
+39
+00:02:25,625 --> 00:02:29,375
+We will drag and drop the ingredient workflow here.
+
+40
+00:02:29,375 --> 00:02:32,945
+Once the ingredient workflow is completed,
+
+41
+00:02:32,945 --> 00:02:36,065
+we want the recipe workflow to be invoked.
+
+42
+00:02:36,065 --> 00:02:42,815
+We will drag and drop the recipe workflow underneath the ingredient workflow.
+
+43
+00:02:42,815 --> 00:02:46,075
+Click on the import argument.
+
+44
+00:02:46,075 --> 00:02:53,905
+Here, you can see the ingredient workflow is giving out an argument.
+
+45
+00:02:53,905 --> 00:02:59,675
+We need to store that argument into a variable in the main file.
+
+46
+00:02:59,675 --> 00:03:02,270
+Let us go ahead and do that.
+
+47
+00:03:02,270 --> 00:03:05,330
+Control K for creating a variable,
+
+48
+00:03:05,330 --> 00:03:08,425
+and we'll name the variable as Lemon.
+
+49
+00:03:08,425 --> 00:03:11,820
+We'll do the same thing for water,
+
+50
+00:03:11,820 --> 00:03:14,690
+I'll say Control K for creating the variable,
+
+51
+00:03:14,690 --> 00:03:17,900
+and I'll name the variable as Water.
+
+52
+00:03:17,900 --> 00:03:19,685
+You can see here,
+
+53
+00:03:19,685 --> 00:03:21,935
+in the variables panel,
+
+54
+00:03:21,935 --> 00:03:25,660
+there are two variables created, lemon and water.
+
+55
+00:03:25,660 --> 00:03:28,370
+What is going to happen now is,
+
+56
+00:03:28,370 --> 00:03:30,835
+from the ingredient workflow,
+
+57
+00:03:30,835 --> 00:03:34,700
+the lemon values will be stored in the lemon variable.
+
+58
+00:03:34,700 --> 00:03:38,980
+The water values will be stored in the variable water.
+
+59
+00:03:38,980 --> 00:03:45,010
+Now we need to pass these two variables into the recipe workflow.
+
+60
+00:03:45,010 --> 00:03:50,335
+To do that, click on the import arguments and over here,
+
+61
+00:03:50,335 --> 00:03:52,525
+pass the variable name.
+
+62
+00:03:52,525 --> 00:03:57,535
+For in_water, we will pass water as the input;
+
+63
+00:03:57,535 --> 00:04:03,560
+and for in_lemon, we will pass lemon as the input.
+
+64
+00:04:03,560 --> 00:04:08,340
+Let us run this process.
+
+65
+00:04:08,340 --> 00:04:15,680
+The first input dialog box is asking us to enter the quantity of water needed.
+
+66
+00:04:15,680 --> 00:04:18,880
+We'll say we need 500 ml of water.
+
+67
+00:04:18,880 --> 00:04:20,895
+Enter the count of lemons,
+
+68
+00:04:20,895 --> 00:04:24,015
+we'll say we need two count of lemons,
+
+69
+00:04:24,015 --> 00:04:27,560
+and now you can see the recipe workflows
+
+70
+00:04:27,560 --> 00:04:30,610
+is called and the argument have been passed correctly.
+
+71
+00:04:30,610 --> 00:04:35,015
+The messages extract the juice of two lemons, that we stated,
+
+72
+00:04:35,015 --> 00:04:37,385
+and mix it with 500 ml of water,
+
+73
+00:04:37,385 --> 00:04:38,825
+that is what we passed,
+
+74
+00:04:38,825 --> 00:04:41,710
+and add one tablespoon of sugar and mix it.
+
+75
+00:04:41,710 --> 00:04:44,210
+Your lemonade is ready.
+

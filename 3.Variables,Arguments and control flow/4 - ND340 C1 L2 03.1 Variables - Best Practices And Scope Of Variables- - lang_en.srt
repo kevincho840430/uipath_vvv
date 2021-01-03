@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:04,440
+Let's see the best practices for naming a variable.
+
+2
+00:00:04,440 --> 00:00:07,875
+You use clear and meaningful names.
+
+3
+00:00:07,875 --> 00:00:12,900
+The name of the variable should accurately describe its content.
+
+4
+00:00:12,900 --> 00:00:16,305
+Assigned name in a consistent manner.
+
+5
+00:00:16,305 --> 00:00:19,695
+Adhere to using camel casing.
+
+6
+00:00:19,695 --> 00:00:23,520
+Keep variable names descriptive and short.
+
+7
+00:00:23,520 --> 00:00:32,040
+For example, a variable named userName is acceptable versus the variable named uname.
+
+8
+00:00:32,040 --> 00:00:35,115
+An another example where you can create
+
+9
+00:00:35,115 --> 00:00:39,440
+a variable name counter versus calling the variable as i,
+
+10
+00:00:39,440 --> 00:00:41,110
+j, and so on.
+
+11
+00:00:41,110 --> 00:00:47,620
+The type of variable defines the type of data that can be stored inside the variable.
+
+12
+00:00:47,620 --> 00:00:53,555
+The different types of variable available in your iPad are: String variables,
+
+13
+00:00:53,555 --> 00:00:57,490
+Boolean variable, number variable,
+
+14
+00:00:57,490 --> 00:01:01,830
+date and time variable, data table variable.
+
+15
+00:01:01,830 --> 00:01:07,700
+This is usually used to store a data which is in the form of rows and columns.
+
+16
+00:01:07,700 --> 00:01:10,340
+Generic value, QueueItem.
+
+17
+00:01:10,340 --> 00:01:15,935
+This is a UI path specific variable and Arrays,
+
+18
+00:01:15,935 --> 00:01:20,410
+these will be discussed in detail in the classroom.
+
+19
+00:01:20,410 --> 00:01:23,190
+Also, in addition to this,
+
+20
+00:01:23,190 --> 00:01:26,070
+there are two collection variables,
+
+21
+00:01:26,070 --> 00:01:31,730
+lists and dictionaries, which also will be discussed later.
+
+22
+00:01:31,730 --> 00:01:38,615
+Scope field determines the container in which the variable is available.
+
+23
+00:01:38,615 --> 00:01:40,985
+When the variable is created,
+
+24
+00:01:40,985 --> 00:01:45,755
+the user chooses the scope from the scope drop-down field,
+
+25
+00:01:45,755 --> 00:01:50,975
+where all the major sequences and sections of the programs are listed.
+
+26
+00:01:50,975 --> 00:01:54,710
+The scope of a variable should be defined correctly.
+
+27
+00:01:54,710 --> 00:02:00,080
+The variables should be defined only in the scope in which they are used.
+
+28
+00:02:00,080 --> 00:02:03,620
+Making multiple variables unnecessarily available
+
+29
+00:02:03,620 --> 00:02:07,370
+for entire workflow can cause efficiency issues,
+
+30
+00:02:07,370 --> 00:02:10,400
+as well as the possibility for confusion.
+
+31
+00:02:10,400 --> 00:02:14,690
+The user chooses one of these sequences and
+
+32
+00:02:14,690 --> 00:02:19,670
+the variable will then be available in the part of the walk-throughs.
+
+33
+00:02:19,670 --> 00:02:24,890
+The scope of the variable is limited to the selected container.
+
+34
+00:02:24,890 --> 00:02:29,165
+If a variable is declared for a parent activity,
+
+35
+00:02:29,165 --> 00:02:33,440
+then the variable is available in the entire workflow.
+
+36
+00:02:33,440 --> 00:02:38,239
+However, if the variable is declared in any specific activity,
+
+37
+00:02:38,239 --> 00:02:42,790
+then it is available only for the scope of that activity.
+
+38
+00:02:42,790 --> 00:02:50,010
+The scope of a variable cannot exceed the workflow in which it was defined.
+

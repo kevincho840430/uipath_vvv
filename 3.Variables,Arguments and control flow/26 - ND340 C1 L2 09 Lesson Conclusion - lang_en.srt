@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:01,965
+Now that you have learned about
+
+2
+00:00:01,965 --> 00:00:06,315
+the fundamental structure for creating a process in the Studio,
+
+3
+00:00:06,315 --> 00:00:11,925
+you can now start building the actual automation of a process.
+
+4
+00:00:11,925 --> 00:00:16,365
+In this lesson, we learned about variables, arguments,
+
+5
+00:00:16,365 --> 00:00:22,665
+and namespace, and also saw the difference between a variable and an argument.
+
+6
+00:00:22,665 --> 00:00:30,390
+We also learned about decision-based and iteration-based control flow in UiPath.
+
+7
+00:00:30,390 --> 00:00:32,070
+In the next lesson,
+
+8
+00:00:32,070 --> 00:00:39,120
+we will learn about data manipulation and UI activity properties in UiPath.
+

@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:04,140
+Now, let us look at a DoWhile example.
+
+2
+00:00:04,140 --> 00:00:09,240
+In this example, we are printing a set of numbers
+
+3
+00:00:09,240 --> 00:00:15,270
+starting from one until a point where the user wants to print the number.
+
+4
+00:00:15,270 --> 00:00:20,010
+To start with, we have used and input dialog activity.
+
+5
+00:00:20,010 --> 00:00:26,160
+The input dialog activity is asking the last number of the range.
+
+6
+00:00:26,160 --> 00:00:28,830
+The user enters the number,
+
+7
+00:00:28,830 --> 00:00:33,750
+and that number is stored in a variable called as last number.
+
+8
+00:00:33,750 --> 00:00:40,065
+After that, the control flows goes to the do while activity.
+
+9
+00:00:40,065 --> 00:00:42,455
+In the do-while activity,
+
+10
+00:00:42,455 --> 00:00:50,275
+we are using a right line activity which prints the number in the output console.
+
+11
+00:00:50,275 --> 00:00:55,715
+We are using the assign activity to increase the number by one.
+
+12
+00:00:55,715 --> 00:00:58,865
+Here in the condition we have mentioned,
+
+13
+00:00:58,865 --> 00:01:03,670
+if the number is less than or equal to the last number,
+
+14
+00:01:03,670 --> 00:01:06,755
+that means for each and every iteration,
+
+15
+00:01:06,755 --> 00:01:09,620
+it will check if the current number is less
+
+16
+00:01:09,620 --> 00:01:13,130
+than or equal to the last number provided by the user.
+
+17
+00:01:13,130 --> 00:01:16,355
+If the number is still in the range,
+
+18
+00:01:16,355 --> 00:01:18,680
+it will keep on printing the number.
+
+19
+00:01:18,680 --> 00:01:25,790
+Once the number is equal to the last number or it becomes greater than the last number,
+
+20
+00:01:25,790 --> 00:01:29,150
+then the do-while blog will not
+
+21
+00:01:29,150 --> 00:01:33,790
+execute and the control will come out of the do while activity.
+
+22
+00:01:33,790 --> 00:01:36,450
+Let us run this example.
+
+23
+00:01:36,450 --> 00:01:39,620
+Here you can see there is an input dialog box which
+
+24
+00:01:39,620 --> 00:01:42,835
+is asking entered the last number of the range.
+
+25
+00:01:42,835 --> 00:01:45,715
+Let me put the number as 10.
+
+26
+00:01:45,715 --> 00:01:50,585
+So we are assuming we will get the output which starts from 1 ,2,
+
+27
+00:01:50,585 --> 00:01:53,375
+3, 4 and it prints until 10.
+
+28
+00:01:53,375 --> 00:01:55,480
+Let's click on Okay.
+
+29
+00:01:55,480 --> 00:02:01,250
+Let us open the output panel and here you can see we have the numbers starting from 1,
+
+30
+00:02:01,250 --> 00:02:04,490
+2, 3, 4, 5, 6 until 10.
+
+31
+00:02:04,490 --> 00:02:09,525
+Let us look at the While example now.
+
+32
+00:02:09,525 --> 00:02:17,130
+In this example, we are trying to print the even numbers between 1-10.
+
+33
+00:02:17,570 --> 00:02:22,820
+To do so, we have used a while activity.
+
+34
+00:02:22,820 --> 00:02:24,410
+In the While activity,
+
+35
+00:02:24,410 --> 00:02:26,480
+we are specifying the condition.
+
+36
+00:02:26,480 --> 00:02:30,530
+If the number is less than or equal to 10,
+
+37
+00:02:30,530 --> 00:02:33,995
+the number variable has been initialized and
+
+38
+00:02:33,995 --> 00:02:38,395
+the default value is 1 because we need to start from 1.
+
+39
+00:02:38,395 --> 00:02:42,230
+Inside the while activity we have used an if
+
+40
+00:02:42,230 --> 00:02:47,200
+activity to check if the number is divisible by 2.
+
+41
+00:02:47,200 --> 00:02:52,960
+If yes, we will print the number or else we will do nothing.
+
+42
+00:02:52,960 --> 00:02:58,130
+After that we are incrementing the number by 1 so that we can check if that number,
+
+43
+00:02:58,130 --> 00:03:00,575
+again is an even number or not.
+
+44
+00:03:00,575 --> 00:03:02,790
+Let us run this example.
+
+45
+00:03:02,790 --> 00:03:05,415
+There we go, so we are getting 2,
+
+46
+00:03:05,415 --> 00:03:11,560
+4, 6, 8, and 10. Perfect.
+

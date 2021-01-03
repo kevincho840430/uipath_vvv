@@ -1,0 +1,188 @@
+1
+00:00:00,000 --> 00:00:04,995
+Now that we have learned how to use a switch activity in UiPath,
+
+2
+00:00:04,995 --> 00:00:08,295
+let us try to implement it in this exercise.
+
+3
+00:00:08,295 --> 00:00:14,715
+Here, you have to build a workflow which ask the user about their eye color.
+
+4
+00:00:14,715 --> 00:00:16,995
+Depending upon the eye color,
+
+5
+00:00:16,995 --> 00:00:20,645
+you have to give a personality message to the user.
+
+6
+00:00:20,645 --> 00:00:25,215
+First, you have to ask the user his eye color.
+
+7
+00:00:25,215 --> 00:00:28,425
+If the user enters blue,
+
+8
+00:00:28,425 --> 00:00:30,885
+you have to give a message saying,
+
+9
+00:00:30,885 --> 00:00:32,865
+"You must be very brave."
+
+10
+00:00:32,865 --> 00:00:35,310
+If the eye color is green,
+
+11
+00:00:35,310 --> 00:00:37,020
+the message should be,
+
+12
+00:00:37,020 --> 00:00:39,045
+"You must be generous."
+
+13
+00:00:39,045 --> 00:00:41,730
+If the eye color is gray,
+
+14
+00:00:41,730 --> 00:00:43,575
+the message should be,
+
+15
+00:00:43,575 --> 00:00:45,765
+"You must be very wise."
+
+16
+00:00:45,765 --> 00:00:48,690
+If the eye color is black,
+
+17
+00:00:48,690 --> 00:00:50,415
+the message should be,
+
+18
+00:00:50,415 --> 00:00:52,545
+"You must be very bold."
+
+19
+00:00:52,545 --> 00:00:55,310
+Let us see the solution for it.
+
+20
+00:00:55,310 --> 00:00:58,234
+Here, we started using a sequence.
+
+21
+00:00:58,234 --> 00:01:00,650
+Inside the sequence, we are using
+
+22
+00:01:00,650 --> 00:01:05,735
+an input dialog box which is asking for the color of the eye.
+
+23
+00:01:05,735 --> 00:01:12,095
+The user input is stored in a variable called eye color.
+
+24
+00:01:12,095 --> 00:01:15,560
+Next we are using a switch activity.
+
+25
+00:01:15,560 --> 00:01:18,469
+In the switch activity under the expression,
+
+26
+00:01:18,469 --> 00:01:20,815
+we are passing the user input.
+
+27
+00:01:20,815 --> 00:01:24,875
+If the input from the user is blue,
+
+28
+00:01:24,875 --> 00:01:28,145
+we will pass the message, "You are brave."
+
+29
+00:01:28,145 --> 00:01:32,470
+If it is green, we will pass the message, "You are generous."
+
+30
+00:01:32,470 --> 00:01:33,915
+If it is gray,
+
+31
+00:01:33,915 --> 00:01:35,250
+we will pass the message,
+
+32
+00:01:35,250 --> 00:01:36,705
+"You are very wise."
+
+33
+00:01:36,705 --> 00:01:39,360
+If it is black, you will pass the message,
+
+34
+00:01:39,360 --> 00:01:40,740
+"You are very bold."
+
+35
+00:01:40,740 --> 00:01:45,275
+Now, if the user enters any other column,
+
+36
+00:01:45,275 --> 00:01:50,405
+the control will go to the default block and here we will say,
+
+37
+00:01:50,405 --> 00:01:52,715
+"Can't recognize that color."
+
+38
+00:01:52,715 --> 00:01:55,525
+Let us run this example.
+
+39
+00:01:55,525 --> 00:02:00,300
+First, we will enter black and you got the answer,
+
+40
+00:02:00,300 --> 00:02:01,740
+"You must be very bold."
+
+41
+00:02:01,740 --> 00:02:08,380
+Let us execute it and give the input as green.
+
+42
+00:02:08,450 --> 00:02:11,985
+Here it says, "You must be generous."
+
+43
+00:02:11,985 --> 00:02:16,650
+Now, let us give a color, brown.
+
+44
+00:02:16,650 --> 00:02:22,675
+As you can see, the control goes to the default block which prints the message,
+
+45
+00:02:22,675 --> 00:02:24,940
+"Can't recognize that color."
+
+46
+00:02:24,940 --> 00:02:29,720
+The reason, we have only made cases for color blue,
+
+47
+00:02:29,720 --> 00:02:33,270
+green, gray and black.
+

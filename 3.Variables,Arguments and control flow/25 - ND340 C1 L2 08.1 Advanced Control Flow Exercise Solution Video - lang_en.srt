@@ -1,0 +1,264 @@
+1
+00:00:00,000 --> 00:00:05,550
+Now that we have learned how to use the advanced control flow in UiPath,
+
+2
+00:00:05,550 --> 00:00:09,330
+let us use that concept in this exercise.
+
+3
+00:00:09,330 --> 00:00:13,740
+Let us first try to understand what is the use case.
+
+4
+00:00:13,740 --> 00:00:17,835
+In this workflow, you have to calculate the sum
+
+5
+00:00:17,835 --> 00:00:22,020
+of five positive numbers entered by the user,
+
+6
+00:00:22,020 --> 00:00:24,810
+but we have two conditions for that.
+
+7
+00:00:24,810 --> 00:00:26,265
+The condition one is,
+
+8
+00:00:26,265 --> 00:00:29,355
+if the user enters a negative number,
+
+9
+00:00:29,355 --> 00:00:31,410
+we need to skip the calculation.
+
+10
+00:00:31,410 --> 00:00:36,040
+That means we are not going to add the negative numbers entered by the user.
+
+11
+00:00:36,040 --> 00:00:37,790
+The second condition is,
+
+12
+00:00:37,790 --> 00:00:41,330
+if the user enters zero as the number,
+
+13
+00:00:41,330 --> 00:00:44,405
+we need to break the loop, as in,
+
+14
+00:00:44,405 --> 00:00:50,200
+we need to break the addiction then and there itself and display the sum directly.
+
+15
+00:00:50,200 --> 00:00:52,950
+Let us see the code for it.
+
+16
+00:00:52,950 --> 00:00:56,510
+To begin, we have chosen a sequence for it,
+
+17
+00:00:56,510 --> 00:00:58,265
+and inside the sequence,
+
+18
+00:00:58,265 --> 00:01:02,270
+we have used an assign activity where we
+
+19
+00:01:02,270 --> 00:01:06,560
+are initializing a variable called as sum with zero.
+
+20
+00:01:06,560 --> 00:01:11,965
+This sum is the variable that we will keep on adding our result into it.
+
+21
+00:01:11,965 --> 00:01:16,875
+We have used a for reach loop to iterate for the five times.
+
+22
+00:01:16,875 --> 00:01:18,500
+Inside the for reach loop,
+
+23
+00:01:18,500 --> 00:01:21,035
+we're using an input dialog activity,
+
+24
+00:01:21,035 --> 00:01:25,385
+and we are asking the user to enter the number for the addition.
+
+25
+00:01:25,385 --> 00:01:31,760
+The number entered from the user is stored into a variable called num.
+
+26
+00:01:31,760 --> 00:01:38,615
+Now, we will do a condition check on the number entered by the user.
+
+27
+00:01:38,615 --> 00:01:41,520
+If the number is less than zero,
+
+28
+00:01:41,520 --> 00:01:44,750
+that means if the number is a negative number,
+
+29
+00:01:44,750 --> 00:01:48,484
+we'll directly call the continue activity,
+
+30
+00:01:48,484 --> 00:01:53,710
+as in, we will not do any addition and we will skip to the next iteration.
+
+31
+00:01:53,710 --> 00:01:57,235
+But if the number is greater than zero,
+
+32
+00:01:57,235 --> 00:02:00,425
+then we have a different set of condition check over here.
+
+33
+00:02:00,425 --> 00:02:03,680
+Here we will first check if the number is zero.
+
+34
+00:02:03,680 --> 00:02:05,375
+If the number is zero,
+
+35
+00:02:05,375 --> 00:02:07,075
+we will break the loop.
+
+36
+00:02:07,075 --> 00:02:09,770
+But if the number is not zero, that is,
+
+37
+00:02:09,770 --> 00:02:12,080
+if the number is a positive number,
+
+38
+00:02:12,080 --> 00:02:14,570
+then they will do the addition of that number.
+
+39
+00:02:14,570 --> 00:02:16,415
+We'll do the addition, that is,
+
+40
+00:02:16,415 --> 00:02:20,120
+sum plus the number entered by the user.
+
+41
+00:02:20,120 --> 00:02:26,300
+This loop will iterate for five times depending upon the number entered by the user.
+
+42
+00:02:26,300 --> 00:02:32,285
+After that, we are using a message box to display the addition to the user.
+
+43
+00:02:32,285 --> 00:02:35,480
+Let us run this exercise.
+
+44
+00:02:35,480 --> 00:02:41,065
+Let us enter all the five positive integers for default span.
+
+45
+00:02:41,065 --> 00:02:43,590
+Enter the first number,
+
+46
+00:02:43,590 --> 00:02:45,805
+so we'll enter one.
+
+47
+00:02:45,805 --> 00:02:48,620
+Is asking to enter the second number,
+
+48
+00:02:48,620 --> 00:02:55,365
+we'll enter two, seven, four and five.
+
+49
+00:02:55,365 --> 00:02:58,650
+Now we got the addition as 19.
+
+50
+00:02:58,650 --> 00:03:04,610
+Now, let us try to insert a negative number and zero,
+
+51
+00:03:04,610 --> 00:03:08,260
+will enter a positive number for the first time.
+
+52
+00:03:08,260 --> 00:03:12,915
+Now, we will enter minus eight as the number.
+
+53
+00:03:12,915 --> 00:03:15,830
+Now, since we are entering a negative number,
+
+54
+00:03:15,830 --> 00:03:18,730
+we are not supposed to do a calculation of it.
+
+55
+00:03:18,730 --> 00:03:21,185
+If we hit Enter right now,
+
+56
+00:03:21,185 --> 00:03:24,260
+our value should be only positive two.
+
+57
+00:03:24,260 --> 00:03:30,805
+We will hit zero as the third number and we'll click "Okay".
+
+58
+00:03:30,805 --> 00:03:32,555
+Now, if you are entering zero,
+
+59
+00:03:32,555 --> 00:03:35,405
+that means we should break the loop, as in,
+
+60
+00:03:35,405 --> 00:03:38,345
+we should stop doing the addition and display whatever
+
+61
+00:03:38,345 --> 00:03:41,610
+is the sum of the number and there you go.
+
+62
+00:03:41,610 --> 00:03:43,405
+The addition is two because,
+
+63
+00:03:43,405 --> 00:03:46,120
+on the first iteration we entered two,
+
+64
+00:03:46,120 --> 00:03:50,690
+on the second iteration we entered a negative number and we are not doing an addition,
+
+65
+00:03:50,690 --> 00:03:52,025
+and on the third iteration,
+
+66
+00:03:52,025 --> 00:03:56,310
+we entered zero, and that is the reason the answers is two.
+

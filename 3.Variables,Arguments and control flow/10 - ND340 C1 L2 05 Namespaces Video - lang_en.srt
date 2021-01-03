@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:06,645
+Namespace are containers which hold groups of unique names.
+
+2
+00:00:06,645 --> 00:00:11,085
+Let's understand namespace through an example.
+
+3
+00:00:11,085 --> 00:00:19,530
+College A should not have two students with the same ID and neither College B should.
+
+4
+00:00:19,530 --> 00:00:26,670
+But there is no problem for the same ID number to be used in both these schools.
+
+5
+00:00:26,670 --> 00:00:32,675
+If Heba is a student in College A and Daniel is a student in College B,
+
+6
+00:00:32,675 --> 00:00:38,495
+then it is not a problem for each of them to have the ID 123.
+
+7
+00:00:38,495 --> 00:00:46,460
+In this example, the ID number is the identifier and the college serves as the namespace.
+
+8
+00:00:46,460 --> 00:00:49,775
+It does not cause problem for the same identifier
+
+9
+00:00:49,775 --> 00:00:53,724
+to identify a different student in each namespace.
+
+10
+00:00:53,724 --> 00:00:58,040
+VB.NET namespace in UIpath Studio represents
+
+11
+00:00:58,040 --> 00:01:02,075
+the container that store different types of data.
+
+12
+00:01:02,075 --> 00:01:09,035
+They enable you to easily define the scope of your expression, variables, and arguments.
+
+13
+00:01:09,035 --> 00:01:12,350
+Some namespace are automatically imported when you
+
+14
+00:01:12,350 --> 00:01:15,710
+browse for a dot-net type variable or argument.
+
+15
+00:01:15,710 --> 00:01:20,090
+For example, if you have System.Data namespace imported,
+
+16
+00:01:20,090 --> 00:01:22,670
+you can further use data table,
+
+17
+00:01:22,670 --> 00:01:24,650
+data view, data column,
+
+18
+00:01:24,650 --> 00:01:29,120
+data row, and other classes that are available in it without
+
+19
+00:01:29,120 --> 00:01:34,340
+having to always type the system.datatable and so on.
+
+20
+00:01:34,340 --> 00:01:39,410
+All imported namespace are displayed in the import panel.
+
+21
+00:01:39,410 --> 00:01:42,529
+Note that some namespace are automatically
+
+22
+00:01:42,529 --> 00:01:46,864
+imported when you browse for a dot-net type variable argument.
+
+23
+00:01:46,864 --> 00:01:51,870
+To open this, click Imports in the designer panel.
+

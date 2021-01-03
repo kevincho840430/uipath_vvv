@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:05,370
+Loops are structures used to automate the repetitive task.
+
+2
+00:00:05,370 --> 00:00:10,125
+A certain section in the flowchart may be required to perform
+
+3
+00:00:10,125 --> 00:00:16,055
+repetitive task and hence loop can be used inside the flow chart.
+
+4
+00:00:16,055 --> 00:00:22,890
+In flowchart, the simplest type of loop can be created by connecting a certain point in
+
+5
+00:00:22,890 --> 00:00:26,070
+the workflow to an earlier execution and
+
+6
+00:00:26,070 --> 00:00:30,585
+repeating the task until the specified condition is met.
+
+7
+00:00:30,585 --> 00:00:34,840
+Here you can see we have a flow decision in the diagram.
+
+8
+00:00:34,840 --> 00:00:39,115
+When the control evaluates to true,
+
+9
+00:00:39,115 --> 00:00:42,100
+a set of sequences is executed.
+
+10
+00:00:42,100 --> 00:00:44,930
+After the effect of sequence is executed,
+
+11
+00:00:44,930 --> 00:00:48,875
+we are looping back again to the input dialog box.
+
+12
+00:00:48,875 --> 00:00:54,575
+Nesting is vital while creating complex workflows as it
+
+13
+00:00:54,575 --> 00:01:00,160
+allows a logical division of the program and promote reusability.
+
+14
+00:01:00,160 --> 00:01:06,875
+Although it is technically possible to nest workflows and sequence in every way,
+
+15
+00:01:06,875 --> 00:01:11,930
+the only sustainable combination is to use a flowchart to represent
+
+16
+00:01:11,930 --> 00:01:17,530
+the overall logic of the program and to use sequences for different parts.
+
+17
+00:01:17,530 --> 00:01:22,774
+In sequence the process step flow in a clear succession.
+
+18
+00:01:22,774 --> 00:01:28,450
+Activities in sequence are easier to read and maintain.
+
+19
+00:01:28,450 --> 00:01:33,305
+Decision tree are rarely used in sequences.
+
+20
+00:01:33,305 --> 00:01:38,870
+They are highly recommended for simple and linear workflows.
+
+21
+00:01:38,870 --> 00:01:44,000
+In flowchart, steps are represented through a diagram.
+
+22
+00:01:44,000 --> 00:01:48,770
+The individual activities are a bit more difficult to read and edit,
+
+23
+00:01:48,770 --> 00:01:51,860
+but the flow between them are much clearer.
+
+24
+00:01:51,860 --> 00:01:55,430
+Use flowchart when decision points and branching are
+
+25
+00:01:55,430 --> 00:01:58,700
+needed in order to accommodate complex scenarios,
+
+26
+00:01:58,700 --> 00:02:01,990
+walk-around and decision mechanism.
+
+27
+00:02:01,990 --> 00:02:08,030
+State machine is a container for using state machines specific activities.
+
+28
+00:02:08,030 --> 00:02:14,255
+It contains a start node that can be linked to the initial state of this state machines.
+
+29
+00:02:14,255 --> 00:02:19,400
+A state is a container where we can put our activities.
+
+30
+00:02:19,400 --> 00:02:23,120
+There are two types of states in UI path;
+
+31
+00:02:23,120 --> 00:02:26,845
+state and the final state.
+
+32
+00:02:26,845 --> 00:02:31,235
+A state machine is divided into following blocks.
+
+33
+00:02:31,235 --> 00:02:37,960
+Entry. It allows a path to start the activity by the entry process.
+
+34
+00:02:37,960 --> 00:02:44,290
+Exit. It allows a direction to end activity by the exit process.
+
+35
+00:02:44,290 --> 00:02:46,140
+Transition area.
+
+36
+00:02:46,140 --> 00:02:52,580
+It describes the current transition this state has about the other states.
+
+37
+00:02:52,580 --> 00:02:56,840
+Note, final state has only one block.
+
+38
+00:02:56,840 --> 00:02:59,550
+For example, entry.
+

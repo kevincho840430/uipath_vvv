@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:03,630
+Now that we have learned about loops in UiPath,
+
+2
+00:00:03,630 --> 00:00:06,960
+let us try to implement it in this exercise.
+
+3
+00:00:06,960 --> 00:00:10,785
+Here you have to build a workflow for guessing a number.
+
+4
+00:00:10,785 --> 00:00:13,860
+First, we need to generate a random number in
+
+5
+00:00:13,860 --> 00:00:18,210
+the studio and then prompt the user to input a number.
+
+6
+00:00:18,210 --> 00:00:20,580
+In case of a round input,
+
+7
+00:00:20,580 --> 00:00:23,280
+we have to display a message saying,
+
+8
+00:00:23,280 --> 00:00:26,385
+please entered a lesser or a greater number.
+
+9
+00:00:26,385 --> 00:00:29,220
+The loop should keep on running till
+
+10
+00:00:29,220 --> 00:00:33,795
+the input number is equal to the generated number in the studio.
+
+11
+00:00:33,795 --> 00:00:36,405
+Let us look at the solution.
+
+12
+00:00:36,405 --> 00:00:39,715
+Here we are starting it with a sequence.
+
+13
+00:00:39,715 --> 00:00:44,485
+Inside the sequence, we are using a do-while loop.
+
+14
+00:00:44,485 --> 00:00:46,565
+In the do-while loop,
+
+15
+00:00:46,565 --> 00:00:50,960
+we are first taking an input dialog activity.
+
+16
+00:00:50,960 --> 00:00:53,090
+In the input dialog activity,
+
+17
+00:00:53,090 --> 00:00:56,690
+we are asking the user to guess a number.
+
+18
+00:00:56,690 --> 00:00:59,555
+Before that, in the Variables panel,
+
+19
+00:00:59,555 --> 00:01:06,140
+we have generated a random variable and we have assigned the value as 25.
+
+20
+00:01:06,140 --> 00:01:10,985
+Now, depending on the number that the user has given,
+
+21
+00:01:10,985 --> 00:01:13,250
+we will do a condition check.
+
+22
+00:01:13,250 --> 00:01:21,125
+If the number entered by the user is equal to the number that we have generated,
+
+23
+00:01:21,125 --> 00:01:24,155
+then we'll put a message box saying,
+
+24
+00:01:24,155 --> 00:01:25,970
+you guessed it correct.
+
+25
+00:01:25,970 --> 00:01:30,380
+As we are going to do a different condition check,
+
+26
+00:01:30,380 --> 00:01:33,830
+here we will check if the number entered by
+
+27
+00:01:33,830 --> 00:01:37,445
+the user is greater than the number that we generated.
+
+28
+00:01:37,445 --> 00:01:40,625
+If so, they will print a message saying,
+
+29
+00:01:40,625 --> 00:01:43,100
+please enter a smaller number.
+
+30
+00:01:43,100 --> 00:01:46,985
+Or else they will pass a message to the user,
+
+31
+00:01:46,985 --> 00:01:50,000
+saying, please enter a grater number.
+
+32
+00:01:50,000 --> 00:01:54,575
+This loop will keep on running till the time
+
+33
+00:01:54,575 --> 00:02:00,335
+the number entered from the user and the number generated is not equal.
+
+34
+00:02:00,335 --> 00:02:06,395
+The moment both the number becomes equal or the condition evaluates to true,
+
+35
+00:02:06,395 --> 00:02:11,030
+we will break the loop and the program will exterminate.
+
+36
+00:02:11,030 --> 00:02:13,470
+Let us run this example.
+
+37
+00:02:13,470 --> 00:02:15,760
+Let us enter a number.
+
+38
+00:02:15,760 --> 00:02:18,359
+The generated number is 25,
+
+39
+00:02:18,359 --> 00:02:22,500
+let us enter 20 as the input.
+
+40
+00:02:22,500 --> 00:02:26,085
+As you can see, we've got a message box saying,
+
+41
+00:02:26,085 --> 00:02:28,465
+please try a greater number.
+
+42
+00:02:28,465 --> 00:02:32,530
+Let us give 30 as the input.
+
+43
+00:02:32,530 --> 00:02:34,865
+Here we got a message saying,
+
+44
+00:02:34,865 --> 00:02:36,560
+please try a smaller number.
+
+45
+00:02:36,560 --> 00:02:39,800
+Let us give the number as 25.
+
+46
+00:02:39,800 --> 00:02:44,430
+Perfect, we got the correct answer.
+

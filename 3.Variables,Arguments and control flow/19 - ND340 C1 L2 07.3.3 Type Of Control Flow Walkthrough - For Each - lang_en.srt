@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:04,320
+Let us look at the forEach example now.
+
+2
+00:00:04,320 --> 00:00:10,545
+In this example, we have created an array of the string type.
+
+3
+00:00:10,545 --> 00:00:12,930
+You can select the type from here.
+
+4
+00:00:12,930 --> 00:00:15,810
+You can choose array of T,
+
+5
+00:00:15,810 --> 00:00:19,860
+and you can give the value of T as string over here.
+
+6
+00:00:19,860 --> 00:00:24,645
+This array that consists of four names,
+
+7
+00:00:24,645 --> 00:00:27,615
+and the variable is employee name.
+
+8
+00:00:27,615 --> 00:00:31,620
+We will use forEach activity.
+
+9
+00:00:31,620 --> 00:00:34,110
+In this forEach activity,
+
+10
+00:00:34,110 --> 00:00:37,200
+we are passing the array name here.
+
+11
+00:00:37,200 --> 00:00:41,370
+Now, each and every element from
+
+12
+00:00:41,370 --> 00:00:47,530
+the array will be taken and it will be stored inside this item.
+
+13
+00:00:47,530 --> 00:00:51,925
+Inside the forEach, we are printing the item.
+
+14
+00:00:51,925 --> 00:00:55,660
+That means for the first iteration out of
+
+15
+00:00:55,660 --> 00:01:00,580
+the entire array Heba will be picked up and it will be printed.
+
+16
+00:01:00,580 --> 00:01:02,405
+On the second iteration,
+
+17
+00:01:02,405 --> 00:01:05,545
+Christa will be picked up and it will be printed.
+
+18
+00:01:05,545 --> 00:01:09,850
+It will go till the last element that is Heather in our case,
+
+19
+00:01:09,850 --> 00:01:12,295
+and it will print the last element.
+
+20
+00:01:12,295 --> 00:01:15,020
+Let us run this example.
+
+21
+00:01:15,020 --> 00:01:20,395
+As you can see, we got the first name, the second,
+
+22
+00:01:20,395 --> 00:01:24,670
+third, fourth, and then now the automation should stop.
+
+23
+00:01:24,670 --> 00:01:28,090
+Perfect.
+

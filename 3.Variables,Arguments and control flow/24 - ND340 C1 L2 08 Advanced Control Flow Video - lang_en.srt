@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:03,360
+As discussed earlier, In addition to
+
+2
+00:00:03,360 --> 00:00:07,260
+decision-based and iteration-based control flow activities,
+
+3
+00:00:07,260 --> 00:00:13,740
+there are other activities in UiPath that help in controlling the flow of the program.
+
+4
+00:00:13,740 --> 00:00:17,520
+These are Delay, Break,
+
+5
+00:00:17,520 --> 00:00:21,675
+Assign, Continue, and Parallel.
+
+6
+00:00:21,675 --> 00:00:28,770
+The Delay activity enables the user to pause the automation for a custom period time.
+
+7
+00:00:28,770 --> 00:00:35,520
+The duration can be set from the properties panel under the duration tab in hours,
+
+8
+00:00:35,520 --> 00:00:38,230
+minutes, and seconds format.
+
+9
+00:00:38,230 --> 00:00:44,975
+This activity is useful in projects that requires good timing,
+
+10
+00:00:44,975 --> 00:00:50,090
+such as waiting for a specific application to start or waiting for
+
+11
+00:00:50,090 --> 00:00:55,520
+some information to be processed so that it can be used in another activity.
+
+12
+00:00:55,520 --> 00:01:03,140
+For example, here is the sequence displayed by 20 seconds after the text.
+
+13
+00:01:03,140 --> 00:01:06,310
+This is the start time displayed.
+
+14
+00:01:06,310 --> 00:01:13,205
+The break activity enables the user to stop the loop at a chosen point,
+
+15
+00:01:13,205 --> 00:01:17,060
+and then continue with the next activity.
+
+16
+00:01:17,060 --> 00:01:19,970
+For example, using break activity,
+
+17
+00:01:19,970 --> 00:01:23,360
+the user exits the For loop activity and
+
+18
+00:01:23,360 --> 00:01:27,605
+continues the workflow with the activities that follows it.
+
+19
+00:01:27,605 --> 00:01:31,850
+The Break activity can be used in all the three loops,
+
+20
+00:01:31,850 --> 00:01:35,685
+that is, While, Do While, and For Each.
+
+21
+00:01:35,685 --> 00:01:42,390
+Assign activity allocates any value to a variable or argument.
+
+22
+00:01:42,390 --> 00:01:44,865
+Other control flow activity,
+
+23
+00:01:44,865 --> 00:01:50,600
+it can be used to increment the value of a variable in a loop,
+
+24
+00:01:50,600 --> 00:01:53,765
+sum up the value of two or more variables,
+
+25
+00:01:53,765 --> 00:01:57,235
+and assign the result to a different variable,
+
+26
+00:01:57,235 --> 00:02:00,675
+or assign a value to an array.
+
+27
+00:02:00,675 --> 00:02:08,359
+For example, the activity inputs a username and assign it to a variable.
+
+28
+00:02:08,359 --> 00:02:12,560
+The Continue activity skips the current 'For
+
+29
+00:02:12,560 --> 00:02:17,940
+Each' iteration and continues to the next iteration.
+
+30
+00:02:17,940 --> 00:02:22,055
+For example, continue activity used with
+
+31
+00:02:22,055 --> 00:02:27,220
+a condition using the if activity inside of For Each loop.
+
+32
+00:02:27,220 --> 00:02:33,185
+The Parallel activity executes child activities in Parallel.
+
+33
+00:02:33,185 --> 00:02:36,815
+This means that by using Parallel,
+
+34
+00:02:36,815 --> 00:02:41,720
+multiple activities can be executed side-by-side.
+
+35
+00:02:41,720 --> 00:02:49,135
+It is helpful when there is need to run several processes at the same time.
+
+36
+00:02:49,135 --> 00:02:53,255
+Parallel activities lets the user schedule
+
+37
+00:02:53,255 --> 00:02:58,735
+two or more child activities branches for processing simultaneously.
+
+38
+00:02:58,735 --> 00:03:05,705
+However, it cannot run multiple processes in foreground at the same time.
+
+39
+00:03:05,705 --> 00:03:10,310
+In order to run more than one process at the same time,
+
+40
+00:03:10,310 --> 00:03:16,325
+the user has to choose a single activity branch to run in the foreground,
+
+41
+00:03:16,325 --> 00:03:21,275
+and the remaining activity branches have to run in the background.
+
+42
+00:03:21,275 --> 00:03:28,685
+To do this, send window message or the Simulate Type property of the activities are used.
+
+43
+00:03:28,685 --> 00:03:33,385
+If send window messages or Simulate Type is not used,
+
+44
+00:03:33,385 --> 00:03:36,395
+then the Parallel activity begins
+
+45
+00:03:36,395 --> 00:03:41,135
+processing with the execution of one activity branch at a time.
+
+46
+00:03:41,135 --> 00:03:48,750
+It completes one activity branch and then randomly picks another activity branch.
+
+47
+00:03:48,750 --> 00:03:55,520
+It gives the result randomly when a user allows this process in the parent activity.
+
+48
+00:03:55,520 --> 00:03:59,090
+For example, there are five Type Into activities
+
+49
+00:03:59,090 --> 00:04:03,380
+numbered one to five placed in the Parallel activities.
+
+50
+00:04:03,380 --> 00:04:08,785
+On the execution, the activities may give results randomly,
+
+51
+00:04:08,785 --> 00:04:11,790
+such as three, four, five, one,
+
+52
+00:04:11,790 --> 00:04:14,100
+two or three, two,
+
+53
+00:04:14,100 --> 00:04:17,680
+five, four, one, and so on.
+

@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:05,009
+Now that we have learned how to use the if activity in Uipath,
+
+2
+00:00:05,009 --> 00:00:08,670
+let us implement it in this exercise.
+
+3
+00:00:08,670 --> 00:00:14,550
+In this exercise, you have to build a workflow which asks the user,
+
+4
+00:00:14,550 --> 00:00:18,135
+do you want to get the second marshmallow or not?
+
+5
+00:00:18,135 --> 00:00:21,090
+For that you have to ask the user,
+
+6
+00:00:21,090 --> 00:00:26,340
+"Do you want to eat the first marshmallow now or after five minutes?"
+
+7
+00:00:26,340 --> 00:00:28,815
+If the user answer is now,
+
+8
+00:00:28,815 --> 00:00:32,445
+we need to respond to him saying, "Oops!
+
+9
+00:00:32,445 --> 00:00:35,115
+You will not get the second marshmallow."
+
+10
+00:00:35,115 --> 00:00:41,040
+Else if the answer is after five minutes you have to response saying,
+
+11
+00:00:41,040 --> 00:00:45,299
+"Congratulations, you will also get your second marshmallow."
+
+12
+00:00:45,299 --> 00:00:52,205
+If the user enters the option other than now or after five minutes,
+
+13
+00:00:52,205 --> 00:00:55,910
+you have to respond to him saying, "Invalid option."
+
+14
+00:00:55,910 --> 00:00:58,130
+Let us see the code for it.
+
+15
+00:00:58,130 --> 00:01:02,025
+We have begun choosing a sequence.
+
+16
+00:01:02,025 --> 00:01:06,665
+Inside the sequence, we have used an input dialog activity.
+
+17
+00:01:06,665 --> 00:01:10,345
+In the input dialog activity we will ask the user,
+
+18
+00:01:10,345 --> 00:01:13,320
+when does he want to eat the marshmallow?
+
+19
+00:01:13,320 --> 00:01:16,050
+As in now or after five minutes?
+
+20
+00:01:16,050 --> 00:01:21,775
+The user answers will be stored into variable coalesce user input.
+
+21
+00:01:21,775 --> 00:01:24,110
+Depending upon the user input,
+
+22
+00:01:24,110 --> 00:01:27,560
+we will do a condition check using the if activity.
+
+23
+00:01:27,560 --> 00:01:30,965
+If the user option is now,
+
+24
+00:01:30,965 --> 00:01:34,340
+we will directly print a message saying, "Oops!
+
+25
+00:01:34,340 --> 00:01:36,385
+You will not get the second marshmallow."
+
+26
+00:01:36,385 --> 00:01:38,120
+Or in the else part,
+
+27
+00:01:38,120 --> 00:01:40,535
+we will do one more condition check.
+
+28
+00:01:40,535 --> 00:01:45,380
+Here we will check if the user input is after five minutes.
+
+29
+00:01:45,380 --> 00:01:47,360
+If this condition is true,
+
+30
+00:01:47,360 --> 00:01:49,055
+we will print the message.
+
+31
+00:01:49,055 --> 00:01:51,685
+"Congrats! You will get the second marshmallow."
+
+32
+00:01:51,685 --> 00:01:59,855
+Or else, if the user has given an input which is neither now or after five minutes,
+
+33
+00:01:59,855 --> 00:02:04,285
+here we will print a message saying, "Invalid input."
+
+34
+00:02:04,285 --> 00:02:07,425
+Let us run this workflow.
+
+35
+00:02:07,425 --> 00:02:10,950
+Let us give the option as now.
+
+36
+00:02:10,950 --> 00:02:13,920
+Perfect. So we have got the message saying, "Oops!
+
+37
+00:02:13,920 --> 00:02:16,005
+You will not get this second marshmallow."
+
+38
+00:02:16,005 --> 00:02:20,230
+Let us give the input as after five minutes.
+
+39
+00:02:20,230 --> 00:02:21,900
+Let's hit Okay.
+
+40
+00:02:21,900 --> 00:02:23,970
+You've got the message saying, "Congrats!
+
+41
+00:02:23,970 --> 00:02:25,845
+You will get the second marshmallow."
+
+42
+00:02:25,845 --> 00:02:31,920
+Now, let us try to give an input apart from this two options.
+
+43
+00:02:31,920 --> 00:02:36,965
+Let us give the option user input as never.
+
+44
+00:02:36,965 --> 00:02:44,820
+Lets hit "Okay" and you got the message saying this is an invalid input.
+

@@ -1,0 +1,260 @@
+1
+00:00:00,000 --> 00:00:03,840
+Arguments are used to pass data from
+
+2
+00:00:03,840 --> 00:00:08,655
+one workflow to another by storing the data dynamically.
+
+3
+00:00:08,655 --> 00:00:14,550
+They are similar to variables as they stored data and pass it on.
+
+4
+00:00:14,550 --> 00:00:19,230
+However, the variables pass data between activities,
+
+5
+00:00:19,230 --> 00:00:23,640
+while argument pass data between workflows.
+
+6
+00:00:23,640 --> 00:00:28,905
+Argument enables user to reuse automation projects,
+
+7
+00:00:28,905 --> 00:00:33,720
+hence they can be accessed outside the workflow in which they are
+
+8
+00:00:33,720 --> 00:00:40,430
+defined and are useful in automation projects consisting of multiple workflows.
+
+9
+00:00:40,430 --> 00:00:44,150
+The user can configure an argument through
+
+10
+00:00:44,150 --> 00:00:49,475
+its properties which are similar to that of variable accept for one,
+
+11
+00:00:49,475 --> 00:00:51,635
+that is the argument direction.
+
+12
+00:00:51,635 --> 00:00:55,490
+The argument have following properties.
+
+13
+00:00:55,490 --> 00:00:58,785
+The first property is name.
+
+14
+00:00:58,785 --> 00:01:02,490
+This specifies the name of the argument.
+
+15
+00:01:02,490 --> 00:01:08,435
+It represents the title of the information that is being stored by the argument.
+
+16
+00:01:08,435 --> 00:01:14,765
+If the user does not add a name to an argument it is automatically generated.
+
+17
+00:01:14,765 --> 00:01:18,050
+The second property is direction.
+
+18
+00:01:18,050 --> 00:01:22,130
+As argument passes data between workflow,
+
+19
+00:01:22,130 --> 00:01:25,685
+the user needs to specify the direction,
+
+20
+00:01:25,685 --> 00:01:30,640
+that is from or to which the data is passed.
+
+21
+00:01:30,640 --> 00:01:32,760
+It can be in,
+
+22
+00:01:32,760 --> 00:01:35,095
+out, and in out.
+
+23
+00:01:35,095 --> 00:01:38,540
+The third property is argument type.
+
+24
+00:01:38,540 --> 00:01:44,515
+It defines the data that the argument is intended to store.
+
+25
+00:01:44,515 --> 00:01:50,255
+In new iPod, the type is declared when the argument is created.
+
+26
+00:01:50,255 --> 00:01:53,525
+The types of arguments are string,
+
+27
+00:01:53,525 --> 00:01:58,085
+numbers, RAs, datetime, Boolean, and data table.
+
+28
+00:01:58,085 --> 00:02:01,910
+The fourth property is default value.
+
+29
+00:02:01,910 --> 00:02:05,725
+It is the data that the argument holds.
+
+30
+00:02:05,725 --> 00:02:09,230
+Argument direction sends the application where
+
+31
+00:02:09,230 --> 00:02:12,575
+the information stored in them is supposed to go.
+
+32
+00:02:12,575 --> 00:02:18,880
+That is, it specifies the direction from or to which the data is passed.
+
+33
+00:02:18,880 --> 00:02:21,990
+The directions are in.
+
+34
+00:02:21,990 --> 00:02:28,405
+The argument can only be used within the given workflow out.
+
+35
+00:02:28,405 --> 00:02:34,295
+The arguments can be used to pass data outside of a given workflow.
+
+36
+00:02:34,295 --> 00:02:40,780
+In/out, the argument can be used both within and outside a given workflow.
+
+37
+00:02:40,780 --> 00:02:47,195
+Argument needs should be prefix for easy identification of the argument direction,
+
+38
+00:02:47,195 --> 00:02:51,170
+such as if the direction of the argument is in,
+
+39
+00:02:51,170 --> 00:02:54,894
+but prefix the argument with an underscore.
+
+40
+00:02:54,894 --> 00:03:01,255
+Here in the example, we can see the argument name as in_FileName.
+
+41
+00:03:01,255 --> 00:03:04,235
+If the direction of the argument is out,
+
+42
+00:03:04,235 --> 00:03:08,510
+prefixes the argument name without underscore.
+
+43
+00:03:08,510 --> 00:03:15,860
+In this example, you can see the argument name is out_TextResult.
+
+44
+00:03:15,860 --> 00:03:20,115
+If the direction of the argument is in/out,
+
+45
+00:03:20,115 --> 00:03:23,775
+prefix the argument name with IO.
+
+46
+00:03:23,775 --> 00:03:30,280
+In this example, you can see the argument name as io_ReplyNumber.
+
+47
+00:03:30,280 --> 00:03:33,595
+IO represents input and output.
+
+48
+00:03:33,595 --> 00:03:38,140
+Arguments and variables are quite similar to each other.
+
+49
+00:03:38,140 --> 00:03:45,010
+They both are used to store information of a particular data type and basket.
+
+50
+00:03:45,010 --> 00:03:48,325
+But some of the differences between them are
+
+51
+00:03:48,325 --> 00:03:53,230
+the argument stores data and passes it between the workflows.
+
+52
+00:03:53,230 --> 00:03:55,645
+Variable also stores data,
+
+53
+00:03:55,645 --> 00:03:58,280
+but passes between activities.
+
+54
+00:03:58,280 --> 00:04:02,674
+An argument can be used across multiple workflows,
+
+55
+00:04:02,674 --> 00:04:08,390
+but a variable is limited to the workflow in which it is defined.
+
+56
+00:04:08,390 --> 00:04:11,720
+An argument is created and modified through
+
+57
+00:04:11,720 --> 00:04:17,225
+argument panels whereas a variable is created and modified through variable panel.
+
+58
+00:04:17,225 --> 00:04:20,720
+An argument is defined by properties such as name,
+
+59
+00:04:20,720 --> 00:04:22,925
+direction, type, default values,
+
+60
+00:04:22,925 --> 00:04:26,480
+whereas available as defined by name,
+
+61
+00:04:26,480 --> 00:04:29,660
+type, scope, and default values.
+
+62
+00:04:29,660 --> 00:04:33,785
+If a user does not assign a value to an argument,
+
+63
+00:04:33,785 --> 00:04:36,365
+it does not have any default values,
+
+64
+00:04:36,365 --> 00:04:40,160
+whereas if a user does not assign a value to
+
+65
+00:04:40,160 --> 00:04:45,150
+a variable that is automatically assigned a default value.
+

@@ -1,0 +1,260 @@
+1
+00:00:00,000 --> 00:00:02,655
+In your iPad, control flow,
+
+2
+00:00:02,655 --> 00:00:07,770
+is enacted using two separate concepts that influenced each other.
+
+3
+00:00:07,770 --> 00:00:10,020
+The type of the project,
+
+4
+00:00:10,020 --> 00:00:16,335
+that is workflow, and the control flow statements that can be used.
+
+5
+00:00:16,335 --> 00:00:19,095
+Let's take them one by one.
+
+6
+00:00:19,095 --> 00:00:24,240
+Here we will learn about the three types of workflows in new iPad.
+
+7
+00:00:24,240 --> 00:00:29,605
+They are sequence, flowchart, and state machines.
+
+8
+00:00:29,605 --> 00:00:31,575
+In your iPad studio,
+
+9
+00:00:31,575 --> 00:00:35,225
+a sequence is a container in which multiple activities
+
+10
+00:00:35,225 --> 00:00:39,470
+are placed one after another and executed linearly.
+
+11
+00:00:39,470 --> 00:00:46,310
+Within the sequence, an activity is followed by the next activity in a linear fashion.
+
+12
+00:00:46,310 --> 00:00:50,480
+The sequence can contain any number of activities,
+
+13
+00:00:50,480 --> 00:00:55,295
+but no activity can be skipped during the execution.
+
+14
+00:00:55,295 --> 00:01:00,770
+The program, when run must execute each activity linearly with
+
+15
+00:01:00,770 --> 00:01:06,589
+no possibility of skipping an activity or branching off to another activity.
+
+16
+00:01:06,589 --> 00:01:12,665
+A sequence can either solve as a standalone automation project or can be included
+
+17
+00:01:12,665 --> 00:01:18,995
+as a part of a workflow or a state machine to help grow the specific activities.
+
+18
+00:01:18,995 --> 00:01:26,180
+One of the key features of sequence is that it can be reused time and again.
+
+19
+00:01:26,180 --> 00:01:30,200
+In this section, we will learn about workflows
+
+20
+00:01:30,200 --> 00:01:33,890
+in your iPad and how are they different from sequences.
+
+21
+00:01:33,890 --> 00:01:38,630
+A flowchart is a type of project that consists
+
+22
+00:01:38,630 --> 00:01:44,480
+of various activities which can be connected to one another in multiple ways.
+
+23
+00:01:44,480 --> 00:01:47,135
+It is diagrammatically approach,
+
+24
+00:01:47,135 --> 00:01:54,320
+which represents various steps involved in completing activities, task, and processes.
+
+25
+00:01:54,320 --> 00:01:59,660
+This helps the user to easily view and follow the process.
+
+26
+00:01:59,660 --> 00:02:01,940
+Flowchart can either be used as
+
+27
+00:02:01,940 --> 00:02:07,670
+a standalone automation project or included in procedures of large projects.
+
+28
+00:02:07,670 --> 00:02:12,530
+The most important aspect of flowchart is that unlike sequence,
+
+29
+00:02:12,530 --> 00:02:17,180
+they represent multiple branching logical operators that
+
+30
+00:02:17,180 --> 00:02:23,780
+helps to create complex business processes and connect activities in multiple ways.
+
+31
+00:02:23,780 --> 00:02:31,130
+They're two activities used to decide the flow of a program inside flowchart.
+
+32
+00:02:31,130 --> 00:02:34,465
+These are flow decision.
+
+33
+00:02:34,465 --> 00:02:38,240
+It is an activity which executes one of
+
+34
+00:02:38,240 --> 00:02:43,525
+two branches depending on whether a specified condition is met.
+
+35
+00:02:43,525 --> 00:02:48,245
+The branches are titled true or false by default,
+
+36
+00:02:48,245 --> 00:02:52,765
+but the names can be changed in the Properties panel.
+
+37
+00:02:52,765 --> 00:02:56,600
+This activity can only be used in flowchart,
+
+38
+00:02:56,600 --> 00:03:00,020
+and if equivalent to the If activity.
+
+39
+00:03:00,020 --> 00:03:05,930
+Important properties of these activities are condition,
+
+40
+00:03:05,930 --> 00:03:08,600
+true label and the false label.
+
+41
+00:03:08,600 --> 00:03:14,915
+The condition is used to analyze before one of the two branch is executed.
+
+42
+00:03:14,915 --> 00:03:21,025
+This field supports only Boolean expression, true Label,
+
+43
+00:03:21,025 --> 00:03:28,070
+enables the user to provide a description of the case in which the condition is met.
+
+44
+00:03:28,070 --> 00:03:31,280
+The description can be removed by
+
+45
+00:03:31,280 --> 00:03:34,685
+holding the mouse cursor over the flow decision activity.
+
+46
+00:03:34,685 --> 00:03:40,025
+By default, this is filled in with true or false label,
+
+47
+00:03:40,025 --> 00:03:47,075
+enables the user to provide a description of the case in which the condition is not met.
+
+48
+00:03:47,075 --> 00:03:53,015
+The description can be viewed by holding the mouse cursor or the flow decision activity,
+
+49
+00:03:53,015 --> 00:03:56,750
+by default, this is filled in with false.
+
+50
+00:03:56,750 --> 00:04:00,685
+Here you can see we have a flawed decision here,
+
+51
+00:04:00,685 --> 00:04:06,710
+and you can see the two labels here are true Label and the false label.
+
+52
+00:04:06,710 --> 00:04:11,405
+If the flow decision control evaluates to true,
+
+53
+00:04:11,405 --> 00:04:14,150
+it goes to the true label.
+
+54
+00:04:14,150 --> 00:04:17,705
+If the flow decision control evaluated to be false,
+
+55
+00:04:17,705 --> 00:04:19,355
+it follows defaults label,
+
+56
+00:04:19,355 --> 00:04:23,035
+and then it executes the corresponding activities.
+
+57
+00:04:23,035 --> 00:04:25,935
+The second one, the flow switch.
+
+58
+00:04:25,935 --> 00:04:30,650
+It is an activity that splits the control flow into
+
+59
+00:04:30,650 --> 00:04:34,310
+three or more branches out of which
+
+60
+00:04:34,310 --> 00:04:39,710
+a single one is executed based on a specific condition.
+
+61
+00:04:39,710 --> 00:04:47,215
+This activity can be used in a flowchart and as equivalent to the switching activity.
+
+62
+00:04:47,215 --> 00:04:51,270
+Here you can see we have flow switch,
+
+63
+00:04:51,270 --> 00:04:59,550
+it has multiple branches and each branch serves as a different case.
+
+64
+00:04:59,550 --> 00:05:06,335
+There is a default case available if none of the cases get much,
+
+65
+00:05:06,335 --> 00:05:10,560
+the sequences of the default is selected.
+

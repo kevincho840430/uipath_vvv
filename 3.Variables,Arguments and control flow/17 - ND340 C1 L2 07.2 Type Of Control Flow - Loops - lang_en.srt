@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:04,560
+A loop statement in a program will repeat itself
+
+2
+00:00:04,560 --> 00:00:09,480
+till a given sector for instruction is met or valid.
+
+3
+00:00:09,480 --> 00:00:17,475
+For example, suppose the user wants to create a program that counts from one to 10.
+
+4
+00:00:17,475 --> 00:00:24,405
+The user may want to restart the count once it is complete. This is a loop.
+
+5
+00:00:24,405 --> 00:00:30,030
+The user can continue doing so as long as desired.
+
+6
+00:00:30,030 --> 00:00:35,100
+At the instance, when the user does not want to count again,
+
+7
+00:00:35,100 --> 00:00:37,620
+he breaks out of the loop.
+
+8
+00:00:37,620 --> 00:00:41,910
+Here, count one to 10 is the instruction,
+
+9
+00:00:41,910 --> 00:00:45,075
+count again is the condition.
+
+10
+00:00:45,075 --> 00:00:49,700
+As long as the condition is met, the count continues.
+
+11
+00:00:49,700 --> 00:00:55,895
+Loop represents an important part of automation as they enable the user
+
+12
+00:00:55,895 --> 00:01:02,155
+to easily check dependencies between variables, activities, and conditions.
+
+13
+00:01:02,155 --> 00:01:08,060
+Once created, they enable the user to run a segment of the automation
+
+14
+00:01:08,060 --> 00:01:14,480
+for a specific number of times until a condition is met or indefinitely.
+
+15
+00:01:14,480 --> 00:01:18,900
+There are three types of loop in UiPath.
+
+16
+00:01:18,900 --> 00:01:21,355
+The first one is do-while.
+
+17
+00:01:21,355 --> 00:01:29,280
+It executes the contained activities first and then checks if the condition is true.
+
+18
+00:01:29,280 --> 00:01:35,930
+This also means that a do-while loop will be executed at least once,
+
+19
+00:01:35,930 --> 00:01:38,675
+even if the condition is not true.
+
+20
+00:01:38,675 --> 00:01:41,695
+The second loop is a While loop.
+
+21
+00:01:41,695 --> 00:01:47,880
+It executes the contained activities while the condition is true.
+
+22
+00:01:47,880 --> 00:01:53,425
+It checks the condition at the beginning before getting into the loop.
+
+23
+00:01:53,425 --> 00:01:55,290
+The third type of loop,
+
+24
+00:01:55,290 --> 00:01:56,985
+as a for-each loop.
+
+25
+00:01:56,985 --> 00:02:01,875
+It lets the user iterate through element of list,
+
+26
+00:02:01,875 --> 00:02:03,820
+data-sets and et cetera,
+
+27
+00:02:03,820 --> 00:02:09,125
+and perform an action on each element individually.
+
+28
+00:02:09,125 --> 00:02:14,795
+The do-while activity enables the user to create a loop that
+
+29
+00:02:14,795 --> 00:02:20,995
+executes a specified part of automation while a condition is met.
+
+30
+00:02:20,995 --> 00:02:25,325
+The sequence is executed at least once,
+
+31
+00:02:25,325 --> 00:02:31,565
+and the condition is evaluated before each execution of the sequence.
+
+32
+00:02:31,565 --> 00:02:35,315
+When the specified condition is no longer met,
+
+33
+00:02:35,315 --> 00:02:38,030
+the program exits the loop.
+
+34
+00:02:38,030 --> 00:02:42,785
+This type of activity can be useful to step through
+
+35
+00:02:42,785 --> 00:02:48,785
+all the elements of an array or execute a particular activity multiple time.
+
+36
+00:02:48,785 --> 00:02:53,195
+The user can increment counter to browse through arrays,
+
+37
+00:02:53,195 --> 00:02:57,140
+indexes or step through a list of items.
+
+38
+00:02:57,140 --> 00:03:02,105
+For example, a program to input an even number.
+
+39
+00:03:02,105 --> 00:03:09,470
+The do-while loop keeps asking for an input until an even number is entered.
+
+40
+00:03:09,470 --> 00:03:15,200
+The while activity enables the user to create a loop that
+
+41
+00:03:15,200 --> 00:03:21,720
+executes a specific processes repeatedly while a specific condition is met.
+
+42
+00:03:21,720 --> 00:03:27,785
+The condition is evaluated before each execution of the sequence.
+
+43
+00:03:27,785 --> 00:03:33,620
+The main difference between a while and do-while activity is that in
+
+44
+00:03:33,620 --> 00:03:39,730
+while the condition is evaluated before the body of the loop is executed.
+
+45
+00:03:39,730 --> 00:03:44,000
+This type of activity can be useful to step through
+
+46
+00:03:44,000 --> 00:03:49,015
+all the elements of an array or execute a particular activity multiple times.
+
+47
+00:03:49,015 --> 00:03:52,460
+The user can increment counter to browse through
+
+48
+00:03:52,460 --> 00:03:56,390
+array indexes or step through a list of items.
+
+49
+00:03:56,390 --> 00:04:01,715
+For example, a program that checks if the age of the user,
+
+50
+00:04:01,715 --> 00:04:04,045
+is less than 18.
+
+51
+00:04:04,045 --> 00:04:11,600
+It performs an activity or a series of activity on each element of a collection.
+
+52
+00:04:11,600 --> 00:04:19,385
+The for-each activity enables the user to step through arrays, list, data tables,
+
+53
+00:04:19,385 --> 00:04:22,249
+or other types of collection,
+
+54
+00:04:22,249 --> 00:04:26,000
+so that the user can iterate through the data
+
+55
+00:04:26,000 --> 00:04:30,440
+and process each piece of information individually.
+
+56
+00:04:30,440 --> 00:04:34,470
+This is useful in data processing.
+
+57
+00:04:34,470 --> 00:04:37,575
+Consider an array of integers.
+
+58
+00:04:37,575 --> 00:04:41,600
+for-each would enable the robot to check whether
+
+59
+00:04:41,600 --> 00:04:46,710
+it numeric item fulfills a certain condition.
+

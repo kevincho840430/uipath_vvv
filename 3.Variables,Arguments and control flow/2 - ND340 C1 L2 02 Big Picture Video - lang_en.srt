@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:01,530
+In the variable section,
+
+2
+00:00:01,530 --> 00:00:07,095
+we will cover the variable panel and the scope of the variables.
+
+3
+00:00:07,095 --> 00:00:08,895
+In the argument section,
+
+4
+00:00:08,895 --> 00:00:11,850
+we will cover what is the argument panel,
+
+5
+00:00:11,850 --> 00:00:17,085
+what are the argument directions and how does an argument differ from a variable?
+
+6
+00:00:17,085 --> 00:00:19,125
+In the control flow statements,
+
+7
+00:00:19,125 --> 00:00:25,005
+we will talk about the workflows that sequence flowchart state machines,
+
+8
+00:00:25,005 --> 00:00:30,760
+and we'll speak about the control flow and its type in new iPods.
+

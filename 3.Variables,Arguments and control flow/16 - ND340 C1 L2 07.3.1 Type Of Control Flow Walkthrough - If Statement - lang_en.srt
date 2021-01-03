@@ -1,0 +1,220 @@
+1
+00:00:00,000 --> 00:00:07,815
+In this section, we will see how to use the types of control flow in the UiPath Studio.
+
+2
+00:00:07,815 --> 00:00:14,580
+To start with, we will use the if control flow statement.
+
+3
+00:00:14,580 --> 00:00:17,460
+Here, in this example,
+
+4
+00:00:17,460 --> 00:00:21,645
+we are trying to find whether the number
+
+5
+00:00:21,645 --> 00:00:26,715
+entered from the user is an even number or an odd number.
+
+6
+00:00:26,715 --> 00:00:33,030
+To do so, we have taken a foster activity as the input dialog activity.
+
+7
+00:00:33,030 --> 00:00:38,815
+Here, the user will enter a number.
+
+8
+00:00:38,815 --> 00:00:45,784
+The corresponding number will be stored in a variable called as numbers.
+
+9
+00:00:45,784 --> 00:00:48,830
+As you can see, there is a variable created here,
+
+10
+00:00:48,830 --> 00:00:51,715
+a number of the type integer.
+
+11
+00:00:51,715 --> 00:00:56,390
+After the user has entered the number,
+
+12
+00:00:56,390 --> 00:00:59,935
+the control goes to the if activity.
+
+13
+00:00:59,935 --> 00:01:03,375
+In the if activity under the condition,
+
+14
+00:01:03,375 --> 00:01:07,040
+we are implying the conditions for
+
+15
+00:01:07,040 --> 00:01:11,555
+finding out whether the number is an even or an odd number.
+
+16
+00:01:11,555 --> 00:01:16,865
+Depending upon the outcome of the condition that is true or false,
+
+17
+00:01:16,865 --> 00:01:21,260
+the following then, or else block will be executed.
+
+18
+00:01:21,260 --> 00:01:25,030
+If the number mod 2 is equal to 0,
+
+19
+00:01:25,030 --> 00:01:27,725
+then this message box is printed,
+
+20
+00:01:27,725 --> 00:01:31,295
+which says the entered number is an even number.
+
+21
+00:01:31,295 --> 00:01:34,670
+If this condition evaluates to false,
+
+22
+00:01:34,670 --> 00:01:40,640
+then the control goes to the else block and then this message box is displayed,
+
+23
+00:01:40,640 --> 00:01:44,360
+which says the entered number is an odd number.
+
+24
+00:01:44,360 --> 00:01:47,305
+Let us run this example.
+
+25
+00:01:47,305 --> 00:01:49,655
+Here there is the input dialog box,
+
+26
+00:01:49,655 --> 00:01:52,070
+which is asking ''enter the number.''
+
+27
+00:01:52,070 --> 00:01:55,355
+Let us enter an even number.
+
+28
+00:01:55,355 --> 00:02:02,090
+As you can see, we got a message box and it says the entered number is an even number.
+
+29
+00:02:02,090 --> 00:02:05,315
+Let us try to run it one more time,
+
+30
+00:02:05,315 --> 00:02:10,625
+and this time we will give an odd number. There we go.
+
+31
+00:02:10,625 --> 00:02:17,000
+You've got the correct message box which says the entered number is an odd number.
+
+32
+00:02:17,000 --> 00:02:20,980
+Let us look at the switch example.
+
+33
+00:02:20,980 --> 00:02:26,765
+Here, in the program we are printing the days of the week,
+
+34
+00:02:26,765 --> 00:02:30,900
+depending upon the number inputted from the user.
+
+35
+00:02:30,900 --> 00:02:35,630
+To start with, we have used an input dialog activity,
+
+36
+00:02:35,630 --> 00:02:39,040
+which is asking the user to enter a number.
+
+37
+00:02:39,040 --> 00:02:44,195
+The entered number is stored in a variable called as number.
+
+38
+00:02:44,195 --> 00:02:48,665
+The control then flows to the switch activity.
+
+39
+00:02:48,665 --> 00:02:51,830
+In the switch activity under the expression,
+
+40
+00:02:51,830 --> 00:02:54,490
+we have passed the numbers.
+
+41
+00:02:54,490 --> 00:03:02,630
+Depending upon the value that the number is holding we have made seven cases accordingly.
+
+42
+00:03:02,630 --> 00:03:07,050
+Case one prints it's ''Monday,'' case
+
+43
+00:03:07,050 --> 00:03:11,970
+two ''Tuesday,'' case three ''Wednesday,'' and the last case seven,
+
+44
+00:03:11,970 --> 00:03:13,680
+prints it's ''Sunday. ''
+
+45
+00:03:13,680 --> 00:03:18,920
+If the user enters a number which is not in the range of one to seven,
+
+46
+00:03:18,920 --> 00:03:22,580
+we have a default block which brings the message,
+
+47
+00:03:22,580 --> 00:03:25,645
+''enter the number within the range.''
+
+48
+00:03:25,645 --> 00:03:28,260
+Let us run this example.
+
+49
+00:03:28,260 --> 00:03:31,970
+Here there's an input box which is asking for the number.
+
+50
+00:03:31,970 --> 00:03:34,685
+Let us give the number as two.
+
+51
+00:03:34,685 --> 00:03:39,875
+We're expecting the output should be Tuesday, perfect.
+
+52
+00:03:39,875 --> 00:03:45,530
+Let us run this example again and will give number eight.
+
+53
+00:03:45,530 --> 00:03:49,280
+In this case, we should get the message box,
+
+54
+00:03:49,280 --> 00:03:53,060
+which is displayed in this default Block.
+
+55
+00:03:53,060 --> 00:03:58,530
+Perfect. For it says ''enter the number within the range one to seven.''
+

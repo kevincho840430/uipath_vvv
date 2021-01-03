@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,315
+Welcome to the second lesson of this course.
+
+2
+00:00:03,315 --> 00:00:09,760
+In this lesson, we will cover the following topics: variable and its type,
+
+3
+00:00:09,760 --> 00:00:15,330
+arguments, namespace, type of workflows,
+
+4
+00:00:15,330 --> 00:00:18,165
+and the control flow statements in UiPath.
+
+5
+00:00:18,165 --> 00:00:20,040
+At the end of this lesson,
+
+6
+00:00:20,040 --> 00:00:27,540
+you will be able to define variables and arguments and understand the usage in UiPath,
+
+7
+00:00:27,540 --> 00:00:32,220
+understand the variable and implement in UiPath studio,
+
+8
+00:00:32,220 --> 00:00:39,310
+use various control statements and workflows specific to UiPath in automation projects.
+
