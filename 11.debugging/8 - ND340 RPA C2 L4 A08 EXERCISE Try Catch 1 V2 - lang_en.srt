@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:02,385
+To start out for the exercise solution,
+
+2
+00:00:02,385 --> 00:00:08,355
+we have created three variables here: name and age and we have a DataTable variable,
+
+3
+00:00:08,355 --> 00:00:10,590
+the name is PersonInfoDT.
+
+4
+00:00:10,590 --> 00:00:13,440
+Now, depending upon the user input,
+
+5
+00:00:13,440 --> 00:00:17,010
+that is the user enters a correct age format,
+
+6
+00:00:17,010 --> 00:00:18,915
+we will build a DataTable.
+
+7
+00:00:18,915 --> 00:00:21,720
+In DataTable, we have the name and the age field,
+
+8
+00:00:21,720 --> 00:00:25,125
+and we will write the user input into the DataTable.
+
+9
+00:00:25,125 --> 00:00:29,310
+Later, we will also write the data into CSV file.
+
+10
+00:00:29,310 --> 00:00:32,815
+If the data enters a wrong format for the age,
+
+11
+00:00:32,815 --> 00:00:35,265
+then we will throw a exception.
+
+12
+00:00:35,265 --> 00:00:36,470
+In the catch block here,
+
+13
+00:00:36,470 --> 00:00:39,320
+we have chosen a message box and we'll print
+
+14
+00:00:39,320 --> 00:00:43,355
+the message to the user saying that you entered an invalid data.
+
+15
+00:00:43,355 --> 00:00:46,170
+Let us run this workflow.
+
+16
+00:00:46,430 --> 00:00:51,480
+Let us enter a name and let us give the age.
+
+17
+00:00:51,480 --> 00:00:55,405
+For this first run, we will give the age in a correct format.
+
+18
+00:00:55,405 --> 00:00:57,875
+Awesome, the workflow has completed.
+
+19
+00:00:57,875 --> 00:01:00,710
+Now over here, let us do a quick refresh
+
+20
+00:01:00,710 --> 00:01:05,750
+and let us open the.CSV file that has been created.
+
+21
+00:01:05,750 --> 00:01:08,930
+Here you can see that the data that you entered
+
+22
+00:01:08,930 --> 00:01:12,125
+has been successfully entered into the CSV file.
+
+23
+00:01:12,125 --> 00:01:17,370
+Let us close this and let us run the workflow again.
+
+24
+00:01:17,390 --> 00:01:20,870
+Now, let us provide the name and in this case,
+
+25
+00:01:20,870 --> 00:01:24,905
+let us provide data which is not in the number format.
+
+26
+00:01:24,905 --> 00:01:27,185
+Let us give some random text.
+
+27
+00:01:27,185 --> 00:01:29,320
+Now let us click on "OK".
+
+28
+00:01:29,320 --> 00:01:35,110
+Here we got the exception saying that," Your data that you entered is invalid."
+

@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:01,740
+In the debugging lesson,
+
+2
+00:00:01,740 --> 00:00:04,980
+we will learn about the debugging interface and we'll
+
+3
+00:00:04,980 --> 00:00:08,550
+also see the debugging panel in UiPath Studio.
+
+4
+00:00:08,550 --> 00:00:10,830
+In the exception handling topic,
+
+5
+00:00:10,830 --> 00:00:14,100
+we will see what are the types of exceptions in
+
+6
+00:00:14,100 --> 00:00:18,990
+UiPath and what are the types of exception handling present in UiPath.
+
+7
+00:00:18,990 --> 00:00:22,710
+Also, we'll look at some of the common exceptions in
+
+8
+00:00:22,710 --> 00:00:26,880
+UiPath and we'll look at the strategies to solve it.
+
+9
+00:00:26,880 --> 00:00:34,120
+Lastly, we will learn how to test our workflows by providing some default values.
+

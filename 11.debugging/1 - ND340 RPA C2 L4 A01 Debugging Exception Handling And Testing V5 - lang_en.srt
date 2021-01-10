@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,125
+Now that we have seen how to automate various task,
+
+2
+00:00:04,125 --> 00:00:09,480
+let us dive deep into debugging and exception handling in the UiPath.
+
+3
+00:00:09,480 --> 00:00:13,455
+In this lesson, we will learn about debugging in the UiPath.
+
+4
+00:00:13,455 --> 00:00:18,720
+We look at the debugging interface and the debugging panels in UiPath.
+
+5
+00:00:18,720 --> 00:00:22,020
+Next, we will learn about what are exceptions in
+
+6
+00:00:22,020 --> 00:00:26,655
+UiPath and how can we handle exceptions in UiPath studio.
+
+7
+00:00:26,655 --> 00:00:29,885
+Lastly, we will see how can we test
+
+8
+00:00:29,885 --> 00:00:34,220
+an individual workflows by passing a default value to it?
+
+9
+00:00:34,220 --> 00:00:36,080
+At the end of the lesson,
+
+10
+00:00:36,080 --> 00:00:41,920
+you should be able to understand and use debugging techniques to find errors.
+
+11
+00:00:41,920 --> 00:00:48,155
+Define exception handling, and use of different types of exceptions in finding error.
+
+12
+00:00:48,155 --> 00:00:55,110
+Run and test your automations with default values, and reusable code.
+

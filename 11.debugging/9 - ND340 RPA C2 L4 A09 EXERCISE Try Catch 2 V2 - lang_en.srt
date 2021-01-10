@@ -1,0 +1,220 @@
+1
+00:00:00,000 --> 00:00:02,970
+Let us look at the solution for this exercise.
+
+2
+00:00:02,970 --> 00:00:05,730
+The bot will read this Excel file and it will
+
+3
+00:00:05,730 --> 00:00:09,180
+calculate the difference between the selling price and the cost price.
+
+4
+00:00:09,180 --> 00:00:10,545
+As you can see here,
+
+5
+00:00:10,545 --> 00:00:14,450
+the data is not correct for all the fields that we have.
+
+6
+00:00:14,450 --> 00:00:18,680
+We have some alphabet for some of the cost price and the selling price.
+
+7
+00:00:18,680 --> 00:00:21,574
+Now the bot needs to do the subtraction,
+
+8
+00:00:21,574 --> 00:00:23,885
+that is the selling price minus the cost price.
+
+9
+00:00:23,885 --> 00:00:28,705
+If the data in the cost price and in the selling price are in the correct number format,
+
+10
+00:00:28,705 --> 00:00:31,910
+the bot will do the difference and put the values
+
+11
+00:00:31,910 --> 00:00:35,330
+here and it will set the status to success.
+
+12
+00:00:35,330 --> 00:00:37,175
+If the data is incorrect,
+
+13
+00:00:37,175 --> 00:00:38,645
+say for example in this case,
+
+14
+00:00:38,645 --> 00:00:41,030
+we have 13K and we have 130.
+
+15
+00:00:41,030 --> 00:00:43,010
+This is an incorrect data.
+
+16
+00:00:43,010 --> 00:00:46,610
+In that case, the bot will not perform the difference but
+
+17
+00:00:46,610 --> 00:00:50,465
+it will set the status to incorrect data in the cell.
+
+18
+00:00:50,465 --> 00:00:53,490
+Let us see a solution for it.
+
+19
+00:00:54,050 --> 00:00:57,015
+Here in the UiPath Studio,
+
+20
+00:00:57,015 --> 00:00:59,205
+under the sequence we have started with
+
+21
+00:00:59,205 --> 00:01:01,945
+a "Read Range" activity which reads the Excel file,
+
+22
+00:01:01,945 --> 00:01:04,870
+and we're storing it in a variable called as "CashDT."
+
+23
+00:01:04,870 --> 00:01:07,450
+Now we have used a "ForEachRow" activity to
+
+24
+00:01:07,450 --> 00:01:10,065
+look through all the records in the Excel file,
+
+25
+00:01:10,065 --> 00:01:11,710
+that is the data table.
+
+26
+00:01:11,710 --> 00:01:14,455
+Here we have used a "TryCatch" block.
+
+27
+00:01:14,455 --> 00:01:19,420
+In the try block, we are using these two assign activity where we are
+
+28
+00:01:19,420 --> 00:01:24,325
+fetching the values of the cost price and we're fetching the values of the selling price,
+
+29
+00:01:24,325 --> 00:01:28,475
+and we're converting them into a string using the CINT method.
+
+30
+00:01:28,475 --> 00:01:31,600
+Next, we are performing the difference,
+
+31
+00:01:31,600 --> 00:01:33,550
+that is the selling price minus
+
+32
+00:01:33,550 --> 00:01:37,050
+the cost price and we're writing it into the corresponding cell.
+
+33
+00:01:37,050 --> 00:01:38,870
+To write into the corresponding cell,
+
+34
+00:01:38,870 --> 00:01:42,065
+we are using a variable called as "cellNumber."
+
+35
+00:01:42,065 --> 00:01:43,580
+Now in the variables panel,
+
+36
+00:01:43,580 --> 00:01:46,520
+the "cellNumber" default value is 2 because the
+
+37
+00:01:46,520 --> 00:01:50,310
+first is the header and we have to start from the second row,
+
+38
+00:01:50,310 --> 00:01:53,180
+and each and every time we are incrementing
+
+39
+00:01:53,180 --> 00:01:57,755
+the cell number by one so that we can increase the row value.
+
+40
+00:01:57,755 --> 00:02:00,620
+Next we're using another "Write Cell" activity.
+
+41
+00:02:00,620 --> 00:02:06,200
+This is to write a message "Success" and in the catch block over here,
+
+42
+00:02:06,200 --> 00:02:11,720
+we are specifying that if the number conversion format is not proper,
+
+43
+00:02:11,720 --> 00:02:15,155
+then over here first we use a "Log Message" to throw
+
+44
+00:02:15,155 --> 00:02:18,060
+the exception that is the number conversion could not
+
+45
+00:02:18,060 --> 00:02:21,219
+happen and we're using a "Write Cell" activity.
+
+46
+00:02:21,219 --> 00:02:24,290
+In the "Write Cell" activity in the status column will
+
+47
+00:02:24,290 --> 00:02:27,705
+set the status as incorrect data in the cell.
+
+48
+00:02:27,705 --> 00:02:30,665
+Let us see the workflow in action.
+
+49
+00:02:30,665 --> 00:02:35,515
+Let us save the workflow and let us run the workflow.
+
+50
+00:02:35,515 --> 00:02:39,845
+Awesome. The bot was able to complete the process.
+
+51
+00:02:39,845 --> 00:02:43,925
+Now let us do a quick refresh and open the Excel file.
+
+52
+00:02:43,925 --> 00:02:46,730
+Here you can see all the differences has been
+
+53
+00:02:46,730 --> 00:02:49,895
+added and for the values which was incorrect,
+
+54
+00:02:49,895 --> 00:02:52,010
+the difference could not be calculated and
+
+55
+00:02:52,010 --> 00:02:56,100
+the status is set to incorrect data in the cell.
+

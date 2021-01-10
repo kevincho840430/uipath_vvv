@@ -1,0 +1,508 @@
+1
+00:00:00,000 --> 00:00:06,075
+In this example, we will see how to use the debugging tool from the UiPath Studio.
+
+2
+00:00:06,075 --> 00:00:09,330
+For that we have built a workflow which opens up
+
+3
+00:00:09,330 --> 00:00:14,535
+a Google form website and it reads all the values from an Excel sheet,
+
+4
+00:00:14,535 --> 00:00:16,530
+that is the challenge.xlsx,
+
+5
+00:00:16,530 --> 00:00:20,850
+and it inputs all the values into the Google form.
+
+6
+00:00:20,850 --> 00:00:25,350
+Now, let us try to debug the application.
+
+7
+00:00:25,350 --> 00:00:27,450
+For that under the ribbon bar,
+
+8
+00:00:27,450 --> 00:00:32,295
+navigate to the debug section and click on the "Debug Play Icon".
+
+9
+00:00:32,295 --> 00:00:35,475
+Now, you can see the debug process has
+
+10
+00:00:35,475 --> 00:00:39,730
+started and this is the web form that we are entering it.
+
+11
+00:00:39,730 --> 00:00:41,315
+Now, as you can see,
+
+12
+00:00:41,315 --> 00:00:47,195
+the debug process has stopped and as you can clearly see here in the output panel,
+
+13
+00:00:47,195 --> 00:00:49,435
+that we got an exception.
+
+14
+00:00:49,435 --> 00:00:51,295
+Now, the exception or the error,
+
+15
+00:00:51,295 --> 00:00:55,045
+it says that the input string is not in the correct format.
+
+16
+00:00:55,045 --> 00:01:00,905
+As you can easily notice here that this particular activity has been highlighted.
+
+17
+00:01:00,905 --> 00:01:04,175
+That means this activity is causing a trouble.
+
+18
+00:01:04,175 --> 00:01:10,400
+Now over here, the reason is very simple because we had a phone number text field,
+
+19
+00:01:10,400 --> 00:01:13,970
+and the conversion to the number did not happen correctly,
+
+20
+00:01:13,970 --> 00:01:17,090
+and so is the error that has been thrown to us.
+
+21
+00:01:17,090 --> 00:01:22,360
+Now, let us look at some of the options available in the debugging and being bad.
+
+22
+00:01:22,360 --> 00:01:24,300
+Over here, we have options;
+
+23
+00:01:24,300 --> 00:01:26,955
+Retry, Ignore, and Restart.
+
+24
+00:01:26,955 --> 00:01:28,830
+Now, as the name suggest,
+
+25
+00:01:28,830 --> 00:01:33,350
+Retry it will try executing this particular activity again.
+
+26
+00:01:33,350 --> 00:01:37,100
+Let us try executing this particular activity.
+
+27
+00:01:37,100 --> 00:01:43,610
+As you can see, it started and it said again that the activity was not able to perform.
+
+28
+00:01:43,610 --> 00:01:46,100
+Let us try again and as you can see here,
+
+29
+00:01:46,100 --> 00:01:49,795
+we've got the faulted message or the error here again.
+
+30
+00:01:49,795 --> 00:01:53,295
+Now we also have the Ignore and the Restart.
+
+31
+00:01:53,295 --> 00:01:56,210
+Now Ignore basically means it will skip
+
+32
+00:01:56,210 --> 00:01:59,735
+that particular activity and it will move forward.
+
+33
+00:01:59,735 --> 00:02:02,975
+As you can see here, this particular activity has been
+
+34
+00:02:02,975 --> 00:02:07,950
+ignored and we can say hit "Continue" to proceed further.
+
+35
+00:02:08,030 --> 00:02:10,635
+So as you can see here,
+
+36
+00:02:10,635 --> 00:02:14,315
+that the IT and the India was perfectly
+
+37
+00:02:14,315 --> 00:02:18,365
+executed and we skipped this particular phone number field.
+
+38
+00:02:18,365 --> 00:02:21,040
+We also have an option called as Restart.
+
+39
+00:02:21,040 --> 00:02:26,825
+Now, Restart basically will restart the whole debugging process again.
+
+40
+00:02:26,825 --> 00:02:29,165
+Now, before moving ahead,
+
+41
+00:02:29,165 --> 00:02:31,730
+as we saw that we had an header in
+
+42
+00:02:31,730 --> 00:02:35,255
+this activity that is the type into for the phone number.
+
+43
+00:02:35,255 --> 00:02:40,990
+Now, let us head back to the Excel workbook and see what exactly is causing this error.
+
+44
+00:02:40,990 --> 00:02:43,310
+As you can see clearly over here,
+
+45
+00:02:43,310 --> 00:02:45,860
+that the phone number is not in the correct format.
+
+46
+00:02:45,860 --> 00:02:49,325
+We have some alphabets also present in the phone number.
+
+47
+00:02:49,325 --> 00:02:53,315
+Let us edit the data and make it as a proper data.
+
+48
+00:02:53,315 --> 00:02:57,350
+Awesome. Now let us close the Excel workbook and let us
+
+49
+00:02:57,350 --> 00:03:01,490
+try executing or try restarting the debugging process again.
+
+50
+00:03:01,490 --> 00:03:04,685
+Now, before we start the debugging process again,
+
+51
+00:03:04,685 --> 00:03:07,820
+let us put a break point after the phone number field.
+
+52
+00:03:07,820 --> 00:03:09,245
+So we have a sequence here,
+
+53
+00:03:09,245 --> 00:03:10,520
+which is the phone number,
+
+54
+00:03:10,520 --> 00:03:13,340
+and we have a sequence that is for the department.
+
+55
+00:03:13,340 --> 00:03:17,555
+Now, adding a breakpoint over here means that
+
+56
+00:03:17,555 --> 00:03:22,250
+the execution will stop after the phone number field.
+
+57
+00:03:22,250 --> 00:03:26,110
+Let us restart the debugging process.
+
+58
+00:03:26,660 --> 00:03:30,200
+Now you can see easily the debugging process has been
+
+59
+00:03:30,200 --> 00:03:33,500
+started again and you can see John, Address,
+
+60
+00:03:33,500 --> 00:03:36,995
+and now you can see the phone number has been
+
+61
+00:03:36,995 --> 00:03:41,390
+correctly entered since we meet the edit in the Excel workbook.
+
+62
+00:03:41,390 --> 00:03:46,550
+Now the application is in the paused state because we have added a breakpoint here,
+
+63
+00:03:46,550 --> 00:03:49,925
+that means the workflow will not continue from this point.
+
+64
+00:03:49,925 --> 00:03:54,455
+Now, let us look at the other options that we have available here.
+
+65
+00:03:54,455 --> 00:03:55,745
+We have Step Into,
+
+66
+00:03:55,745 --> 00:03:58,040
+Step Over, and Step Out.
+
+67
+00:03:58,040 --> 00:04:00,765
+Now, as the name suggests,
+
+68
+00:04:00,765 --> 00:04:06,125
+step into the Step Into will debug all the activities one at a time.
+
+69
+00:04:06,125 --> 00:04:09,460
+Let us try using this Step Into option.
+
+70
+00:04:09,460 --> 00:04:11,850
+If I click Step Into for the first time,
+
+71
+00:04:11,850 --> 00:04:14,990
+as you can see, the Assign activity has been highlighted.
+
+72
+00:04:14,990 --> 00:04:19,440
+Now the Assign activity will be executed and you can see the logs for
+
+73
+00:04:19,440 --> 00:04:23,915
+that and it has taken the next activity that is the log message.
+
+74
+00:04:23,915 --> 00:04:26,105
+Let us click on this "Step Into" again.
+
+75
+00:04:26,105 --> 00:04:29,150
+Now you can see the log messages have been executed
+
+76
+00:04:29,150 --> 00:04:32,465
+and now the control is in the type into activity.
+
+77
+00:04:32,465 --> 00:04:35,630
+Let's click on the "Step Into" again and now you can
+
+78
+00:04:35,630 --> 00:04:39,439
+see the type into activity has been performed successfully.
+
+79
+00:04:39,439 --> 00:04:42,755
+Now let us see the option for the Step Over.
+
+80
+00:04:42,755 --> 00:04:48,065
+Now the Step Over is used when you want to run the entire container,
+
+81
+00:04:48,065 --> 00:04:50,555
+that is the sequence or the workflow together.
+
+82
+00:04:50,555 --> 00:04:54,695
+In this case, it will not execute each activity one at a time,
+
+83
+00:04:54,695 --> 00:04:57,515
+but it will execute the entire sequence,
+
+84
+00:04:57,515 --> 00:04:59,885
+that is the container in a single go.
+
+85
+00:04:59,885 --> 00:05:02,060
+Let us click on this "Step Over".
+
+86
+00:05:02,060 --> 00:05:05,165
+Now after that, we have that location.
+
+87
+00:05:05,165 --> 00:05:08,885
+Now let us execute this step over for the location.
+
+88
+00:05:08,885 --> 00:05:10,940
+The moment I click on "Step Over",
+
+89
+00:05:10,940 --> 00:05:13,775
+the entire sequence will be executed.
+
+90
+00:05:13,775 --> 00:05:18,019
+Now you can see it did not go into any of the particular activities,
+
+91
+00:05:18,019 --> 00:05:20,975
+but it executed the entire sequence,
+
+92
+00:05:20,975 --> 00:05:23,690
+that is Enter Location at one go.
+
+93
+00:05:23,690 --> 00:05:26,690
+Now, let us also look at the options,
+
+94
+00:05:26,690 --> 00:05:28,295
+that is the Step Out.
+
+95
+00:05:28,295 --> 00:05:30,650
+Now, as the name suggests, step out,
+
+96
+00:05:30,650 --> 00:05:33,560
+this action is used for stepping out and pausing
+
+97
+00:05:33,560 --> 00:05:36,830
+the execution or the level of the current container.
+
+98
+00:05:36,830 --> 00:05:40,970
+That means it will execute each and everything in
+
+99
+00:05:40,970 --> 00:05:43,340
+the parent container and it will pause
+
+100
+00:05:43,340 --> 00:05:46,820
+the debugging when it reaches the parent container again.
+
+101
+00:05:46,820 --> 00:05:48,050
+So in our case,
+
+102
+00:05:48,050 --> 00:05:51,710
+the parent container for us is this body activity,
+
+103
+00:05:51,710 --> 00:05:54,710
+which is inside the for each row activity.
+
+104
+00:05:54,710 --> 00:05:57,550
+Let us do a step out.
+
+105
+00:05:57,550 --> 00:06:03,890
+Now I can see the submit and submit another response was executed and it stopped
+
+106
+00:06:03,890 --> 00:06:05,615
+the execution when it reached
+
+107
+00:06:05,615 --> 00:06:10,410
+the parent container that is the body container in our case.
+
+108
+00:06:10,410 --> 00:06:15,505
+Now, let us look how to use the local panel in the debugging window.
+
+109
+00:06:15,505 --> 00:06:18,400
+Now here again, we have made changes into
+
+110
+00:06:18,400 --> 00:06:22,600
+the Excel file and we'll throw an exception when the debugging is running.
+
+111
+00:06:22,600 --> 00:06:26,090
+Let us start executing the debugging process.
+
+112
+00:06:27,000 --> 00:06:32,965
+Now you can see the debugging process has started and now at the phone number section,
+
+113
+00:06:32,965 --> 00:06:35,215
+we got the error again.
+
+114
+00:06:35,215 --> 00:06:39,370
+Now let us use the local panel and change
+
+115
+00:06:39,370 --> 00:06:44,065
+the values of the phone number and try continuing the debugging process.
+
+116
+00:06:44,065 --> 00:06:45,580
+Now in the local panel,
+
+117
+00:06:45,580 --> 00:06:47,080
+here you can see we have
+
+118
+00:06:47,080 --> 00:06:52,030
+all the variables available that we are using in the current sequence.
+
+119
+00:06:52,030 --> 00:06:56,945
+Now our variable, in that case is this phone number and you can easily see here,
+
+120
+00:06:56,945 --> 00:07:00,095
+the phone number has some alphabets present.
+
+121
+00:07:00,095 --> 00:07:04,495
+Let us click on this pencil icon and edit this data.
+
+122
+00:07:04,495 --> 00:07:06,765
+Awesome. Let us click on "Okay".
+
+123
+00:07:06,765 --> 00:07:13,640
+Now we can try the Retry option and let us see if it is executing perfectly fine or not.
+
+124
+00:07:13,640 --> 00:07:18,580
+Awesome. Now you can see that the phone number executed perfectly fine.
+
+125
+00:07:18,580 --> 00:07:21,125
+To continue with the rest debugging process,
+
+126
+00:07:21,125 --> 00:07:23,465
+we can click on this Continue icon and
+
+127
+00:07:23,465 --> 00:07:28,470
+the debugging process will execute in the correct manner.
+

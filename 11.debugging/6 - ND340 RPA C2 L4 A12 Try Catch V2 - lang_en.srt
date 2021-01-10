@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:05,655
+In this example, we will try to read a data from an Excel file,
+
+2
+00:00:05,655 --> 00:00:09,645
+and we'll try to input that values into this web form.
+
+3
+00:00:09,645 --> 00:00:13,500
+Let us head back to the studio and let us see how can we
+
+4
+00:00:13,500 --> 00:00:18,255
+use or try catch activity to handle some exceptions.
+
+5
+00:00:18,255 --> 00:00:21,980
+Over here, we are using a Read Range activity and
+
+6
+00:00:21,980 --> 00:00:27,450
+this Read Range activity is reading the data from the "challenge.xlsx" workbook.
+
+7
+00:00:27,450 --> 00:00:30,120
+Let us open this workbook.
+
+8
+00:00:30,120 --> 00:00:34,770
+In this workbook, we have three records and for each and every record,
+
+9
+00:00:34,770 --> 00:00:37,015
+we have seven dates.
+
+10
+00:00:37,015 --> 00:00:40,910
+Now, since we are using the Read Range activity,
+
+11
+00:00:40,910 --> 00:00:43,280
+if the Excel workbook is open,
+
+12
+00:00:43,280 --> 00:00:45,155
+we will get an exception.
+
+13
+00:00:45,155 --> 00:00:49,800
+Let us run the workflow and see what is the exception that we get.
+
+14
+00:00:51,350 --> 00:00:56,690
+Here we've got the exception saying that the Excel workbook is already
+
+15
+00:00:56,690 --> 00:01:01,280
+being used by another process because of the Excel workbook is already opened up.
+
+16
+00:01:01,280 --> 00:01:05,095
+Now, let us try to handle such exception.
+
+17
+00:01:05,095 --> 00:01:08,340
+Moving ahead, first, we will encompass
+
+18
+00:01:08,340 --> 00:01:12,660
+the Read Range activity inside a Try Block activity.
+
+19
+00:01:12,660 --> 00:01:15,915
+To do so, right-click and choose the option,
+
+20
+00:01:15,915 --> 00:01:18,615
+Surround with a Try Catch block.
+
+21
+00:01:18,615 --> 00:01:20,925
+Now, in the Catches section,
+
+22
+00:01:20,925 --> 00:01:23,460
+we need to handle the Exception.
+
+23
+00:01:23,460 --> 00:01:26,700
+First, we will define an Exception over here.
+
+24
+00:01:26,700 --> 00:01:30,590
+We'll choose the Exception which is the most generic,
+
+25
+00:01:30,590 --> 00:01:33,425
+that is the System.Exception.
+
+26
+00:01:33,425 --> 00:01:36,590
+Here, we will add an activity.
+
+27
+00:01:36,590 --> 00:01:41,310
+Here, we will add a log message in the Catch log.
+
+28
+00:01:42,230 --> 00:01:45,465
+We'll choose the log level as Warning.
+
+29
+00:01:45,465 --> 00:01:47,795
+Over here, we will display what is
+
+30
+00:01:47,795 --> 00:01:51,680
+the exception message and what is the source of the exceptions.
+
+31
+00:01:51,680 --> 00:01:59,190
+For that, we need to save exception.Message and for printing the exception source,
+
+32
+00:01:59,190 --> 00:02:02,590
+you need to mention Exception.Source.
+
+33
+00:02:03,500 --> 00:02:08,980
+Now, let us try to handle the exception in the Catch log.
+
+34
+00:02:08,980 --> 00:02:11,960
+Since the Excel workbook is already opened up,
+
+35
+00:02:11,960 --> 00:02:15,230
+we'll use a Close Application activity.
+
+36
+00:02:15,230 --> 00:02:20,020
+Drag and drop the Close Application activity inside the Catch log.
+
+37
+00:02:20,020 --> 00:02:24,400
+Over here, we'll indicate the Excel file that we need to close.
+
+38
+00:02:24,400 --> 00:02:27,710
+Now, even if the Read Range activity
+
+39
+00:02:27,710 --> 00:02:30,875
+is not able to perform since the Excel file is opened,
+
+40
+00:02:30,875 --> 00:02:32,900
+the control goes to the Catch log.
+
+41
+00:02:32,900 --> 00:02:37,835
+In the Catch log, we first print the log message then we close the application.
+
+42
+00:02:37,835 --> 00:02:43,010
+Now, we can proceed further and we can read data from the same Excel workbook.
+
+43
+00:02:43,010 --> 00:02:45,290
+Before moving ahead over here,
+
+44
+00:02:45,290 --> 00:02:50,435
+we have read the data into a variable called as challengeDT.
+
+45
+00:02:50,435 --> 00:02:52,670
+Now in the Finally log,
+
+46
+00:02:52,670 --> 00:02:55,630
+we will read the data again.
+
+47
+00:02:55,630 --> 00:02:59,010
+Over here, we will specify a condition.
+
+48
+00:02:59,010 --> 00:03:06,360
+The condition is, "If the challengeDT is Nothing."
+
+49
+00:03:06,360 --> 00:03:11,465
+As in, if there is nothing read into the DataTable variable,
+
+50
+00:03:11,465 --> 00:03:15,170
+then we will use the Read Range activity again,
+
+51
+00:03:15,170 --> 00:03:17,450
+and we will read it over here.
+
+52
+00:03:17,450 --> 00:03:19,800
+Or else in the Else part,
+
+53
+00:03:19,800 --> 00:03:21,120
+we will do nothing.
+
+54
+00:03:21,120 --> 00:03:23,940
+For that, we'll just add a Comment activity,
+
+55
+00:03:23,940 --> 00:03:27,240
+and here we'll mention, "Do Nothing."
+
+56
+00:03:27,240 --> 00:03:30,150
+Awesome, let us click on "Okey."
+
+57
+00:03:30,150 --> 00:03:33,060
+Now, we have handled the mechanism.
+
+58
+00:03:33,060 --> 00:03:37,115
+Even if the workbook has opened or if the workbook is not open,
+
+59
+00:03:37,115 --> 00:03:41,555
+then also the workflow will run without causing exception.
+
+60
+00:03:41,555 --> 00:03:45,125
+Now, let us proceed further and see what we have.
+
+61
+00:03:45,125 --> 00:03:48,680
+Over here, we're using the ForEach row activity and we are
+
+62
+00:03:48,680 --> 00:03:52,355
+looping across each and every record from the DataTable.
+
+63
+00:03:52,355 --> 00:03:57,675
+Now, one of the record in the Excel file is mismatching.
+
+64
+00:03:57,675 --> 00:04:01,250
+As in, the e-mail address is not correct.
+
+65
+00:04:01,250 --> 00:04:04,580
+Let us open the Excel file and verify from here.
+
+66
+00:04:04,580 --> 00:04:05,735
+As you can see here,
+
+67
+00:04:05,735 --> 00:04:09,185
+the e-mail address of this field is not correct,
+
+68
+00:04:09,185 --> 00:04:15,635
+we will try to throw an exception when we encounter such situation.
+
+69
+00:04:15,635 --> 00:04:18,725
+Over here, we are using the Is Match activity.
+
+70
+00:04:18,725 --> 00:04:20,120
+In the Is Match activity,
+
+71
+00:04:20,120 --> 00:04:23,440
+we have configured it rejects for the e-mail address.
+
+72
+00:04:23,440 --> 00:04:26,520
+Over here, we're passing row of 5.ToString,
+
+73
+00:04:26,520 --> 00:04:28,860
+which represent the e-mail address column,
+
+74
+00:04:28,860 --> 00:04:32,450
+and we are checking that if it is valid.
+
+75
+00:04:32,450 --> 00:04:34,985
+Now, depending upon the Boolean output,
+
+76
+00:04:34,985 --> 00:04:36,935
+if the condition is valid,
+
+77
+00:04:36,935 --> 00:04:38,750
+as in, if the e-mail is valid,
+
+78
+00:04:38,750 --> 00:04:42,265
+then we will do the Type Into activity in the form.
+
+79
+00:04:42,265 --> 00:04:44,715
+Hence, we will throw an exception.
+
+80
+00:04:44,715 --> 00:04:47,775
+Over here since it is a Business Exception,
+
+81
+00:04:47,775 --> 00:04:52,615
+we will throw a Business Exception saying that the e-mail is not valid.
+
+82
+00:04:52,615 --> 00:04:56,435
+Then, the loop continues again for the next element.
+
+83
+00:04:56,435 --> 00:04:59,060
+Let us execute the workflow.
+
+84
+00:04:59,060 --> 00:05:02,160
+Our Excel file is still open.
+
+85
+00:05:02,540 --> 00:05:07,180
+As you can see, the bot successfully closed the Excel file,
+
+86
+00:05:07,180 --> 00:05:10,895
+now the value is being entered into the form.
+
+87
+00:05:10,895 --> 00:05:12,830
+The second value skipped,
+
+88
+00:05:12,830 --> 00:05:15,500
+and this is the third value that has been printed into
+
+89
+00:05:15,500 --> 00:05:18,210
+the form and the execution has stopped.
+
+90
+00:05:18,210 --> 00:05:20,720
+Out of the three records we have only entered
+
+91
+00:05:20,720 --> 00:05:24,560
+two records because one of the record field was faulty.
+
+92
+00:05:24,560 --> 00:05:26,225
+In the Output panel here,
+
+93
+00:05:26,225 --> 00:05:28,100
+you can see the exception.
+
+94
+00:05:28,100 --> 00:05:31,560
+That is, the Excel workbook exception.
+
+95
+00:05:31,560 --> 00:05:32,990
+Since we handled it,
+
+96
+00:05:32,990 --> 00:05:35,960
+the exception, the program brands successfully.
+
+97
+00:05:35,960 --> 00:05:40,505
+Here is the second exception that we explicitly through using the pro-activity,
+
+98
+00:05:40,505 --> 00:05:44,460
+which said the e-mail address is not valid.
+

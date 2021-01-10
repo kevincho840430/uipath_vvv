@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:04,620
+With debugging and exception handling techniques that you have learned,
+
+2
+00:00:04,620 --> 00:00:07,230
+I hope this will help you to build
+
+3
+00:00:07,230 --> 00:00:11,895
+an automation that can handle exception while it is in production.
+
+4
+00:00:11,895 --> 00:00:16,080
+In this lesson, we learned about debugging in UiPath,
+
+5
+00:00:16,080 --> 00:00:20,430
+and saw the debugging interface and the panel in UiPath.
+
+6
+00:00:20,430 --> 00:00:23,735
+Next, we learned about exception handling and
+
+7
+00:00:23,735 --> 00:00:27,590
+the type of exceptions in UiPath and how to handle them.
+
+8
+00:00:27,590 --> 00:00:33,260
+We also looked at common exceptions in UiPath and the strategies to solve it.
+
+9
+00:00:33,260 --> 00:00:38,465
+Lastly, we looked at testing the workflows with a default value.
+
+10
+00:00:38,465 --> 00:00:40,085
+In the next lesson,
+
+11
+00:00:40,085 --> 00:00:46,770
+we will learn about the very important concept of UiPath, that is Orchestrator.
+

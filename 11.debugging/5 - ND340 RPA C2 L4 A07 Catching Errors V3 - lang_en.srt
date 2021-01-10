@@ -1,0 +1,388 @@
+1
+00:00:00,000 --> 00:00:04,545
+An exception, is an activity or event that interrupts
+
+2
+00:00:04,545 --> 00:00:09,675
+the normal flow of the program when we run or execute a program.
+
+3
+00:00:09,675 --> 00:00:14,460
+An exception refers to the amount of deviation in the output,
+
+4
+00:00:14,460 --> 00:00:18,330
+shown from the required business or the agreed process.
+
+5
+00:00:18,330 --> 00:00:23,115
+In the software or bot programming exception handling is
+
+6
+00:00:23,115 --> 00:00:28,455
+responsive process that occurs during the execution or run-time.
+
+7
+00:00:28,455 --> 00:00:34,185
+Usually, developers do not want this to happen on program compilation time.
+
+8
+00:00:34,185 --> 00:00:35,760
+So to avoid this,
+
+9
+00:00:35,760 --> 00:00:40,700
+they check and pre-register an exception that can occur.
+
+10
+00:00:40,700 --> 00:00:44,285
+Some exceptions are handled fairly so that
+
+11
+00:00:44,285 --> 00:00:47,990
+the execution could start from where it was interrupted.
+
+12
+00:00:47,990 --> 00:00:55,420
+In short, exception handling is a precautionary method implemented to avoid deviations.
+
+13
+00:00:55,420 --> 00:01:00,485
+In UiPath there are two types of exceptions that are common,
+
+14
+00:01:00,485 --> 00:01:04,010
+business exception and system exceptions.
+
+15
+00:01:04,010 --> 00:01:07,795
+Let us talk about each of them in more detail.
+
+16
+00:01:07,795 --> 00:01:09,405
+Business exception.
+
+17
+00:01:09,405 --> 00:01:12,410
+The exception that occurs in a business process,
+
+18
+00:01:12,410 --> 00:01:14,525
+is called a business exception.
+
+19
+00:01:14,525 --> 00:01:18,965
+The exception is dependent on the type of business.
+
+20
+00:01:18,965 --> 00:01:22,734
+When an exception is caused due to the current working structure,
+
+21
+00:01:22,734 --> 00:01:25,615
+it is termed as a business exception.
+
+22
+00:01:25,615 --> 00:01:30,230
+For example, if you have to download an attachment from an e-mail,
+
+23
+00:01:30,230 --> 00:01:33,050
+then we need to have a unique identifier.
+
+24
+00:01:33,050 --> 00:01:38,000
+If the e-mail subject is not standard and keeps on changing,
+
+25
+00:01:38,000 --> 00:01:43,099
+the robot will not be able to pick the result in a business exception.
+
+26
+00:01:43,099 --> 00:01:48,790
+Any deviation from the standard business rule in any process or activity,
+
+27
+00:01:48,790 --> 00:01:51,275
+is called as a business exception.
+
+28
+00:01:51,275 --> 00:01:54,275
+Hence, to avoid the business exception,
+
+29
+00:01:54,275 --> 00:01:58,340
+we need to understand the business process very carefully.
+
+30
+00:01:58,340 --> 00:02:00,454
+To avoid business exception,
+
+31
+00:02:00,454 --> 00:02:02,705
+use a unique identifier.
+
+32
+00:02:02,705 --> 00:02:07,475
+In RPA, a business rule is defined as a set of
+
+33
+00:02:07,475 --> 00:02:14,275
+specific instructions on how the input and output of data should be processed.
+
+34
+00:02:14,275 --> 00:02:16,035
+System exceptions.
+
+35
+00:02:16,035 --> 00:02:22,010
+Every business process that we automate requires different application and tools,
+
+36
+00:02:22,010 --> 00:02:24,350
+such as Microsoft Office,
+
+37
+00:02:24,350 --> 00:02:28,610
+SAP, CRM, Oracle, and many more.
+
+38
+00:02:28,610 --> 00:02:31,955
+When the control flow of the automation process is
+
+39
+00:02:31,955 --> 00:02:35,980
+disrupted or stopped due to the failure of the system,
+
+40
+00:02:35,980 --> 00:02:38,825
+this is called system exception.
+
+41
+00:02:38,825 --> 00:02:45,515
+Example, it is mandatory to have Microsoft Outlook to automate a business process.
+
+42
+00:02:45,515 --> 00:02:51,080
+The robot picks the attachment from an e-mail and then downloads the same.
+
+43
+00:02:51,080 --> 00:02:53,375
+If the Outlook is not working,
+
+44
+00:02:53,375 --> 00:02:56,615
+the robot will not be able to open the attachment.
+
+45
+00:02:56,615 --> 00:02:58,685
+The error caused is due to
+
+46
+00:02:58,685 --> 00:03:04,175
+Microsoft Outlook failure and has nothing to do with the programming or business rule,
+
+47
+00:03:04,175 --> 00:03:07,295
+hence, this is categorized as system error.
+
+48
+00:03:07,295 --> 00:03:11,960
+A system error can be minimized by making the code error proof.
+
+49
+00:03:11,960 --> 00:03:16,625
+This is the remedial method used in UiPath studio to
+
+50
+00:03:16,625 --> 00:03:21,305
+identify the reason for failure and detect the error.
+
+51
+00:03:21,305 --> 00:03:28,055
+One of the most reliable method that we use in UiPath is a try catch activity.
+
+52
+00:03:28,055 --> 00:03:30,350
+In every automation process,
+
+53
+00:03:30,350 --> 00:03:34,085
+user wants to detect errors as they happen,
+
+54
+00:03:34,085 --> 00:03:39,205
+and perform various actions to rectify the errors when they occur.
+
+55
+00:03:39,205 --> 00:03:44,570
+Try catch activity is used to recover from a specific error,
+
+56
+00:03:44,570 --> 00:03:48,740
+instead of crashing and terminating the whole workflow.
+
+57
+00:03:48,740 --> 00:03:53,455
+The try catch activity can be found in the activities panel.
+
+58
+00:03:53,455 --> 00:03:56,345
+For handling errors in a try catch,
+
+59
+00:03:56,345 --> 00:04:01,160
+the user has to divide the whole workflow into three parts.
+
+60
+00:04:01,160 --> 00:04:03,590
+The first is the try block.
+
+61
+00:04:03,590 --> 00:04:10,220
+In this, the user has to put all the activities that might throw an error.
+
+62
+00:04:10,220 --> 00:04:17,695
+All the possible activities you create that causes error are placed inside this block.
+
+63
+00:04:17,695 --> 00:04:20,360
+The next is the catch block.
+
+64
+00:04:20,360 --> 00:04:25,055
+This is another very important activity to remove the error.
+
+65
+00:04:25,055 --> 00:04:28,100
+It is called catches in UiPath,
+
+66
+00:04:28,100 --> 00:04:32,645
+since the user can add multiple type of catches.
+
+67
+00:04:32,645 --> 00:04:35,450
+The last is the finally block,
+
+68
+00:04:35,450 --> 00:04:37,330
+it is the optional one.
+
+69
+00:04:37,330 --> 00:04:42,695
+It is just for the action to be performed after the try catch block.
+
+70
+00:04:42,695 --> 00:04:45,560
+In case of error or no error,
+
+71
+00:04:45,560 --> 00:04:49,240
+still, the final block will be executed.
+
+72
+00:04:49,240 --> 00:04:52,535
+Throw activity, it is used to throw
+
+73
+00:04:52,535 --> 00:04:57,095
+specific types of exception that a user want to throw,
+
+74
+00:04:57,095 --> 00:05:01,060
+and the catch can handle that particular type of exception,
+
+75
+00:05:01,060 --> 00:05:06,920
+and perform an action that the user wants to perform on that exception.
+
+76
+00:05:06,920 --> 00:05:14,705
+Rethrow activity throws an expression previously caught in an exception handling block.
+
+77
+00:05:14,705 --> 00:05:20,750
+We have already learned about the continue on error property in an earlier lesson.
+
+78
+00:05:20,750 --> 00:05:24,020
+Let us try to understand it in detail.
+
+79
+00:05:24,020 --> 00:05:28,190
+It is a property that specifies if the execution
+
+80
+00:05:28,190 --> 00:05:32,585
+should continue even when the activity throws an error.
+
+81
+00:05:32,585 --> 00:05:37,880
+Keep in mind that if the continue on error is set to true on
+
+82
+00:05:37,880 --> 00:05:43,850
+an activity that has a scope such as the attach window or the attach browser,
+
+83
+00:05:43,850 --> 00:05:50,990
+then all the errors that occur in other activities inside that scope are also ignored.
+
+84
+00:05:50,990 --> 00:05:56,195
+Having this property set to true is not recommended in all situations,
+
+85
+00:05:56,195 --> 00:06:00,260
+but there are some situations where it does make sense,
+
+86
+00:06:00,260 --> 00:06:02,975
+such as while using data scraping,
+
+87
+00:06:02,975 --> 00:06:07,580
+so the activity does not throw an error on the last page,
+
+88
+00:06:07,580 --> 00:06:12,635
+that is, when the selector of the Next button is no longer found.
+
+89
+00:06:12,635 --> 00:06:17,795
+The second situation is when we are not interested in capturing the error,
+
+90
+00:06:17,795 --> 00:06:22,055
+but simply in the execution of the activity.
+
+91
+00:06:22,055 --> 00:06:25,685
+This field only supports Boolean values,
+
+92
+00:06:25,685 --> 00:06:28,085
+that is true or false.
+
+93
+00:06:28,085 --> 00:06:31,585
+The default value is false, first,
+
+94
+00:06:31,585 --> 00:06:34,655
+if the field is blank and an error is thrown,
+
+95
+00:06:34,655 --> 00:06:37,280
+the execution of the project stops.
+
+96
+00:06:37,280 --> 00:06:40,100
+If the value is set to true,
+
+97
+00:06:40,100 --> 00:06:45,480
+the execution of the project continues regardless of any error.
+

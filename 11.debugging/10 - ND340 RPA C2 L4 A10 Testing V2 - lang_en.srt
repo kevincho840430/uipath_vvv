@@ -1,0 +1,496 @@
+1
+00:00:00,000 --> 00:00:07,245
+In this section, we will see how to perform testings on the activities that we have used.
+
+2
+00:00:07,245 --> 00:00:11,790
+For this example, we have chosen a form and we are
+
+3
+00:00:11,790 --> 00:00:17,445
+using the Type into Activities to input all the values inside this form.
+
+4
+00:00:17,445 --> 00:00:20,595
+Let us begin with the first option that is,
+
+5
+00:00:20,595 --> 00:00:22,590
+Run to this Activity.
+
+6
+00:00:22,590 --> 00:00:25,730
+The Run to this Activity is available when
+
+7
+00:00:25,730 --> 00:00:29,225
+right-clicking an activity in the Designer Panel.
+
+8
+00:00:29,225 --> 00:00:35,065
+In our case, we'll choose the company name and we'll right-click on the context menu,
+
+9
+00:00:35,065 --> 00:00:39,135
+and from here you can see the Run into this Activity.
+
+10
+00:00:39,135 --> 00:00:41,580
+Now, this option starts
+
+11
+00:00:41,580 --> 00:00:47,135
+the Debugging processes and pauses before the selected activity is executed,
+
+12
+00:00:47,135 --> 00:00:50,030
+while highlighting into the Designer Panel.
+
+13
+00:00:50,030 --> 00:00:53,030
+Let us run this and see it in action.
+
+14
+00:00:53,030 --> 00:00:55,595
+Click on, Run to this Activity.
+
+15
+00:00:55,595 --> 00:01:00,815
+Now you can see, the Bot is entering the values and as you saw,
+
+16
+00:01:00,815 --> 00:01:03,665
+the Bot has stopped the execution.
+
+17
+00:01:03,665 --> 00:01:07,415
+As you can see, we chose the Activity,
+
+18
+00:01:07,415 --> 00:01:08,870
+that is the Company,
+
+19
+00:01:08,870 --> 00:01:11,210
+and we chose, Run to this Activity.
+
+20
+00:01:11,210 --> 00:01:13,265
+So all the Activities,
+
+21
+00:01:13,265 --> 00:01:15,440
+that were before the Company Name,
+
+22
+00:01:15,440 --> 00:01:19,610
+was executed and the Debugging has been paused.
+
+23
+00:01:19,610 --> 00:01:20,795
+As you can see over here,
+
+24
+00:01:20,795 --> 00:01:22,610
+the First Name and the Last Name,
+
+25
+00:01:22,610 --> 00:01:26,030
+has been entered, and on the Company Name,
+
+26
+00:01:26,030 --> 00:01:28,715
+the execution has paused.
+
+27
+00:01:28,715 --> 00:01:31,830
+You can choose the option, Continue,
+
+28
+00:01:31,830 --> 00:01:36,590
+and proceed further or you can Stop your automation from here.
+
+29
+00:01:36,590 --> 00:01:42,560
+Let us see the other options that we have on the Designer Panel, Context Menu.
+
+30
+00:01:42,560 --> 00:01:44,960
+The second option that we have is,
+
+31
+00:01:44,960 --> 00:01:46,850
+Run from this Activity.
+
+32
+00:01:46,850 --> 00:01:51,280
+For this, we'll choose the activity role in the company.
+
+33
+00:01:51,280 --> 00:01:54,650
+Right-click on this, and here you have the option,
+
+34
+00:01:54,650 --> 00:01:56,665
+Run from this Activity.
+
+35
+00:01:56,665 --> 00:01:58,430
+The Run from this Activity,
+
+36
+00:01:58,430 --> 00:02:02,105
+context menu enters the debugging in a pause state,
+
+37
+00:02:02,105 --> 00:02:05,390
+which allows you to make changes to the values or
+
+38
+00:02:05,390 --> 00:02:08,915
+variables and arguments from the local panel.
+
+39
+00:02:08,915 --> 00:02:12,325
+Let us click on Run from this Activity.
+
+40
+00:02:12,325 --> 00:02:13,845
+Now, as you can see,
+
+41
+00:02:13,845 --> 00:02:16,385
+the Debugging is in a paused state.
+
+42
+00:02:16,385 --> 00:02:20,540
+Now the execution will start from the Role in the Company.
+
+43
+00:02:20,540 --> 00:02:23,870
+That means, all the activities which are above this,
+
+44
+00:02:23,870 --> 00:02:26,824
+Type into Activities, will be skipped and your execution,
+
+45
+00:02:26,824 --> 00:02:28,130
+will start from here.
+
+46
+00:02:28,130 --> 00:02:31,070
+You can even Edit the values from here.
+
+47
+00:02:31,070 --> 00:02:32,945
+For example, in our case,
+
+48
+00:02:32,945 --> 00:02:36,335
+let us change, the email address to something else.
+
+49
+00:02:36,335 --> 00:02:39,080
+Over here, the email address is, test10.
+
+50
+00:02:39,080 --> 00:02:42,560
+Let us change it to, test12.
+
+51
+00:02:43,420 --> 00:02:47,130
+Let us click on, Continue.
+
+52
+00:02:48,020 --> 00:02:53,045
+Here you can see, the Bot is entering the values into this field,
+
+53
+00:02:53,045 --> 00:02:54,575
+and you can see from here,
+
+54
+00:02:54,575 --> 00:02:56,645
+that the first three Activities,
+
+55
+00:02:56,645 --> 00:03:00,140
+did not execute and only the Role in the Company,
+
+56
+00:03:00,140 --> 00:03:03,229
+Address, E-mail, and the Phone Number, got executed.
+
+57
+00:03:03,229 --> 00:03:07,595
+As you can also see, the updated value is being displayed here.
+
+58
+00:03:07,595 --> 00:03:11,885
+You can also test an individual Activity.
+
+59
+00:03:11,885 --> 00:03:13,820
+For this purpose, we'll use the,
+
+60
+00:03:13,820 --> 00:03:16,130
+Type into Activity for the Phone Number.
+
+61
+00:03:16,130 --> 00:03:19,525
+Let us drag it out of the parent container.
+
+62
+00:03:19,525 --> 00:03:23,060
+When you do a right-click on this Activity in the Context Menu,
+
+63
+00:03:23,060 --> 00:03:24,180
+you see an option,
+
+64
+00:03:24,180 --> 00:03:28,050
+the Text Activity, click on the Test Activity.
+
+65
+00:03:28,050 --> 00:03:32,180
+The Text Activity, Context Menu option of the Designer Panel is
+
+66
+00:03:32,180 --> 00:03:36,095
+used for running a test on a current selected activities.
+
+67
+00:03:36,095 --> 00:03:40,930
+In our case, we are performing the activity on the Type into the Phone Number.
+
+68
+00:03:40,930 --> 00:03:43,890
+When you click, the local panel opens up,
+
+69
+00:03:43,890 --> 00:03:46,605
+which displays the variables and the arguments.
+
+70
+00:03:46,605 --> 00:03:50,360
+As you can see, we have the list of all the variables available,
+
+71
+00:03:50,360 --> 00:03:53,965
+but from here, we are only interested in the Phone Number.
+
+72
+00:03:53,965 --> 00:03:57,890
+We can do an Edit from this local panel,
+
+73
+00:03:57,890 --> 00:04:02,705
+and we can choose some random phone number that we want to enter.
+
+74
+00:04:02,705 --> 00:04:04,460
+Let us click on,
+
+75
+00:04:04,460 --> 00:04:09,970
+Continue, and now you can see,
+
+76
+00:04:09,970 --> 00:04:12,980
+only that particular activity was executed
+
+77
+00:04:12,980 --> 00:04:17,540
+and we have also changed the values from the local panel.
+
+78
+00:04:17,540 --> 00:04:22,690
+Let us look at the other option that is Creating a Test Bench.
+
+79
+00:04:22,690 --> 00:04:24,445
+The Test Bench option,
+
+80
+00:04:24,445 --> 00:04:27,125
+allows for creation of automation building blocks,
+
+81
+00:04:27,125 --> 00:04:30,605
+which can be tested and added to the final workflow.
+
+82
+00:04:30,605 --> 00:04:33,814
+In that case, we'll use the Type into Activity,
+
+83
+00:04:33,814 --> 00:04:36,155
+will do a right-click, and from here,
+
+84
+00:04:36,155 --> 00:04:38,855
+you can choose, Create Test Bench.
+
+85
+00:04:38,855 --> 00:04:42,920
+The Create Test Bench is similar to the Text Activity option,
+
+86
+00:04:42,920 --> 00:04:47,810
+with the exception that the later is contained and defined in an actual workflow.
+
+87
+00:04:47,810 --> 00:04:50,125
+It is used for testing activities,
+
+88
+00:04:50,125 --> 00:04:53,169
+working with variables or debugging the processes.
+
+89
+00:04:53,169 --> 00:04:56,500
+All this is done in a test bench or workflow,
+
+90
+00:04:56,500 --> 00:04:58,990
+that is a temporary sequence that is not
+
+91
+00:04:58,990 --> 00:05:01,720
+a part of the current project and it is discarded,
+
+92
+00:05:01,720 --> 00:05:02,980
+when we close it.
+
+93
+00:05:02,980 --> 00:05:04,390
+As you can see here,
+
+94
+00:05:04,390 --> 00:05:07,225
+our temporary sequence has been created
+
+95
+00:05:07,225 --> 00:05:11,125
+and this sequence is not available in our project panel.
+
+96
+00:05:11,125 --> 00:05:14,425
+When you close this temporary sequence,
+
+97
+00:05:14,425 --> 00:05:20,020
+it will not be Saved and the same will not be reflected in the project panel.
+
+98
+00:05:20,090 --> 00:05:24,355
+Let us go ahead and indicate a Notepad application,
+
+99
+00:05:24,355 --> 00:05:25,765
+where we need to type.
+
+100
+00:05:25,765 --> 00:05:27,850
+In our case, we'll type the message,
+
+101
+00:05:27,850 --> 00:05:34,740
+" Hello and welcome to test bench."
+
+102
+00:05:34,740 --> 00:05:39,670
+Let us Save, the workflow and let us click on, Debug.
+
+103
+00:05:40,070 --> 00:05:44,890
+As you can see, the Debugging is in the pause state.
+
+104
+00:05:44,890 --> 00:05:48,320
+As you can see, we have a two break points here.
+
+105
+00:05:48,320 --> 00:05:51,965
+The first break-point is where we have created
+
+106
+00:05:51,965 --> 00:05:55,880
+a Test Bench for the activities and we have another break-point,
+
+107
+00:05:55,880 --> 00:05:58,384
+that is ending this sequence.
+
+108
+00:05:58,384 --> 00:06:01,300
+Let us click on, Continue.
+
+109
+00:06:02,090 --> 00:06:05,960
+As you saw, the particular activity,
+
+110
+00:06:05,960 --> 00:06:08,165
+was able to perform the desired task.
+
+111
+00:06:08,165 --> 00:06:12,050
+That is, the Type into Activity was able to type into the Notepad and
+
+112
+00:06:12,050 --> 00:06:16,475
+now the process has again went into a pause state.
+
+113
+00:06:16,475 --> 00:06:18,155
+As you can see from here,
+
+114
+00:06:18,155 --> 00:06:20,240
+this is the only thing that is left.
+
+115
+00:06:20,240 --> 00:06:24,445
+Let us click on Continue and complete this Debugging process.
+
+116
+00:06:24,445 --> 00:06:28,125
+Awesome, that the Debugging process has been completed.
+
+117
+00:06:28,125 --> 00:06:31,200
+In this way, you can Create the Test Bench.
+
+118
+00:06:31,200 --> 00:06:34,430
+To summarize, the test activities,
+
+119
+00:06:34,430 --> 00:06:37,935
+we looked into Run to this Activity option.
+
+120
+00:06:37,935 --> 00:06:41,820
+We also looked at Run from this Activity, we also looked at,
+
+121
+00:06:41,820 --> 00:06:44,970
+how to individually test our activity in the workflow,
+
+122
+00:06:44,970 --> 00:06:47,205
+using the Test Activity option.
+
+123
+00:06:47,205 --> 00:06:51,404
+Lastly, we looked at how to Create a Test Bench for the activities,
+
+124
+00:06:51,404 --> 00:06:54,460
+that we're going to use, in the workflow.
+
